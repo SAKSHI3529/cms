@@ -25,3 +25,6 @@ Route::get('/dashboard', function () {
 Route::get('/blank', function () {
     return view('blank');
 });
+
+    
+
