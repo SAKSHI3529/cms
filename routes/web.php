@@ -26,5 +26,10 @@ Route::get('/blank', function () {
     return view('blank');
 });
 
+Route::get('/staff', function () {
+    return view('staff.create');
+});
+
+
     
 

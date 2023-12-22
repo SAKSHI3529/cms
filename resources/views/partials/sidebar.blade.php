@@ -11,7 +11,7 @@
 
                 <li>
                     <a href="index.html" class="waves-effect">
-                        <i class="mdi mdi-view-dashboard"></i><span class="badge badge-pill badge-primary float-right">2</span>
+                        <i class="mdi mdi-view-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
@@ -62,32 +62,27 @@
 
                 <li>
                     <a href="javascript: void(0);" class="waves-effect">
-                        <i class="mdi mdi-clipboard-outline"></i>
-                        <span class="badge badge-pill badge-success float-right">6</span>
-                        <span>Forms</span>
+                        {{-- <i class="fas fa-user-friends"></i> --}}
+                        <i class="typcn typcn-group"></i>
+                       
+                        <span>Staff</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="form-elements.html">Form Elements</a></li>
-                        <li><a href="form-validation.html">Form Validation</a></li>
-                        <li><a href="form-advanced.html">Form Advanced</a></li>
-                        <li><a href="form-editors.html">Form Editors</a></li>
-                        <li><a href="form-uploads.html">Form File Upload</a></li>
-                        <li><a href="form-xeditable.html">Form Xeditable</a></li>
+                        <li><a href="form-elements.html">Add New</a></li>
+                        <li><a href="form-validation.html">List</a></li>
+                        
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="mdi mdi-chart-line"></i>
-                        <span>Charts</span>
+                        <i class="fas fa-boxes"></i>
+                        <span>Parsals</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="charts-morris.html">Morris Chart</a></li>
-                        <li><a href="charts-chartist.html">Chartist Chart</a></li>
-                        <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
-                        <li><a href="charts-flot.html">Flot Chart</a></li>
-                        <li><a href="charts-c3.html">C3 Chart</a></li>
-                        <li><a href="charts-other.html">Jquery Knob Chart</a></li>
+                        <li><a href="charts-morris.html">Add New</a></li>
+                        <li><a href="charts-chartist.html">List</a></li>
+
                     </ul>
                 </li>
 
