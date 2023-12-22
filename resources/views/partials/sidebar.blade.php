@@ -18,7 +18,7 @@
 
                 
 
-                <li>
+                {{-- <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-email-outline"></i>
                         <span>Email</span>
@@ -28,11 +28,11 @@
                         <li><a href="email-read.html">Email Read</a></li>
                         <li><a href="email-compose.html">Email Compose</a></li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <li class="menu-title">Components</li>
 
-                <li>
+                {{-- <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-buffer"></i>
                         <span>UI Elements</span>
@@ -58,7 +58,7 @@
                             <li><a href="ui-typography.html">Typography</a></li>
                             <li><a href="ui-video.html">Video</a></li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <li>
                     <a href="javascript: void(0);" class="waves-effect">

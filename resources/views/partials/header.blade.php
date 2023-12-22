@@ -34,14 +34,9 @@
                 <div class="d-flex">
 
                      <!-- App Search-->
-                     <form class="app-search d-none d-lg-block">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="fa fa-search"></span>
-                        </div>
-                    </form>
+                    
 
-                    <div class="dropdown d-inline-block d-lg-none ml-2">
+                    {{-- <div class="dropdown d-inline-block d-lg-none ml-2">
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="mdi mdi-magnify"></i>
@@ -60,46 +55,11 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="dropdown d-none d-md-block ml-2">
-                        <button type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="mr-2" src="assets/images/flags/us_flag.jpg" alt="Header Language" height="16"> English <span class="mdi mdi-chevron-down"></span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
+                    
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/germany_flag.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle"> German </span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/italy_flag.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle"> Italian </span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/french_flag.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle"> French </span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/spain_flag.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle"> Spanish </span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/russia_flag.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle"> Russian </span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-none d-lg-inline-block">
-                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
-                            <i class="mdi mdi-fullscreen font-size-24"></i>
-                        </button>
-                    </div>
+                   
 
                     <div class="dropdown d-inline-block ml-1">
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
@@ -215,10 +175,10 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <!-- item-->
                             <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle mr-1"></i> Profile</a>
-                            <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle mr-1"></i> My Wallet</a>
+                            {{-- <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle mr-1"></i> My Wallet</a>
                             <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings font-size-17 text-muted align-middle mr-1"></i> Settings</a>
                             <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline font-size-17 text-muted align-middle mr-1"></i> Lock screen</a>
-                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div> --}}
                             <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle mr-1 text-danger"></i> Logout</a>
                         </div>
                     </div>
