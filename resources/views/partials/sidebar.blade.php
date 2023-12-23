@@ -65,7 +65,7 @@
                         {{-- <i class="fas fa-user-friends"></i> --}}
                         <i class="typcn typcn-group"></i>
                        
-                        <span>Staff</span>
+                        <span>Users</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="form-elements.html">Add New</a></li>
