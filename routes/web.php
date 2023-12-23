@@ -14,6 +14,9 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
+
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,3 +36,6 @@ Route::get('/staff', function () {
 
     
 
+
+
+Route::get('/home', 'HomeController@index')->name('home');

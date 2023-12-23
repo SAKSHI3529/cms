@@ -179,15 +179,15 @@
                             <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings font-size-17 text-muted align-middle mr-1"></i> Settings</a>
                             <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline font-size-17 text-muted align-middle mr-1"></i> Lock screen</a>
                             <div class="dropdown-divider"></div> --}}
-                            <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle mr-1 text-danger"></i> Logout</a>
+                            <form action="{{url('/logout')}}" method="post">
+                                @csrf
+                                <button class="btn btn-link dropdown-item" type="submit"><i class="mdi mdi-power font-size-17 text-muted align-middle mr-1 text-danger"></i> Logout</button>
+                            </form>
+                            {{-- <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle mr-1 text-danger"></i> Logout</a> --}}
                         </div>
                     </div>
 
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            <i class="mdi mdi-spin mdi-settings"></i>
-                        </button>
-                    </div>
+                  
             
                 </div>
             </div>
