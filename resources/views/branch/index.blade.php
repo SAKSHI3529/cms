@@ -20,10 +20,10 @@
 
         <tbody>
 
-            @foreach ($branch as $branch)
+            {{-- @foreach ($branch as $branch) --}}
             
         
-            <tr>
+            {{-- <tr>
               <td>{{$branch->id}}</td>
               <td>{{$branch->street}}</td>
               <td>{{$branch->state}}</td>
@@ -42,7 +42,7 @@
             </td>
             </tr>
             
-            @endforeach
+            @endforeach --}}
             
            
             
