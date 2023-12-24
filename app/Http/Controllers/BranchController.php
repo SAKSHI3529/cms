@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\cms\branch;
+use CreateBranchesTable;
 use Illuminate\Http\Request;
 
 class BranchController extends Controller
@@ -35,10 +36,12 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
-        $inputs = $request->only(['name', 'address', 'contact']);
-        $branch = branch::create($inputs);
+      //  $inputs=$request->input();
+        //$b=branches::create($inputs);
+       // $inputs = $request->only(['name', 'address', 'contact']);
+        //$branch = branch::create($inputs);
        // flash('success: branch created');
-        return back();
+       // return back();
     }
 
     /**
