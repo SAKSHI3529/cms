@@ -15,6 +15,12 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{url('/branch')}}" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span>Branch</span>
+                    </a>
+                </li>
 
                 
 
@@ -61,7 +67,7 @@
                 </li> --}}
 
                 <li>
-                    <a href="javascript: void(0);" class="waves-effect">
+                    <a href="{{url('/users')}}" class="waves-effect">
                         {{-- <i class="fas fa-user-friends"></i> --}}
                         <i class="typcn typcn-group"></i>
                        
@@ -77,7 +83,7 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fas fa-boxes"></i>
-                        <span>Parsals</span>
+                        <span>Parcels</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="charts-morris.html">Add New</a></li>

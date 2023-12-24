@@ -32,6 +32,11 @@ Route::get('/blank', function () {
 Route::get('/users', function () {
     return view('users.create');
 });
+// Route::get('/branch', function () {
+  //   return view('branch.create');
+ //});
+ Route::resource('/branch',"BranchController" );
+
 
 
     
