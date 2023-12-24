@@ -1,5 +1,6 @@
 @extends('layouts.cms')
 @section('content')
+
 <div class="card-body">
 
     <h4 class="card-title">Default Datatable</h4>
@@ -8,10 +9,40 @@
 
     <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="datatable_length"><label>Show <select name="datatable_length" aria-controls="datatable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="datatable"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="datatable" class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="datatable_info">
         <thead>
-            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 120.6px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 187.6px;" aria-label="Position: activate to sort column ascending">Position</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 85.6px;" aria-label="Office: activate to sort column ascending">Office</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 33.6px;" aria-label="Age: activate to sort column ascending">Age</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 76.6px;" aria-label="Start date: activate to sort column ascending">Start date</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 58.6px;" aria-label="Salary: activate to sort column ascending">Salary</th></tr>
+            <tr role="row">
+                <th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 120.6px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">ID</th>
+                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 85.6px;" aria-label="Office: activate to sort column ascending">Street/ Building</th>
+                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 33.6px;" aria-label="Age: activate to sort column ascending">City/State/Zip</th>
+                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 76.6px;" aria-label="Start date: activate to sort column ascending">Country</th>
+                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 58.6px;" aria-label="Salary: activate to sort column ascending">Contact</th></tr>
+                <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 58.6px;" aria-label="Salary: activate to sort column ascending">Action</th></tr>
         </thead>
 
         <tbody>
+
+            @foreach ($branch as $branch)
+            
+        
+            <tr>
+              <td>{{$branch->id}}</td>
+              <td>{{$branch->street}}</td>
+              <td>{{$branch->state}}</td>
+              <td>{{$branch->city}}</td>
+              <td>{{$branch->zip}}</td>
+              <td>{{$branch->country}}</td>
+              <td>{{$branch->contact}}</td>
+              
+              <td><a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary">Edit</a></td>
+            <td>
+              <form action="{{url('/branch/'.$branch->id)}}"method="POST">
+                 @csrf
+                 @method('delete')
+                <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+            </tr>
+            
+            @endforeach
             
            
             

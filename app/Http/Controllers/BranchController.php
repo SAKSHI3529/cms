@@ -15,7 +15,8 @@ class BranchController extends Controller
      */
     public function index()
     {
-        //
+        $branch= branch::all();
+        return view("branch.index")->with("branch", $branch);
     }
 
     /**

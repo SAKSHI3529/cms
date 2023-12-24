@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid mt-3">
     <div class="card">
-        <form action="{{url("/branch")}}"method="GET">
+        <form action="{{url("/branch")}}" method="GET">
             @csrf
         <div class="card-body">
 
