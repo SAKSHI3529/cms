@@ -1,6 +1,8 @@
 @extends('layouts.cms')
 @section('content')
 <div class="container-fluid mt-3">
+    <form action="{{url('users')}}" method="POST">
+        @csrf
     <div class="card">
         <div class="card-body">
 
@@ -15,16 +17,18 @@
                             <label for="fname" >First Name</label>
                             <input class="form-control" type="fname" value="" id="fname">
                         </div>
+
+                        <div class="form-group">
+                            <label for="address" >Address</label>
+                            <input class="form-control" type="address" value="" id="address" placeholder="">
+                        </div>
                         
                         <div class="form-group">
                             <label for="email" >Email</label>
                             <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com">
                         </div>
 
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input class="form-control" type="password" value="" id="password">
-                        </div>
+                        
                        
                         <!-- Add more form groups here as needed -->
                     </div>
@@ -40,6 +44,11 @@
                             <label for="contact">Contact</label>
                             <input class="form-control" type="contact"  id="contact">
                         </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" value="" id="password">
+                        </div>
                     </div>
                        
                         <div>
@@ -52,6 +61,6 @@
                         </div>
                         
             
-
+                    </form>
            
 @endsection

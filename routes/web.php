@@ -35,11 +35,17 @@ Route::get('/users', function () {
  Route::get('/branch', function () {
      return view('branch.create');
  });
+
+
  //Route::resource('/branch',"BranchController" );
 
 
+ Route::get('/parcels', function () {
+    return view('parcels.create');
+});
 
-    
+
+
 
 
 

@@ -15,12 +15,7 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="{{url('/branch')}}" class="waves-effect">
-                        <i class="mdi mdi-view-dashboard"></i>
-                        <span>Branch</span>
-                    </a>
-                </li>
+                
 
                 
 
@@ -67,30 +62,43 @@
                 </li> --}}
 
                 <li>
-                    <a href="{{url('/users')}}" class="waves-effect">
-                        {{-- <i class="fas fa-user-friends"></i> --}}
-                        <i class="typcn typcn-group"></i>
-                       
-                        <span>Users</span>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
+                        <i class="mdi mdi-format-list-bulleted-type"></i>
+                        <span>Branch</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="form-elements.html">Add New</a></li>
-                        <li><a href="form-validation.html">List</a></li>
-                        
+                    <ul class="sub-menu mm-collapse" aria-expanded="false">
+                        <li><a href="{{url('/branch')}}">Add New</a></li>
+                        <li><a href="">List</a></li>
                     </ul>
                 </li>
 
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
+                        <i class="typcn typcn-group"></i>
+                        <span>Users</span>
+                    </a>
+                    <ul class="sub-menu mm-collapse" aria-expanded="false">
+                        <li><a href="{{url('/users')}}">Add New</a></li>
+                        <li><a href="{{url('/users/index')}}">List</a></li>
+                    </ul>
+                </li>
+
+                
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fas fa-boxes"></i>
                         <span>Parcels</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="charts-morris.html">Add New</a></li>
+                        <li><a href="{{url('/parcels')}}">Add New</a></li>
                         <li><a href="charts-chartist.html">List</a></li>
 
                     </ul>
                 </li>
+
+
+
+
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">

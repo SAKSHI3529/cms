@@ -61,6 +61,47 @@
                         </div>
                     
                     </div>
+
+
+                    <div class="col-md-2">
+
+                        <div class="form-group">
+                            <h4> Receiver Information</h4>
+                            <label for="Name">Name</label>
+                            <input class="form-control" type="Name" value="" id="Name">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <div class="form-group">
+                            
+                            <label for="Name">Name</label>
+                            <input class="form-control" type="Name" value="" id="Name">
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <div class="form-group">
+                            
+                            <label for="Name">Name</label>
+                            <input class="form-control" type="Name" value="" id="Name">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-2">
+
+                        <div class="form-group">
+                           
+                            <label for="Name">Name</label>
+                            <input class="form-control" type="Name" value="" id="Name">
+                        </div>
+                        
+                    </div>
                     
                         <div>
                             <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
