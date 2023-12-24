@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\cms\branch;
-use CreateBranchesTable;
 use Illuminate\Http\Request;
 
 class BranchController extends Controller
@@ -15,8 +13,7 @@ class BranchController extends Controller
      */
     public function index()
     {
-        $branch= branch::all();
-        return view("branch.index")->with("branch", $branch);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class BranchController extends Controller
      */
     public function create()
     {
-        return view("branch.create");
+        //
     }
 
     /**
@@ -37,21 +34,16 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
-      //  $inputs=$request->input();
-        //$b=branches::create($inputs);
-       // $inputs = $request->only(['name', 'address', 'contact']);
-        //$branch = branch::create($inputs);
-       // flash('success: branch created');
-       // return back();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\cms\branch  $branch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(branch $branch)
+    public function show($id)
     {
         //
     }
@@ -59,10 +51,10 @@ class BranchController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\cms\branch  $branch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(branch $branch)
+    public function edit($id)
     {
         //
     }
@@ -71,10 +63,10 @@ class BranchController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\cms\branch  $branch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, branch $branch)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -82,10 +74,10 @@ class BranchController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\cms\branch  $branch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(branch $branch)
+    public function destroy($id)
     {
         //
     }
