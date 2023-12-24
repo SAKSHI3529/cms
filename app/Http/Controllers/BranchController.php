@@ -24,7 +24,7 @@ class BranchController extends Controller
      */
     public function create()
     {
-        return view ("branch.create");
+        return view("branch.create");
     }
 
     /**
@@ -35,14 +35,11 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
-       $inputs=$request->input();
-        $branch=branch::create($inputs);
-        flash('success: branch created');//->error();
-
-       return back();
-      
+        $inputs = $request->only(['name', 'address', 'contact']);
+        $branch = branch::create($inputs);
+       // flash('success: branch created');
+        return back();
     }
-}
 
     /**
      * Display the specified resource.

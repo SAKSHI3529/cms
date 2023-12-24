@@ -14,12 +14,12 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="fname" > Name</label>
+                            <label for="fname" >name</label>
                             <input class="form-control" type="name" value="" id="name">
                         </div>
                         
                         <div class="form-group">
-                            <label for="address" >Address</label>
+                            <label for="address" >address</label>
                             <input class="form-control" type="address" value="" id="address" placeholder="please enter your address">
                         </div>
 
@@ -39,7 +39,7 @@
                         {{-- </div> --}}
 
                         <div class="form-group">
-                            <label for="contact">Contact</label>
+                            <label for="contact">contact</label>
                             <input class="form-control" type="contact"  id="contact">
                         </div>
                     </div>
