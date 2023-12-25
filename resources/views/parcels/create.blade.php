@@ -35,6 +35,8 @@
                         <!-- Add more form groups here as needed -->
                     </div>
             
+
+                    
                     <div class="col-md-6">
 
                         <div class="form-group">
@@ -63,47 +65,57 @@
                     </div>
 
 
-                    <div class="col-md-2">
+        <div class="card mt-5">
 
-                        <div class="form-group">
-                            <h4> Receiver Information</h4>
-                            <label for="Name">Name</label>
-                            <input class="form-control" type="Name" value="" id="Name">
-                        </div>
+            <div class="card-body">
 
-                    </div>
-
-                    <div class="col-md-2">
-
-                        <div class="form-group">
-                            
-                            <label for="Name">Name</label>
-                            <input class="form-control" type="Name" value="" id="Name">
-                        </div>
+                    <h4>Parsal Information</h4>
+                    <div class="row">
                         
-                    </div>
-
-                    <div class="col-md-2">
-
-                        <div class="form-group">
-                            
-                            <label for="Name">Name</label>
-                            <input class="form-control" type="Name" value="" id="Name">
+                        <div class="col-md-2 mr-5 ">
+                            <div class="form-group">
+                                <label for="weight">Weight</label>
+                                <input class="form-control" type="weight" value="" id="weight">
+                            </div>
                         </div>
-                        
-                    </div>
                     
-                    <div class="col-md-2">
-
-                        <div class="form-group">
-                           
-                            <label for="Name">Name</label>
-                            <input class="form-control" type="Name" value="" id="Name">
+                        <div class="col-md-2 mr-5">
+                            <div class="form-group">
+                                <label for="height">Height</label>
+                                <input class="form-control" type="height" value="" id="height">
+                            </div>
                         </div>
-                        
-                    </div>
                     
-                        <div>
+                        <div class="col-md-2 mr-5">
+                            <div class="form-group">
+                                <label for="length">Length</label>
+                                <input class="form-control" type="length" value="" id="length">
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-2 mr-5">
+                            <div class="form-group">
+                                <label for="width">Width</label>
+                                <input class="form-control" type="width" value="" id="width">
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-2 ">
+                            <div class="form-group">
+                                <label for="price">Price</label>
+                                <input class="form-control" type="price" value="" id="price">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+        
+            
+                         <div>
                             <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
                                 Submit
                             </button>
@@ -113,5 +125,7 @@
                         </div>
                    
 
-           
+                        
+                        
+                        
 @endsection

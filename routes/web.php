@@ -35,9 +35,9 @@ Route::get('/users', function () {
 Route::get('/branch', function () {
       return view('branch.create');
   });
- Route::get('/branch', function () {
-      return view('branch.index');
- });
+//  Route::get('/branch', function () {
+//       return view('branch.index');
+//  });
 
 
  //Route::resource('/branch',"BranchController" );
