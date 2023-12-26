@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Branch;
 use Illuminate\Http\Request;
-
+use DB;
 class BranchController extends Controller
 {
     /**
@@ -14,6 +15,8 @@ class BranchController extends Controller
     public function index()
     {
         //
+        $branchs = Branch::all();
+        return view('branch.index',compact('branchs'));
     }
 
     /**
@@ -24,6 +27,10 @@ class BranchController extends Controller
     public function create()
     {
         //
+        $cities = DB::table('cities')->select('*')->get();
+        $states = DB::table('states')->select('*')->get();
+    
+        return view('branch.create',compact('states','cities'));
     }
 
     /**
@@ -34,16 +41,30 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request->validate([
+            'name' => 'required|max:255',
+            'ad_line' => 'required',
+            'zip_code'=>'required',
+            'contact'=>'required|max:15'
+        ]);
+
+        $inputs = $request->input();
+        $branch = Branch::Create($inputs);
+        if($branch)
+            flash('Branch with name '.$branch->name.' is created')->important();
+        else
+            flash('Unable to create branch');
+        return back()->withInput();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Branch $branch)
     {
         //
     }
@@ -51,10 +72,10 @@ class BranchController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Branch $branch)
     {
         //
     }
@@ -63,10 +84,10 @@ class BranchController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Branch $branch)
     {
         //
     }
@@ -74,10 +95,10 @@ class BranchController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Branch $branch)
     {
         //
     }

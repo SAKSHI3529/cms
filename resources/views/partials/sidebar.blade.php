@@ -67,8 +67,8 @@
                         <span>Branch</span>
                     </a>
                     <ul class="sub-menu mm-collapse" aria-expanded="false">
-                        <li><a href="{{url('/branch')}}">Add New</a></li>
-                        <li><a href="{{url('/branch/index')}}">List</a></li>
+                        <li><a href="{{url('/branch/create')}}">Add New</a></li>
+                        <li><a href="{{url('/branch')}}">List</a></li>
                     </ul>
                 </li>
 

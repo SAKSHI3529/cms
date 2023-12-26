@@ -32,15 +32,13 @@ Route::get('/blank', function () {
 Route::get('/users', function () {
     return view('users.create');
 });
-Route::get('/branch', function () {
-      return view('branch.create');
-  });
+
 //  Route::get('/branch', function () {
 //       return view('branch.index');
 //  });
 
 
- //Route::resource('/branch',"BranchController" );
+ Route::resource('/branch',"BranchController" );
 
 
  Route::get('/parcels', function () {

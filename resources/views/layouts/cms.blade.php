@@ -13,11 +13,13 @@
         <!-- ============================================================== -->
         <div class="main-content">
             <div class="page-content">
+                @include('flash::message')
                     @yield('content')
                 <!-- end main content-->
             </div>
             <!-- END layout-wrapper -->
         </div>
         @include('partials.footerscript')
+        @yield('pagescript')
     </body>
 </html>
