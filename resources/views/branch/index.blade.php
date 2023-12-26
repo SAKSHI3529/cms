@@ -28,7 +28,7 @@
                             @foreach ($branchs as $branch)
                             <tr>
                                 <td>{{$branch->name}}</td>
-                                <td>{{$branch->name}}</td>
+                                <td>{{$branch->state}}</td>
                                 <td>{{$branch->city}}</td>
                                 <td>{{$branch->contact}}</td>
                                 <td>{{$branch->created_at}}</td>
