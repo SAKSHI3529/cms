@@ -41,7 +41,7 @@ class ParcelsController extends Controller
         //
         $inputs=$request->input();
         $par=parcels::create($inputs);
-        return view();
+        return back();
     }
 
     /**
