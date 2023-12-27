@@ -61,9 +61,11 @@ class ParcelsController extends Controller
      * @param  \App\Models\parcels  $parcels
      * @return \Illuminate\Http\Response
      */
-    public function edit(parcels $parcels)
+    public function edit(parcels $req,$id)
     {
         //
+        $p = parcels :: find($id);
+        return view('parcels.edit')->with("parcels",$p);
     }
 
     /**
@@ -73,9 +75,12 @@ class ParcelsController extends Controller
      * @param  \App\Models\parcels  $parcels
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, parcels $parcels)
+    public function update(Request $request, $id)
     {
-        //
+        $input = $request -> input();
+        $p = parcels :: find ($id);
+        $p-> update($input);
+        return redirect()-> route("parcels.index");
     }
 
     /**
@@ -84,8 +89,10 @@ class ParcelsController extends Controller
      * @param  \App\Models\parcels  $parcels
      * @return \Illuminate\Http\Response
      */
-    public function destroy(parcels $parcels)
+    public function destroy($id)
     {
-        //
+        $p = parcels:: find($id);
+        $p -> delete();
+        return back();
     }
 }

@@ -35,12 +35,28 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            @endforeach
+                           
+                            <td>
+                                <div class="button-container" style="display:flex; gap:5px">
+                                    <a href="{{url("/parcels/".$parcels->id."/edit")}}" class="btn btn-primary">
+                                        <i class="fas fa-pen"></i>
+                                    </a>
+
+                                    <form action="{{url('/parcels/'.$parcels->id)}}"method="POST">
+                                        @csrf
+                                        @method('delete')
+                                       <button type="submit" class="btn btn-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                       </button>
+                                       </form>
+                                    
+                                </div>
+                            </td>
                            
                       
                         </tbody>
                     </table>
-
+                    @endforeach
                 </div>
             </div>
         </div>
