@@ -33,19 +33,7 @@
                                 <td>{{$branch->city}}</td>
                                 <td>{{$branch->contact}}</td>
                                 <td>{{$branch->created_at}}</td>
-                                {{-- <td><a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary">
-                                <i class="fas fa-pen"></i>
-                                </a></td>
-                                <td>
-                                
-                                    <form action="{{url('/branch/'.$branch->id)}}"method="POST">
-                                        @csrf
-                                        @method('delete')
-                                       <button type="submit" class="btn btn-danger">
-                                        <i class="fas fa-trash-alt"></i>
-                                       </button>
-                                       </form>
-                                </td> --}}
+                               
 
 
                                 <td>
