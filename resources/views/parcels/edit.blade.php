@@ -122,7 +122,7 @@
                                 </div>
                                 <div>
                                     <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
-                                        UPDATE
+                                        Update
                                     </button>
                                     {{-- <button type="reset" class="btn btn-secondary waves-effect">
                                 Cancel

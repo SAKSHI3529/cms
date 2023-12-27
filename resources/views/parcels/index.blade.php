@@ -37,12 +37,15 @@
                                 <td>{{$parcels->receiverName}}</td>
                                 <td></td>
                                
-
-
-                                <td>
+                              <td>
                                     <div class="button-container" style="display:flex; gap:5px">
+
+                                        <a href="" class="btn btn-success">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+
                                         <a href="{{url("/parcels/".$parcels->id."/edit")}}" class="btn btn-primary">
-                                            <i class="fas fa-pen"></i>
+                                            <i class="fas fa-edit"></i>
                                         </a>
     
                                         <form action="{{url('/parcels/'.$parcels->id)}}"method="POST">
