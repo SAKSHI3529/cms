@@ -38,11 +38,23 @@ class ParcelsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'senderName' => 'required|max:255',
+            'receiverName' => 'required',
+            'BranchProcessed'=>'required',
+            'PickupBranch'=>'required|max:100'
+        ]);
         //
         $inputs=$request->input();
         $par=parcels::create($inputs);
-        return back();
+        // return back();
+        if($par)
+        flash('parcel is added')->important();
+    else
+        flash('Unable to load your details ');
+        return back()->withInput();
     }
+    
 
     /**
      * Display the specified resource.
