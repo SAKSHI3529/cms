@@ -17,6 +17,9 @@
                                     <h4>Sender Information</h4>
                                     <label for="fname"> Name</label>
                                     <input class="form-control" type="name" value="" id="senderName" name="senderName">
+                                    @if($errors->has('senderName'))
+                                    <div class="error">{{ $errors->first('senderName') }}</div>
+                                @endif
                                 </div>
 
                                 <div class="form-group">
@@ -31,6 +34,9 @@
                                 <div class="form-group">
                                     <label for="BranchProcessed">Branch Processed</label>
                                     <input class="form-control" type="BranchProcessed" value="" id="BranchProcessed" name="BranchProcessed">
+                                    @if($errors->has('BranchProcessed'))
+                                        <div class="error">{{ $errors->first('BranchProcessed') }}</div>
+                                    @endif
                                 </div>
 
 
@@ -51,6 +57,9 @@
                                     <h4> Receiver Information</h4>
                                     <label for="Name">Name</label>
                                     <input class="form-control" type="Name" value="" id="receiverName" name="receiverName">
+                                    @if($errors->has('receiverName'))
+                                        <div class="error">{{ $errors->first('receiverName') }}</div>
+                                    @endif
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>
@@ -65,6 +74,9 @@
                                 <div class="form-group">
                                     <label for=" PickupBranch ">Pickup Branch</label>
                                     <input class="form-control" type="PickupBranch" value="" id="PickupBranch" name="PickupBranch">
+                                    @if($errors->has('PickupBranch'))
+                                        <div class="error">{{ $errors->first('PickupBranch') }}</div>
+                                    @endif
                                 </div>
 
                             </div>
