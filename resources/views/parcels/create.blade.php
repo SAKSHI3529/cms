@@ -27,6 +27,13 @@
                             <input class="form-control" type="contact"  id="contact">
                         </div>
 
+                        <div class="form-group">
+                            <label for="Branch Processed" >Branch Processed</label>
+                            <input class="form-control" type="Branch Processed" value="" id="Branch Processed" >
+                        </div>
+
+                        
+
                         {{-- <div class="form-group">
                             <label for="password">Password</label>
                             <input class="form-control" type="password" value="" id="password">
@@ -53,14 +60,11 @@
                             <label for="contact">Contact</label>
                             <input class="form-control" type="contact"  id="contact">
                         </div>
-                        <div class="form-group">
-                            <label for="Branch Processed" >Branch Processed</label>
-                            <input class="form-control" type="Branch Processed" value="" id="Branch Processed" >
-                        </div>
-                        <div class="form-group">
+                        
+                       <div class="form-group">
                             <label for=" Pickup Branch " >Pickup Branch</label>
                             <input class="form-control" type="Pickup Branch" value="" id="Pickup Branch" >
-                        </div>
+                    </div>
                     
                     </div>
 
@@ -106,7 +110,8 @@
                                 <input class="form-control" type="price" value="" id="price">
                             </div>
                         </div>
-                    </div>
+
+                       
                 </div>
             </div>
         
