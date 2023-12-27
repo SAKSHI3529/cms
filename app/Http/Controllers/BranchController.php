@@ -75,9 +75,15 @@ class BranchController extends Controller
      * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function edit(Branch $branch)
+    public function edit(Branch $req , $id)
     {
-        //
+        $cities = DB::table('cities')->select('*')->get();
+        $states = DB::table('states')->select('*')->get();
+    
+        
+        $b = branch :: find($id);
+        return view('branch.edit',compact('states','cities'))->with("branch",$b);
+        // return view ("branch.edit")
     }
 
     /**
@@ -87,9 +93,12 @@ class BranchController extends Controller
      * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Branch $branch)
+    public function update(Request $request ,$id)
     {
-        //
+        $input = $request -> input();
+        $b = branch :: find ($id);
+        $b-> update($input);
+        return redirect()-> route("branch.index");
     }
 
     /**
@@ -98,8 +107,10 @@ class BranchController extends Controller
      * @param  \App\Models\Branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Branch $branch)
+    public function destroy($id )
     {
-        //
+        $b = branch:: find($id);
+        $b -> delete();
+        return back();
     }
 }

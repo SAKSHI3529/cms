@@ -8,9 +8,10 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h4 class="card-title">Default Datatable</h4>
-                    <p class="card-title-desc">DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>.
-                    </p>
+                    <h3>Branches Information</h3>
+                    <br>
+                    <br>
+                    
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
@@ -32,7 +33,38 @@
                                 <td>{{$branch->city}}</td>
                                 <td>{{$branch->contact}}</td>
                                 <td>{{$branch->created_at}}</td>
-                                <td></td>
+                                {{-- <td><a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary">
+                                <i class="fas fa-pen"></i>
+                                </a></td>
+                                <td>
+                                
+                                    <form action="{{url('/branch/'.$branch->id)}}"method="POST">
+                                        @csrf
+                                        @method('delete')
+                                       <button type="submit" class="btn btn-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                       </button>
+                                       </form>
+                                </td> --}}
+
+
+                                <td>
+                                    <div class="button-container" style="display:flex; gap:5px">
+                                        <a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                        <form action="{{url('/branch/'.$branch->id)}}"method="POST">
+                                            @csrf
+                                            @method('delete')
+                                           <button type="submit" class="btn btn-danger">
+                                            <i class="fas fa-trash-alt"></i>
+                                           </button>
+                                           </form>
+                                        
+                                    </div>
+                                </td>
+                                
                             </tr>
                             @endforeach
                            
