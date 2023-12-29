@@ -137,20 +137,20 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="updatedBy " style="font-size: medium">Updated By:</label>
+                    <label for="updatedBy " style="font-size: medium">Updated By:</label><br>
                     @if($parcel->userinfo)
-                    <label for="updatedBy">{{$parcel->userinfo->id}}</label>
-                    <label for="updatedBy">{{$parcel->userinfo->name}}</label>
+                    <label for="updatedBy">ID:{{$parcel->userinfo->id}}</label><br>
+                    <label for="updatedBy">Name:{{$parcel->userinfo->name}}</label>
                     @endif
                     
                     
                 </div>
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for=" status " style="font-size: medium">Status:</label>
                     <label for="status">{{$parcel->Status}}</label>
                     
-                </div>
+                </div> --}}
             </div>
 
     

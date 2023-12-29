@@ -41,3 +41,8 @@ Route::middleware(['auth'])->group( function()
     
 });
 
+
+// Route::get('/parcels', function () {
+//     return view('parcels.status');
+// });
+
