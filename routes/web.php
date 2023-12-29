@@ -16,44 +16,28 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
 Auth::routes();
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view("dashboard.index");
-});
-
-Route::get('/blank', function () {
-    return view('blank');
-});
-
-Route::get('/users', function () {
-    return view('users.create');
-});
-
-//  Route::get('/branch', function () {
-//       return view('branch.index');
-//  });
-
-
- Route::resource('/branch',"BranchController" );
-
-
-//  Route::get('/parcels', function () {
-//     return view('parcels.create');
-// });
-
-Route::resource('/parcels',"ParcelsController" );
-
-
-
-
-
 Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['auth'])->group( function()
+{
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    
+    Route::get('/dashboard', function () {
+        return view("dashboard.index");
+    });
+    
+    Route::get('/blank', function () {
+        return view('blank');
+    });
+    
+    Route::get('/users', function () {
+        return view('users.create');
+    });
+    
+     Route::resource('/branch',"BranchController" );
+    Route::resource('/parcels',"ParcelsController" );
+    
+    
+});
 
-
-// Route::get('/parcels', function () {
-//     return view('parcels.detail');
-// });
