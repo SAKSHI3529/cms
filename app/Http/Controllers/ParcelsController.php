@@ -36,7 +36,7 @@ class ParcelsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request )
     {
         $request->validate([
             'senderName' => 'required|max:255',
@@ -45,7 +45,16 @@ class ParcelsController extends Controller
             'PickupBranch'=>'required|max:100'
         ]);
         //
+        $rno = rand();
+        $str = "cms" . $rno;
+
+        $request -> merge([
+            'referanceNumber' => $str
+        ]);
         $inputs=$request->input();
+
+
+     
         $par=parcels::create($inputs);
         // return back();
         if($par)
@@ -53,6 +62,9 @@ class ParcelsController extends Controller
     else
         flash('Unable to load your details ');
         return back()->withInput();
+
+
+        
     }
     
 
@@ -62,9 +74,10 @@ class ParcelsController extends Controller
      * @param  \App\Models\parcels  $parcels
      * @return \Illuminate\Http\Response
      */
-    public function show(parcels $parcels)
+    public function show( $id)
     {
-        //
+        $parcel= parcels::find($id);
+        return view('parcels.detail', compact('parcel'));
     }
 
     /**

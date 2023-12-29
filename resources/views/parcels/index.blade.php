@@ -32,7 +32,7 @@
                             @foreach ($parcels as $parcels)
                             <tr>
                                 <td>{{$parcels->id}}</td>
-                                <td></td>
+                                <td>{{$parcels ->referanceNumber}}</td>
                                 <td>{{$parcels->senderName}}</td>
                                 <td>{{$parcels->receiverName}}</td>
                                 <td></td>
@@ -40,7 +40,7 @@
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
 
-                                        <a href="" class="btn btn-success">
+                                        <a href="{{url("/parcels/".$parcels->id)}}" class="btn btn-success">
                                             <i class="fas fa-eye"></i>
                                         </a>
 

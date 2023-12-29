@@ -11,6 +11,12 @@
 
                     <form action="{{ url('/parcels') }}" method="POST">
                         @csrf
+
+                       
+
+
+
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">

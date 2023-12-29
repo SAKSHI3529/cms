@@ -15,7 +15,8 @@ class CreateParcelsTable extends Migration
     {
         Schema::create('parcels', function (Blueprint $table) {
             $table->id();
-            $table->string('senderName',50);
+            $table->string('referanceNumber',30);
+            $table->string('senderName',50) ;
             $table->string('senderAddress',100);
             $table->string('sendercontact',15);
             $table->string('BranchProcessed',100);
@@ -23,10 +24,10 @@ class CreateParcelsTable extends Migration
             $table->string('receiverAddress',100);
             $table->string('receivercontact',15);
             $table->string('PickupBranch',100);
-            $table->string('weight',10);
-            $table->string('height',10);
-            $table->string('length',10);
-            $table->string('width',10);
+            $table->string('weight',10)->nullable();
+            $table->string('height',10)->nullable();
+            $table->string('length',10)->nullable();
+            $table->string('width',10)->nullable();
             $table->string('price',10);
 
             $table->timestamps();
