@@ -138,7 +138,11 @@
 
                 <div class="form-group">
                     <label for="updatedBy " style="font-size: medium">Updated By:</label>
-                    <label for="updatedBy">{{$parcel->userId}}</label>
+                    @if($parcel->userinfo)
+                    <label for="updatedBy">{{$parcel->userinfo->id}}</label>
+                    <label for="updatedBy">{{$parcel->userinfo->name}}</label>
+                    @endif
+                    
                     
                 </div>
 

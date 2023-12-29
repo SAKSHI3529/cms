@@ -38,6 +38,8 @@ class ParcelsController extends Controller
      */
     public function store(Request $request )
     {
+        $user=$request->user();
+        // return $user;
         $request->validate([
             'senderName' => 'required|max:255',
             'receiverName' => 'required',
@@ -49,7 +51,8 @@ class ParcelsController extends Controller
         $str = "cms" . $rno;
 
         $request -> merge([
-            'referanceNumber' => $str
+            'referanceNumber' => $str,
+            'userID'=>$user->id
         ]);
         $inputs=$request->input();
 
