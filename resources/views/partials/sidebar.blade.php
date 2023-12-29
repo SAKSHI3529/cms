@@ -92,6 +92,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{url('/parcels/create')}}">Add New</a></li>
                         <li><a href="{{url('/parcels')}}">List</a></li>
+                        <li><a href="{{url('/parcels')}}">Status</a></li>
 
                     </ul>
                 </li>
