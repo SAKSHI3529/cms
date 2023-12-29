@@ -41,6 +41,14 @@ Route::middleware(['auth'])->group( function()
     
 });
 
+<<<<<<< HEAD
 Route::get('/tracking', function () {
     return view('tracking.create');
 });
+=======
+
+// Route::get('/parcels', function () {
+//     return view('parcels.status');
+// });
+
+>>>>>>> 438fc00bc9aee6ec13553b3b586c1704a06a6194
