@@ -45,8 +45,6 @@ Route::get('/traking', function () {
     return view('traking.create');
 });
 
-Route::get('/parcels', function () {
-    return view('parcels.status');
-});
+Route::get('/parcels-status', "ParcelsController@parcelStatus");
 
 
