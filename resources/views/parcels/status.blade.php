@@ -1,9 +1,6 @@
 @extends('layouts.cms')
 @section('content')
 
-
-
-
 <div class="card ">
     <div class="card-body ">
         <h3 class="text-center mb-5">Update Parcel Status</h3>
@@ -27,6 +24,18 @@
                 </select>
             </div>
         </div>
+
+        {{-- <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu is right-aligned
+                <i class="mdi mdi-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div> --}}
 
     <div class="text-center mt-4">
         <a href="" class="btn btn-primary ">

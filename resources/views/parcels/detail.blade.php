@@ -146,11 +146,11 @@
                     
                 </div>
 
-                {{-- <div class="form-group">
+                <div class="form-group">
                     <label for=" status " style="font-size: medium">Status:</label>
                     <label for="status">{{$parcel->Status}}</label>
                     
-                </div> --}}
+                </div>
             </div>
 
     

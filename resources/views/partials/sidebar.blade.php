@@ -96,11 +96,15 @@
 
                     </ul>
                 </li>
+                
+
                 <li>
-                    <a href="{{url('/tracking')}}" class="has-arrow waves-effect">
-                        <i class="fas fa-boxes"></i>
-                        <span>Tracking</span>
-                    </li>
+                    <a href="{{url('traking')}}" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span>Traking</span>
+                    </a>
+                </li>
+
 
 {{-- 
 

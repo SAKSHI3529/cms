@@ -81,6 +81,7 @@ class ParcelsController extends Controller
     {
         $parcel= parcels::find($id);
         return view('parcels.detail', compact('parcel'));
+        
     }
 
     /**
