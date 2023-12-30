@@ -15,6 +15,7 @@ class CreateTrackingsTable extends Migration
     {
         Schema::create('trackings', function (Blueprint $table) {
             $table->id();
+            $table->string('referanceNumber',30);
             $table->timestamps();
         });
     }

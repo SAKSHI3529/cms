@@ -5,7 +5,8 @@
                 <div class="col-md-12">
                     <div class="search-container">
                      
-                        <form action="/action_page.php">
+                      <form action="{{ url('/tracking') }}" method="POST">
+                        @csrf
                           <p>Enter Tracking Number:</p>
                           <input type="text" placeholder="Search.." name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
