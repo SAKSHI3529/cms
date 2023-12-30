@@ -44,3 +44,6 @@ Route::middleware(['auth'])->group( function()
 Route::get('/tracking', function () {
     return view('tracking.create');
 });
+Route::get('/reports', function () {
+    return view('reports.create');
+});
