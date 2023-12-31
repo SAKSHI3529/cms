@@ -40,11 +40,9 @@ Route::middleware(['auth'])->group( function()
     
     
 });
+Route::resource('/tracking',"TrackingController" );
 
-Route::get('/traking', function () {
-    return view('traking.create');
-});
 
-Route::get('/parcels-status', "ParcelsController@parcelStatus");
+Route::get('/parcels-status', "TrackingController@parcelStatus");
 
 

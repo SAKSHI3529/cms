@@ -11,9 +11,6 @@
 
                     <form action="{{ url('/parcels') }}" method="POST">
                         @csrf
-
-                       
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -37,7 +34,7 @@
                                 <div class="form-group">
                                     <label for="BranchProcessed">Branch Processed</label>
 
-                                    <select class="form-control" name="branchs">
+                                    <select class="form-control" name="BranchProcessed">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
                                             <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
@@ -85,7 +82,7 @@
 
                                 <div class="form-group">
                                     <label for=" PickupBranch ">Pickup Branch</label>
-                                    <select class="form-control" name="branchs">
+                                    <select class="form-control" name="PickupBranch">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
                                         <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
@@ -154,4 +151,8 @@
                             </button> --}}
                                 </div>
                     </form>
-                @endsection
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

@@ -99,9 +99,9 @@
                 
 
                 <li>
-                    <a href="{{url('traking')}}" class="waves-effect">
+                    <a href="{{url('/tracking')}}" class="waves-effect">
                         <i class="mdi mdi-view-dashboard"></i>
-                        <span>Traking</span>
+                        <span>Tracking</span>
                     </a>
                 </li>
 
