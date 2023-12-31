@@ -116,6 +116,12 @@
                                                 <input class="form-control" type="price" value="{{$parcels->price}}" id="price" name="price">
                                             </div>
                                         </div>
+                                        <div class="col-md-2 ">
+                                            <div class="form-group">
+                                                <label for="Productdetails">Product details</label>
+                                                <input class="form-control" type="Productdetails" value="{{$parcels->Productdetails}}" id="Productdetails" name="Productdetails">
+                                            </div>
+                                        </div>
 
 
                                     </div>

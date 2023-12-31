@@ -44,6 +44,4 @@ Route::middleware(['auth'])->group( function()
 Route::get('/traking', function () {
     return view('traking.create');
 });
-Route::get('/reports', function () {
-    return view('reports.create');
-});
+Route::get('/reports/{refno}','ParcelsController@invoicepage');
