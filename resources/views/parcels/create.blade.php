@@ -14,9 +14,6 @@
 
                        
 
-
-
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -39,7 +36,16 @@
 
                                 <div class="form-group">
                                     <label for="BranchProcessed">Branch Processed</label>
-                                    <input class="form-control" type="BranchProcessed" value="" id="BranchProcessed" name="BranchProcessed">
+
+                                    <select class="form-control" name="branchs">
+                                        <option>Select</option>
+                                        @foreach ($branchs as $branch)
+                                            <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                           
+                                        @endforeach
+                                    </select>
+                                    {{-- <input class="form-control" type="BranchProcessed" value="" id="BranchProcessed" name="BranchProcessed"> --}}
+
                                     @if($errors->has('BranchProcessed'))
                                         <div class="error">{{ $errors->first('BranchProcessed') }}</div>
                                     @endif
@@ -79,7 +85,13 @@
 
                                 <div class="form-group">
                                     <label for=" PickupBranch ">Pickup Branch</label>
-                                    <input class="form-control" type="PickupBranch" value="" id="PickupBranch" name="PickupBranch">
+                                    <select class="form-control" name="branchs">
+                                        <option>Select</option>
+                                        @foreach ($branchs as $branch)
+                                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                          
+                                        @endforeach
+                                    </select>
                                     @if($errors->has('PickupBranch'))
                                         <div class="error">{{ $errors->first('PickupBranch') }}</div>
                                     @endif

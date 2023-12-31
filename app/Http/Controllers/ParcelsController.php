@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\parcels;
 use Illuminate\Http\Request;
+use App\Models\Branch;
 
 class ParcelsController extends Controller
 {
@@ -26,8 +27,9 @@ class ParcelsController extends Controller
      */
     public function create()
     {
-        //
-        return view('parcels.create');
+        $branchs=Branch::all();
+        return view('parcels.create' , compact('branchs'));
+
     }
 
     /**
@@ -80,7 +82,8 @@ class ParcelsController extends Controller
     public function show( $id)
     {
         $parcel= parcels::find($id);
-        return view('parcels.detail', compact('parcel'));
+        return view('parcels.detail',compact('parcel'));
+        
     }
 
     /**
@@ -122,5 +125,12 @@ class ParcelsController extends Controller
         $p = parcels:: find($id);
         $p -> delete();
         return back();
+    }
+
+    public function parcelStatus(){
+
+        $branchs=Branch::all();
+        return view('parcels.status' , compact('branchs'));
+        
     }
 }

@@ -1,9 +1,7 @@
 @extends('layouts.cms')
 @section('content')
 
-
-
-
+<form action="{{url('/parcels')}}">
 <div class="card ">
     <div class="card-body ">
         <h3 class="text-center mb-5">Update Parcel Status</h3>
@@ -16,18 +14,43 @@
             </div>
         </div>
 
+<div class=" row justify-content-center">
+        <div class="form-group col-md-6 mt-4">
+            <label for=" PickupBranch ">Select Branch</label>
+            <select class="form-control " name="branchs">
+                <option>Select</option>
+                @foreach ($branchs as $branch)
+                <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                  
+                @endforeach
+            </select>
+            @if($errors->has('PickupBranch'))
+                <div class="error">{{ $errors->first('PickupBranch') }}</div>
+            @endif
+        </div>
+    </div>
+
+
+
+
         <div class="form-group row justify-content-center ">
 
-            <div class="col-sm-6 mt-3">
+            <div class="col-sm-6 mt-2">
                 <label class="col-sm-4 col-form-label">Select Status</label>
                 <select class="form-control">
                     <option>Select</option>
-                    <option>Large select</option>
-                    <option>Small select</option>
+                    <option>Order Confirmed</option>
+                    <option>Order Processed</option>
+                    <option>Out for Delivery</option>
+                    <option>Arrived at Destination City</option>
+                    <option>Delivered</option>
+                    <option>Failed Delivery Attempt</option>
+
                 </select>
             </div>
         </div>
 
+      
     <div class="text-center mt-4">
         <a href="" class="btn btn-primary ">
             Update
@@ -37,6 +60,6 @@
 </div>
 
 
-
+</form>
     
 @endsection

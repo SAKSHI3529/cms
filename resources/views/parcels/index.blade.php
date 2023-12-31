@@ -35,7 +35,7 @@
                                 <td>{{$parcels ->referanceNumber}}</td>
                                 <td>{{$parcels->senderName}}</td>
                                 <td>{{$parcels->receiverName}}</td>
-                                <td></td>
+                                <td>{{$parcels->status}}</td>
                                
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
