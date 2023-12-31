@@ -20,13 +20,19 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <address>
-                                            <strong>Sender Name:{{$par->senderName}}</strong><br>
+                                            <strong>Sender Name:</strong><br>
+                                            {{$par->senderName}}<br>
+                                            {{$par->senderAddress}}<br>
+                                            {{$par->sendercontact}}
 
                                         </address>
                                     </div>
                                     <div class="col-6 text-right">
                                         <address>
                                             <strong>Receiver Name</strong><br>
+                                            {{$par->receiverName}}<br>
+                                            {{$par->receiverAddress}}<br>
+                                            {{$par->receivercontact}}
 
                                         </address>
                                     </div>
@@ -42,6 +48,7 @@
                                     <div class="col-6 mt-4 text-right">
                                         <address>
                                             <strong>Order Date:</strong><br>
+                                            {{$par->created_at}}
                                             <br><br>
                                         </address>
                                     </div>
@@ -61,13 +68,33 @@
                                                 <thead>
                                                     <tr>
                                                         <td><strong>Product Details</strong></td>
-                                                        <td class="text-center"><strong>Price</strong></td>
-                                                        <td class="text-center"><strong>Quantity</strong>
+                                                        <td class="text-center"><strong>Price: </strong></td>
+                                                        
+                                                        <td class="text-center"><strong>Weight</strong>
                                                         </td>
                                                         <td class="text-right"><strong>Totals</strong></td>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    <td>{{$par->Productdetails}}</td>
+                                                    <td class="text-center">{{$par->price}}</td>
+                                                    <td class="text-center">{{$par->weight}}</td>
+                                                    <td class="text-right">{{$par->price}}</td>
+                                                </tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-right">56</td>
+                                            </tr>
+                                            {{-- <tr>
+                                                <td class="thick-line"></td>
+                                                <td class="thick-line"></td>
+                                                <td class="thick-line text-center">
+                                                    {{-- <strong>Subtotal</strong></td>
+                                                <td class="thick-line text-right">$670.99</td> --}}
+                                            
+                                            
+
                                                     <!-- foreach ($order->lineItems as $line) or some such thing here -->
                                                     {{-- <tr>
                                                                     <td>BS-200</td>
@@ -94,14 +121,14 @@
                                                                         <strong>Subtotal</strong></td>
                                                                     <td class="thick-line text-right">$670.99</td>
                                                                 </tr> --}}
-                                                    <tr>
+                                                    {{-- <tr>
                                                         <td class="no-line"></td>
                                                         <td class="no-line"></td>
                                                         <td class="no-line text-center">
                                                             <strong>Shipping</strong>
                                                         </td>
                                                         <td class="no-line text-right"></td>
-                                                    </tr>
+                                                    </tr> --}}
                                                     <tr>
                                                         <td class="no-line"></td>
                                                         <td class="no-line"></td>
@@ -111,6 +138,12 @@
                                                         <td class="no-line text-right">
                                                             {{-- <h4 class="m-0">$685.99</h4></td> --}}
                                                     </tr>
+                                                </tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-right">{{$par->price}}</td>
+                                            </tr>
                                                 </tbody>
                                             </table>
                                         </div>
