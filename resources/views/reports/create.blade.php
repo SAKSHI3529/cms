@@ -11,9 +11,10 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="invoice-title">
-                                    <h4 class="float-right font-size-16"><strong>reference:{{$par->referanceNumber}}</strong></h4>
+                                    <h4 class="float-right font-size-16"><strong>Reference Number :</strong> {{$par->referanceNumber}} </h4>
+                                    
                                     <h3 class="mt-0">
-                                        {{-- <img src="assets/images/logo-dark.png" alt="logo" height="24" /> --}}
+                                        <img src="assets/images/logo-dark.png" alt="image" height="24" />
                                     </h3>
                                 </div>
                                 <hr>
@@ -45,7 +46,7 @@
                                                             jsmith@email.com
                                                         </address>
                                                 </div> --}}
-                                    <div class="col-6 mt-4 text-right">
+                                    <div class="col-12 mt-4 text-right">
                                         <address>
                                             <strong>Order Date:</strong><br>
                                             {{$par->created_at}}
