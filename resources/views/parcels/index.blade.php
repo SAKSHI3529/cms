@@ -36,9 +36,10 @@
                                 <td>{{$parcels ->referanceNumber}}</td>
                                 <td>{{$parcels->senderName}}</td>
                                 <td>{{$parcels->receiverName}}</td>
+                               @if($parcels->trackingstatus->count()>0) 
                                 <td>{{$parcels->trackingstatus->first()->trackinginfo}}</td>
-
-                               
+                                 @else <td>no data available</td>
+                               @endif
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
 
