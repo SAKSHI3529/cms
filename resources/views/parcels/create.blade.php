@@ -108,35 +108,35 @@
                                         <div class="col-md-2 mr-5 ">
                                             <div class="form-group">
                                                 <label for="weight">Weight</label>
-                                                <input class="form-control" type="weight" value="" id="weight" name="weight">
+                                                <input class="form-control" type="number" value="" id="weight" name="weight">
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="height">Height</label>
-                                                <input class="form-control" type="height" value="" id="height" name="height">
+                                                <input class="form-control" type="number" value="" id="height" name="height">
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="length">Length</label>
-                                                <input class="form-control" type="length" value="" id="length" name="length">
+                                                <input class="form-control" type="number" value="" id="length" name="length">
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="width">Width</label>
-                                                <input class="form-control" type="width" value="" id="width" name="width">
+                                                <input class="form-control" type="number" value="" id="width" name="width">
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 ">
                                             <div class="form-group">
                                                 <label for="price">Price</label>
-                                                <input class="form-control" type="price" value="" id="price" name="price">
+                                                <input class="form-control" type="number" value="" id="price" name="price">
                                             </div>
                                         </div>
                                         <div class="col-md-2 ">

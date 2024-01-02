@@ -105,6 +105,13 @@
                     </a>
                 </li>
 
+                {{-- <li>
+                    <a href="{{url('/reports/create')}}" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span>Reports</span>
+                    </a>
+                </li> --}}
+
 
 {{-- 
 

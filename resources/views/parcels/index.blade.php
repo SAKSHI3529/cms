@@ -57,6 +57,10 @@
                                             <i class="fas fa-trash-alt"></i>
                                            </button>
                                            </form>
+
+                                           <a href="" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
                                         
                                     </div>
                                 </td>
