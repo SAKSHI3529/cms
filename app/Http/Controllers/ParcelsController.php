@@ -142,5 +142,7 @@ class ParcelsController extends Controller
         // return $par;
         return view('reports.create' , compact('par'));
     }
+
+  
 }
 

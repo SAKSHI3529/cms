@@ -79,7 +79,7 @@
 
                     <div class="col-md-2 mr-5 ">
                         <div class="form-group">
-                            <label for="weight" style="font-size: medium">Weight:</label><br>
+                            <label for="weight" style="font-size: medium" >Weight:</label><br>
                             <label for="weight">{{$parcel->weight}}</label>
                             
                         </div>
@@ -146,11 +146,19 @@
                     
                 </div>
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for=" status " style="font-size: medium">Status:</label>
-                    <label for="status">{{$parcel->Status}}</label>
+                    @foreach ($parcels as $parcels)
+                    <label for="status">{{$parcels->trackingstatus->first()->trackinginfo}}</label>
+                    @endforeach
                     
-                </div>
+                </div> --}}
+
+                
+                   <a href="{{url('/parcels')}}" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
+                    Close
+                </a>
+
             </div>
 
     

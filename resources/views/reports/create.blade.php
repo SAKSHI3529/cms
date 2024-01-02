@@ -154,7 +154,9 @@
                                                 <a href="javascript:window.print()"
                                                     class="btn btn-success waves-effect waves-light"><i
                                                         class="fa fa-print"></i></a>
-                                                <a href="#" class="btn btn-primary waves-effect waves-light">Send</a>
+                                                        <a href="{{url('/parcels')}}" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
+                                                            Close
+                                                        </a>
                                             </div>
                                         </div>
                                     </div>

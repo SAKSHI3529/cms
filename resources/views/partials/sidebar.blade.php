@@ -100,8 +100,8 @@
 
                 <li>
                     <a href="{{url('/tracking')}}" class="waves-effect">
-                        <i class="mdi mdi-view-dashboard"></i>
-                        <span>Tracking</span>
+                        <i class="mdi mdi-chart-line"></i>
+                        <span>Status</span>
                     </a>
                 </li>
 

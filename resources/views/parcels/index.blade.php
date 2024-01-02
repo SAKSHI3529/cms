@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h3>Branches Information</h3>
+                    <h3>Parcels Information</h3>
                     <br>
                     <br>
                     
@@ -29,29 +29,29 @@
                         </thead>
 
                         <tbody>
-                            @foreach ($parcels as $parcels)
-                            {{$parcels->trackingstatus}}
+                            @foreach ($parcels as $parcel)
+                            
                             <tr>
-                                <td>{{$parcels->id}}</td>
-                                <td>{{$parcels ->referanceNumber}}</td>
-                                <td>{{$parcels->senderName}}</td>
-                                <td>{{$parcels->receiverName}}</td>
-                               @if($parcels->trackingstatus->count()>0) 
-                                <td>{{$parcels->trackingstatus->first()->trackinginfo}}</td>
-                                 @else <td>no data available</td>
+                                <td>{{$parcel->id}}</td>
+                                <td>{{$parcel ->referanceNumber}}</td>
+                                <td>{{$parcel->senderName}}</td>
+                                <td>{{$parcel->receiverName}}</td>
+                               @if($parcel->trackingstatus->count()>0) 
+                                <td>{{$parcel->trackingstatus->first()->trackinginfo}}</td>
+                                 @else <td>Not updated</td>
                                @endif
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
 
-                                        <a href="{{url("/parcels/".$parcels->id)}}" class="btn btn-success"  data-toggle="tooltip" data-placement="top" data-original-title="Details">
+                                        <a href="{{url("/parcels/".$parcel->id)}}" class="btn btn-success"  data-toggle="tooltip" data-placement="top" data-original-title="Details">
                                             <i class="fas fa-eye"></i>
                                         </a>
 
-                                        <a href="{{url("/parcels/".$parcels->id."/edit")}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                                        <a href="{{url("/parcels/".$parcel->id."/edit")}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                             <i class="fas fa-edit"></i>
                                         </a>
     
-                                        <form action="{{url('/parcels/'.$parcels->id)}}"method="POST">
+                                        <form action="{{url('/parcels/'.$parcel->id)}}"method="POST">
                                             @csrf
                                             @method('delete')
                                            <button type="submit" class="btn btn-danger"  data-toggle="tooltip " data-placement="top" data-original-title="Delete">
@@ -59,8 +59,8 @@
                                            </button>
                                            </form>
 
-                                           <a href="" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
-                                            <i class="fas fa-edit"></i>
+                                           <a href="{{url('/reports/'.$parcel->referanceNumber)}}" class="btn btn-info"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
+                                            <i class="fas fa-clipboard-check"></i>
                                         </a>
                                         
                                     </div>
