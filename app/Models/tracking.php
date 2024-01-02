@@ -9,3 +9,4 @@ class tracking extends Model
     //
     protected $fillable=['referanceNumber','branch','trackinginfo'];
 }
+

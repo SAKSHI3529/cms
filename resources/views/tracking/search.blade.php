@@ -10,7 +10,7 @@
                 <div class="col-md-6">
 
                     <label for="example-text-input" class="col-form-label">Enter Reference Number</label>
-                    <input class="form-control" type="number" value="" id="referenceNumber" name="referanceNumber">
+                    <input class="form-control" type="text" value="" id="referenceNumber" name="referanceNumber">
                 </div>
             </div>
 
@@ -39,6 +39,7 @@
                         <option>Order Processed</option>
                         <option>Out for Delivery</option>
                         <option>Arrived at Destination City</option>
+                        <option>Arrived at </option>
                         <option>Delivered</option>
                         <option>Failed Delivery Attempt</option>
 

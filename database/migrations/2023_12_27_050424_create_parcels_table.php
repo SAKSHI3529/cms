@@ -30,6 +30,7 @@ class CreateParcelsTable extends Migration
             $table->string('width',10)->nullable();
             $table->string('price',10);
             $table->string('userID',10);
+            $table->string('status',100)->nullable();
 
             $table->timestamps();
         });

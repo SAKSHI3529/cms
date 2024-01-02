@@ -30,28 +30,30 @@
 
                         <tbody>
                             @foreach ($parcels as $parcels)
+                            {{$parcels->trackingstatus}}
                             <tr>
                                 <td>{{$parcels->id}}</td>
                                 <td>{{$parcels ->referanceNumber}}</td>
                                 <td>{{$parcels->senderName}}</td>
                                 <td>{{$parcels->receiverName}}</td>
-                                <td>{{$parcels->status}}</td>
+                                <td>{{$parcels->trackingstatus->first()->trackinginfo}}</td>
+
                                
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
 
-                                        <a href="{{url("/parcels/".$parcels->id)}}" class="btn btn-success">
+                                        <a href="{{url("/parcels/".$parcels->id)}}" class="btn btn-success"  data-toggle="tooltip" data-placement="top" data-original-title="Details">
                                             <i class="fas fa-eye"></i>
                                         </a>
 
-                                        <a href="{{url("/parcels/".$parcels->id."/edit")}}" class="btn btn-primary">
+                                        <a href="{{url("/parcels/".$parcels->id."/edit")}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                             <i class="fas fa-edit"></i>
                                         </a>
     
                                         <form action="{{url('/parcels/'.$parcels->id)}}"method="POST">
                                             @csrf
                                             @method('delete')
-                                           <button type="submit" class="btn btn-danger">
+                                           <button type="submit" class="btn btn-danger"  data-toggle="tooltip " data-placement="top" data-original-title="Delete">
                                             <i class="fas fa-trash-alt"></i>
                                            </button>
                                            </form>

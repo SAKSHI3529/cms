@@ -41,7 +41,9 @@ class ParcelsController extends Controller
     public function store(Request $request )
     {
         $user=$request->user();
+       
         // return $user;
+        
         $request->validate([
             'senderName' => 'required|max:255',
             'receiverName' => 'required',
@@ -54,7 +56,8 @@ class ParcelsController extends Controller
 
         $request -> merge([
             'referanceNumber' => $str,
-            'userID'=>$user->id
+            'userID'=>$user->id,
+           
         ]);
         $inputs=$request->input();
 
@@ -127,10 +130,10 @@ class ParcelsController extends Controller
         return back();
     }
 
-    public function parcelStatus(){
+    // public function parcelStatus(){
 
-        $branchs=Branch::all();
-        return view('parcels.status' , compact('branchs'));
+    //     $branchs=Branch::all();
+    //     return view('parcels.status' , compact('branchs'));
         
-    }
+    // }
 }
