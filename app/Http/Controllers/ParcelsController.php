@@ -135,5 +135,12 @@ class ParcelsController extends Controller
     //     $branchs=Branch::all();
     //     return view('parcels.status' , compact('branchs'));
         
-    // }
+    
+    public function invoicepage($refno)
+    {
+       $par= parcels::select('*')->where("referanceNumber",$refno)->first();
+        // return $par;
+        return view('reports.create' , compact('par'));
+    }
 }
+

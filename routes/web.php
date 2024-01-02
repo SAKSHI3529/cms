@@ -45,4 +45,4 @@ Route::resource('/tracking',"TrackingController" );
 
 Route::get('/parcels-status', "TrackingController@parcelStatus");
 
-
+Route::get('/reports/{refno}','ParcelsController@invoicepage');

@@ -34,6 +34,7 @@
                                 <div class="form-group">
                                     <label for="BranchProcessed">Branch Processed</label>
 
+                                  
                                     <select class="form-control" name="BranchProcessed">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
@@ -136,6 +137,12 @@
                                             <div class="form-group">
                                                 <label for="price">Price</label>
                                                 <input class="form-control" type="price" value="" id="price" name="price">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 ">
+                                            <div class="form-group">
+                                                <label for="Productdetails">Product details</label>
+                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
                                             </div>
                                         </div>
 
