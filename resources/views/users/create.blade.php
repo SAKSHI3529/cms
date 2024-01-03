@@ -14,18 +14,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="fname" >First Name</label>
-                            <input class="form-control" type="fname" value="" id="fname">
+                            <label for="fname" >Name</label>
+                            <input class="form-control" type="fname" value="" id="name" name="name">
                         </div>
 
-                        <div class="form-group">
-                            <label for="address" >Address</label>
-                            <input class="form-control" type="address" value="" id="address" placeholder="">
-                        </div>
+                       
                         
                         <div class="form-group">
                             <label for="email" >Email</label>
-                            <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com">
+                            <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com" name="email">
                         </div>
 
                         
@@ -36,19 +33,50 @@
                     <div class="col-md-6">
 
                         <div class="form-group">
-                            <label for="lname">Last Name</label>
-                            <input class="form-control" type="lname" value="" id="lname">
+                            <label for="address" >Address</label>
+                            <input class="form-control" type="address" value="" id="address" placeholder="" name="address">
                         </div>
 
                         <div class="form-group">
                             <label for="contact">Contact</label>
-                            <input class="form-control" type="contact"  id="contact">
+                            <input class="form-control" type="contact"  id="contact" name="contact">
                         </div>
 
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input class="form-control" type="password" value="" id="password">
-                        </div>
+                        {{-- <div class="form-group">
+                            <label for="role">Role</label>
+                            <input class="form-control" type="text" value="" id="role">
+                        </div> --}}
+
+
+
+                        
+                            <div class="form-group">
+                                <label class="">Select Role</label>
+                                <div class="">
+                                    <select class="form-control" name="roles">
+                                        <option>Select</option>
+                                        @foreach ($roles as $role)
+                                            <option value="{{$role->name}}">{{$role->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                     
+
+                        {{-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="">Select Role</label>
+                                <div class="">
+                                    <select class="form-control" name="state_id">
+                                        <option>Select</option>
+                                        @foreach ($states as $state)
+                                            <option value="{{$state->id}}">{{$state->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div> --}}
+
                     </div>
                        
                         <div>

@@ -31,12 +31,12 @@ Route::middleware(['auth'])->group( function()
         return view('blank');
     });
     
-    Route::get('/users', function () {
-        return view('users.create');
-    });
+    Route::resource('/users', "Usercontroller");
+
     
      Route::resource('/branch',"BranchController" );
     Route::resource('/parcels',"ParcelsController" );
+    Route::resource('/roles',"RoleController" );
     
     
 });
