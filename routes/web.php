@@ -54,4 +54,6 @@ Route::get('/landingPage/home', function () {
 
 Route::get('/profile', function () {
     return view('profile.index');
+
 });
+Route::post('/reviewsubmited','Usercontroller@reviewsubmited');
