@@ -44,8 +44,13 @@
                         <tr>
                             <td></td>
                             <td>
-                                <button type="submit">Update</button>
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <a href="{{url('/roles')}}" class="btn btn-danger"  >
+                                    Close
+                                </a>
+                                
                             </td>
+                           
                             
                         </tr>
                        
