@@ -14,7 +14,7 @@
                         </h3>
                         <div class="p-3">
                             <h4 class="text-muted font-size-18 mb-1 text-center">Welcome Back !</h4>
-                            <p class="text-muted text-center">Sign in to continue to Lexa.</p>
+                            <p class="text-muted text-center">Sign in to continue.</p>
                             <form method="POST" action="{{ route('login') }}" class="form-horizontal mt-4" >
                                 @csrf
         
@@ -76,7 +76,7 @@
                 </div>
                 <div class="mt-5 text-center">
                     <p>Don't have an account ? <a href="{{url('/register')}}" class="text-primary"> Signup Now </a></p>
-                    <p>© 2018 - {{date('Y')}} Lexa. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                    <p>© 2013 - {{date('Y')}}  <i class="mdi mdi-heart text-danger"></i> </p>
                 </div>
             </div>
         </div>

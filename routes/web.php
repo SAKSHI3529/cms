@@ -51,3 +51,7 @@ Route::get('/reports/{refno}','ParcelsController@invoicepage');
 Route::get('/landingPage/home', function () {
     return view('landingPage.home.index');
 });
+
+Route::get('/profile', function () {
+    return view('profile.index');
+});
