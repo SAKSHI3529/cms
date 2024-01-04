@@ -76,7 +76,8 @@ class Usercontroller extends Controller
      */
     public function edit($id)
     {
-        //
+        $u = user :: find($id);
+        return view('user.profile')->with("user",$u);
     }
 
     /**
@@ -88,7 +89,7 @@ class Usercontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -99,6 +100,30 @@ class Usercontroller extends Controller
      */
     public function destroy($id)
     {
-        //
+        $u = User:: find($id);
+        $u -> delete();
+        return back();
+    }
+
+    public function showprofile(){
+        return view('profile.index');
+    }
+
+    public function profileUpdate(Request $request)
+    {
+        $input = $request -> input();
+        // return $input;
+        $u = $request->user();
+        $u-> update($input);
+
+        if($u)
+            flash('Profile Updated')->important();
+        else
+            flash('Unable to save changes');
+
+        return back();
+
+        
+        
     }
 }

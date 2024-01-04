@@ -21,57 +21,79 @@
                 <li class="menu-title">Components</li>
 
               
-
+                @can('branch-view')
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
                         <i class="mdi mdi-format-list-bulleted-type"></i>
                         <span>Branch</span>
                     </a>
                     <ul class="sub-menu mm-collapse" aria-expanded="false">
+                        @can('branch-create')
+
                         <li><a href="{{url('/branch/create')}}">Add New</a></li>
+                       
+                        @endcan
+                        @can('branch-list')
                         <li><a href="{{url('/branch')}}">List</a></li>
+                        @endcan
                     </ul>
                 </li>
+                @endcan
 
+                @can('user-view')
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
                         <i class="typcn typcn-group"></i>
                         <span>Users</span>
                     </a>
                     <ul class="sub-menu mm-collapse" aria-expanded="false">
+                        @can('user-create')
                         <li><a href="{{url('/users/create')}}">Add New</a></li>
+                        @endcan
+
+                        @can('user-list')
                         <li><a href="{{url('/users')}}">List</a></li>
+                        @endcan
                     </ul>
                 </li>
+                @endcan
 
-                
+                @can('parcel-view')
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="fas fa-boxes"></i>
                         <span>Parcels</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
+                        @can('parcel-create')
                         <li><a href="{{url('/parcels/create')}}">Add New</a></li>
+                        @endcan
+
+                        @can('parcel-list')
                         <li><a href="{{url('/parcels')}}">List</a></li>
-                       
+                        @endcan
 
                     </ul>
                 </li>
+                @endcan
                 
-
+                @can('status-view')
                 <li>
                     <a href="{{url('/tracking')}}" class="waves-effect">
                         <i class="mdi mdi-chart-line"></i>
                         <span>Status</span>
                     </a>
                 </li>
+                @endcan
 
+                @can('role-view')
                 <li>
                     <a href="{{url('/roles')}}" class="waves-effect">
                         <i class="mdi mdi-chart-line"></i>
                         <span>Roles</span>
                     </a>
                 </li>
+                @endcan
 
         </div>
         <!-- Sidebar -->

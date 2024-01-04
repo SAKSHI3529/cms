@@ -52,6 +52,7 @@ Route::get('/landingPage/home', function () {
     return view('landingPage.home.index');
 });
 
-Route::get('/profile', function () {
-    return view('profile.index');
-});
+Route::get('/profile',"Usercontroller@showprofile" );
+Route::post('/profile',"Usercontroller@profileUpdate" );
+Route::get('/permissions/{role}',"RoleController@permissions" );
+Route::post('/update-permissions/{role}',"RoleController@updatePermssions" );

@@ -34,7 +34,7 @@
                                 <td>
                                     <div class="button-container" style="display:flex; gap:5px">
                                         
-                                        <a href="" class="btn btn-primary"  >
+                                        <a href="{{url('/permissions/'.$role->name)}}" class="btn btn-primary"  >
                                             Permission
                                         </a>
 

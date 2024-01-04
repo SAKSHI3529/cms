@@ -41,19 +41,19 @@
 
 
                                 <td>
-                                    {{-- <div class="button-container" style="display:flex; gap:5px">
-                                        <a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                                    <div class="button-container" style="display:flex; gap:5px">
+                                        <a href="{{url("/user/".$user->id."/edit")}}" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                             <i class="fas fa-pen"></i>
                                         </a>
 
-                                        <form action="{{url('/branch/'.$branch->id)}}"method="POST">
+                                        <form action="{{url('/user/'.$user->id)}}" method="POST">
                                             @csrf
                                             @method('delete')
                                            <button type="submit" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Delete">
                                             <i class="fas fa-trash-alt"></i>
                                            </button>
                                            </form>
-                                         --}}
+                                        
                                     </div>
                                 </td>
                                 

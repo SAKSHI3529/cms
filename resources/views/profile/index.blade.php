@@ -2,6 +2,7 @@
 @section('content')
     
 <main id="main" class="main">
+  
 
     <div class="pagetitle">
       <h1>Profile</h1>
@@ -16,8 +17,8 @@
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
               <img src="assets/images/my-img/profile-img.png" alt="Profile" class="rounded-circle">
-              <h2>Kevin Anderson</h2>
-              <h3>Web Designer</h3>
+              <h2>{{Auth::user()->name}}</h2>
+              <h3>{{Auth::user()->roles->first()->name??'No role'}}</h3>
               
             </div>
           </div>
@@ -72,7 +73,7 @@
                             <div class="form-group row">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
-                                    <label for="name">//name</label>
+                                    <label for="name">{{Auth::user()->name}}</label>
                                 </div>
                             </div>
                             {{-- <div class="form-group row">
@@ -84,25 +85,25 @@
                             <div class="form-group row">
                                 <label for="example-email-input" class="col-sm-2 col-form-label">Role</label>
                                 <div class="col-sm-10">
-                                  <label for="name">//role</label>
+                                  <label for="name">{{Auth::user()->roles->first()->name??'No role'}}</label>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-url-input" class="col-sm-2 col-form-label">Contact</label>
                                 <div class="col-sm-10">
-                                  <label for="name">//contact</label>
+                                  <label for="name">{{Auth::user()->contact}}</label>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-tel-input" class="col-sm-2 col-form-label">Address</label>
                                 <div class="col-sm-10">
-                                  <label for="name">//address</label>
+                                  <label for="name">{{Auth::user()->address}}</label>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-password-input" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                  <label for="name">//email</label>
+                                  <label for="name">{{Auth::user()->email}}</label>
                                 </div>
                             </div>
                            
@@ -130,43 +131,44 @@
                           <div class="card-body">
 
                       
-
+                            <form method="post" action="{{url('/profile')}}">
+                              @csrf
                             <div class="form-group row">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="" id="example-text-input">
+                                    <input class="form-control" type="text" value="{{Auth::user()->name}}" id="example-text-input" name="name">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-search-input" class="col-sm-2 col-form-label">Role</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="search" value="" id="example-search-input">
+                                    <input class="form-control" type="text" value="{{Auth::user()->roles->first()->name??'No role'}}" id="example-search-input" name="role" disabled>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-email-input" class="col-sm-2 col-form-label">Contact</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="email" value="" id="example-email-input">
+                                    <input class="form-control" type="text" value="{{Auth::user()->contact}}" id="example-email-input" name="contact">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-url-input" class="col-sm-2 col-form-label">Address</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="url" value="" id="example-url-input">
+                                    <input class="form-control" type="text" value="{{Auth::user()->address??'Not added'}}" id="example-url-input" name="address">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-tel-input" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="tel" value="" id="example-tel-input">
+                                    <input class="form-control" type="email" value="{{Auth::user()->email}}" id="example-tel-input" name="email">
                                 </div>
                             </div>
 
-                            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="button" aria-pressed="false">
+                            <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="button" aria-pressed="false">
                               Save Changes
                           </button>
                            
-                           
+                        </form>
                         </div>
                         </p>
                     </div>

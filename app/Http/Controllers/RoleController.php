@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class RoleController extends Controller
 {
@@ -87,4 +88,23 @@ class RoleController extends Controller
         $role -> delete();
         return back();
     }
+
+    public function permissions($rolename){
+        $permissions = Permission::all();
+        $role = role::where('name',$rolename)->first();
+        $user_permissions = $role->permissions->pluck('name');
+        return view('roles.permissions',compact('permissions','rolename','user_permissions'));
+    }
+
+    public function updatePermssions(Request $request,$role){
+        $permissions =$request->permissions;
+        // return $permissions;
+        $role = role::where('name',$role)->first();
+        $role->syncPermissions( $permissions );
+        $user_permissions = $role->permissions->pluck('name');
+        flash("permssions added");
+        return back()->with('user_permissions',$user_permissions);
+    }
+
+    
 }
