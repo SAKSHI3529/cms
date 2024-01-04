@@ -110,16 +110,19 @@
             <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="icon-box">
                 <i class="bi bi-buildings"></i>
-                <h3>Eius provident</h3>
-                <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                <h3>Order Processing:</h3>
+                <p>Collecting and managing customer details for order processing.
+                  Recording and processing incoming orders.
+                  Sending order confirmation notifications to customers.</p>
               </div>
             </div> <!-- End Icon Box -->
 
             <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
               <div class="icon-box">
                 <i class="bi bi-clipboard-pulse"></i>
-                <h3>Rerum aperiam</h3>
-                <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
+                <h3>Package Tracking:</h3>
+                <p>Assigning unique identifiers for tracking.
+                  Providing real-time updates on package status and location.</p>
               </div>
             </div> <!-- End Icon Box -->
 
