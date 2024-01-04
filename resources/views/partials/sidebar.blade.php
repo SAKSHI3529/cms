@@ -39,8 +39,8 @@
                         <span>Users</span>
                     </a>
                     <ul class="sub-menu mm-collapse" aria-expanded="false">
-                        <li><a href="{{url('/users')}}">Add New</a></li>
-                        <li><a href="{{url('/users/index')}}">List</a></li>
+                        <li><a href="{{url('/users/create')}}">Add New</a></li>
+                        <li><a href="{{url('/users')}}">List</a></li>
                     </ul>
                 </li>
 
@@ -63,6 +63,13 @@
                     <a href="{{url('/tracking')}}" class="waves-effect">
                         <i class="mdi mdi-chart-line"></i>
                         <span>Status</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{url('/roles')}}" class="waves-effect">
+                        <i class="mdi mdi-chart-line"></i>
+                        <span>Roles</span>
                     </a>
                 </li>
 

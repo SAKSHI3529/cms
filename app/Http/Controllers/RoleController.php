@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-use App\User;
-use Illuminate\Support\Facades\Hash;
+use Spatie\Permission\Models\Role;
 
-class Usercontroller extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,9 @@ class Usercontroller extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('users.index',compact('users'));
+        $roles = DB::table('roles')->select('*')->get();
+       
+        return view('roles.index',compact('roles'));
     }
 
     /**
@@ -27,10 +27,7 @@ class Usercontroller extends Controller
      */
     public function create()
     {
-        $roles = DB::table('roles')->select('*')->get();
-       
-   
-        return view('users.create',compact('roles'));
+        
     }
 
     /**
@@ -41,20 +38,7 @@ class Usercontroller extends Controller
      */
     public function store(Request $request)
     {
-        $request -> merge([
-            'password' => Hash::make($request->contact),
-            
-           
-        ]);
-
-        $inputs = $request->input();
-        $user = User::Create($inputs);
-        $user->assignRole($request->roles);
-        if($user)
-            flash('Users with name '.$user->name.' is created')->important();
-        else
-            flash('Unable to add Users');
-        return back()->withInput();
+        //
     }
 
     /**
@@ -97,8 +81,10 @@ class Usercontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id )
     {
-        //
+        $role = role:: find($id);
+        $role -> delete();
+        return back();
     }
 }

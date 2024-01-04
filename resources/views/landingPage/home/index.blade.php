@@ -43,7 +43,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="{{url('assets2/img/logo.png')}}" alt=""> -->
-          <h1>Append</h1>
+          <h1>Madhur</h1>
           <span>.</span>
         </a>
   
@@ -54,32 +54,15 @@
             <li><a href="index.html#about" class="">About</a></li>
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="index.html#team">Team</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-              <ul class="dd-box-shadow">
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-                  <ul class="dd-box-shadow">
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
+            
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
   
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav><!-- End Nav Menu -->
   
-        <a class="btn-getstarted" href="index.html#about">Get Started</a>
+        <a class="btn-getstarted" href="index.html#about">Sign Up</a>
   
       </div>
     </header><!-- End Header -->
@@ -94,13 +77,13 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10">
-              <h2 data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">Welcome to Our Website</h2>
-              <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">We are team of talented designers making websites with Bootstrap</p>
+              <h2 data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">Track Your Package</h2>
+              <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Enter your 10 digit Referance Number</p>
             </div>
             <div class="col-lg-5">
               <form action="#" class="sign-up-form d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" class="btn btn-primary" value="Sign up">
+                <input type="text" class="form-control" placeholder="Enter Referance Number Here">
+                <input type="submit" class="btn btn-primary" value="Search"><i class="fa-fa-search"></i>
               </form>
             </div>
           </div>
@@ -185,8 +168,10 @@
           <div class="service-item d-flex">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
             <div>
-              <h4 class="title"><a href="services-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="services-details.html" class="stretched-link">FAST TRACK</a></h4>
+              <p class="description"> High Priority is urgent delivery service within 24 or 48 hours (depending on the destination) for urgent documents and packages.
+
+              </p>
             </div>
           </div>
         </div>
@@ -196,8 +181,8 @@
           <div class="service-item d-flex">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
-              <h4 class="title"><a href="services-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="services-details.html" class="stretched-link">CONTRACT BOOKING</a></h4>
+              <p class="description">Bulk Couriers with free daily pickup and monthly billings.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -206,8 +191,8 @@
           <div class="service-item d-flex">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
-              <h4 class="title"><a href="services-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="services-details.html" class="stretched-link">PROOF OF DELIVERY</a></h4>
+              <p class="description">Immediate Delivery available online.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -216,13 +201,13 @@
           <div class="service-item d-flex">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
-              <h4 class="title"><a href="services-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="services-details.html" class="stretched-link">EXPRESS COURIER SERVICES </a></h4>
+              <p class="description">Express Services for delivering documents and small parcels with an domestic/international logistic network.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
-        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+        {{-- <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
           <div class="service-item d-flex">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
@@ -240,7 +225,7 @@
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div>
-        </div><!-- End Service Item -->
+        </div><!-- End Service Item --> --}}
 
       </div>
 

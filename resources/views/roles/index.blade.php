@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h3>Users Information</h3>
+                    <h3>Branches Information</h3>
                     <br>
                     <br>
                     
@@ -16,44 +16,36 @@
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact</th>
-                                <th>email</th>
                                 <th>Roles</th>
                                 <th>Action</th>
+                                
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach ($users as $user)
+                            @foreach ($roles as $role)
                             <tr>
-                                <td>{{$user->name}}</td>
-                                <td>{{$user->address}}</td>
-                                <td>{{$user->contact}}</td>
-                                <td>{{$user->email}}</td>
+                                <td>{{$role->name}}</td>
+                              
                                
-                                @if($user->roles->count()>0) 
-                                <td>{{$user->roles->first()->name}}</td>
-                                 @else <td>Not Creates</td>
-                               @endif
                                
 
 
                                 <td>
-                                    {{-- <div class="button-container" style="display:flex; gap:5px">
-                                        <a href="{{url("/branch/".$branch->id."/edit")}}" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
-                                            <i class="fas fa-pen"></i>
+                                    <div class="button-container" style="display:flex; gap:5px">
+                                        
+                                        <a href="" class="btn btn-primary"  >
+                                            Permission
                                         </a>
 
-                                        <form action="{{url('/branch/'.$branch->id)}}"method="POST">
+                                        <form action="{{url('/roles/'.$role->id)}}" method="POST">
                                             @csrf
                                             @method('delete')
-                                           <button type="submit" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                           <button type="submit" class="btn btn-danger"  >
                                             <i class="fas fa-trash-alt"></i>
                                            </button>
                                            </form>
-                                         --}}
+                                        
                                     </div>
                                 </td>
                                 
