@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\customer;
 use Illuminate\Http\Request;
 use DB;
 use App\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 
 class Usercontroller extends Controller
 {
@@ -125,5 +127,18 @@ class Usercontroller extends Controller
 
         
         
+    }
+
+    public function reviewsubmited(Request $request)
+    {
+        $request->validate(
+            [
+                "email"=>"required|unique:customer"
+            ]
+        );
+        $inputs = $request->input();
+        $cum = customer::create($inputs);
+        flash("Submmited");
+        return back();
     }
 }

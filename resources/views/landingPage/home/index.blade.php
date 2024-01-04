@@ -72,7 +72,7 @@
       <!-- Hero Section - Home Page -->
       <section id="hero" class="hero">
   
-        <img src="{{url('assets2/img/hero-bg.jpg')}}" alt="" data-aos="fade-in" class="aos-init aos-animate">
+        <img src="{{url('assets2/img/my-img/home-bg.jpg')}}" alt="" data-aos="fade-in" class="aos-init aos-animate">
   
         <div class="container">
           <div class="row">
@@ -317,8 +317,8 @@
 
     <!--  Section Title -->
     <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Review</h2>
+      
     </div><!-- End Section Title -->
 
     <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
@@ -367,9 +367,14 @@
           </div>
 
         </div>
+      
+
+
+
 
         <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <form action="{{url('/reviewsubmited')}}" method="post" class=" aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            @csrf
             <div class="row gy-4">
 
               <div class="col-md-6">
@@ -377,23 +382,32 @@
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" value="">
+                @if($errors->has('email'))
+                    <div class="text-danger">{{ $errors->first('email') }}</div>
+                @endif
               </div>
 
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-              </div>
+              
 
               <div class="col-md-12">
                 <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
+                
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">@include('flash::message')</div>
 
-                <button type="submit">Send Message</button>
+                {{-- <button type="submit" class="btn-getstarted" >Send Message</button> --}}
+                <button type="submit"  
+                style="background: var(--primary-color);
+                color: var(--contrast-color);
+                border: 0;
+                padding: 10px 30px;
+                transition: 0.4s;
+                border-radius: 4px;">
+                Send Messages</button>
               </div>
 
             </div>

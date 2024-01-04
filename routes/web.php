@@ -52,7 +52,11 @@ Route::get('/landingPage/home', function () {
     return view('landingPage.home.index');
 });
 
+
+
 Route::get('/profile',"Usercontroller@showprofile" );
 Route::post('/profile',"Usercontroller@profileUpdate" );
 Route::get('/permissions/{role}',"RoleController@permissions" );
 Route::post('/update-permissions/{role}',"RoleController@updatePermssions" );
+
+Route::post('/reviewsubmited','Usercontroller@reviewsubmited');
