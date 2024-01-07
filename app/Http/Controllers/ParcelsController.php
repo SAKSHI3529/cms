@@ -8,6 +8,12 @@ use App\Models\Branch;
 
 class ParcelsController extends Controller
 {
+    public function __construct()
+    {
+    $this->middleware(['permission:parcel-create'])->only('create');
+    $this->middleware(['permission:parcel-list'])->only('index');
+    $this->middleware(['permission:parcel-view']);
+    }
     /**
      * Display a listing of the resource.
      *

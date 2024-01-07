@@ -9,6 +9,11 @@ use Spatie\Permission\Models\Permission;
 
 class RoleController extends Controller
 {
+    public function __construct()
+    {
+    
+    $this->middleware(['permission:role-view']);
+    }
     /**
      * Display a listing of the resource.
      *

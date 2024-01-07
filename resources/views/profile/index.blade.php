@@ -1,6 +1,7 @@
 @extends('layouts.cms')
 @section('content')
     
+
 <main id="main" class="main">
   
 
@@ -180,30 +181,31 @@
                           <div class="card-body">
 
                       
-
+                            <form action="{{url('/resetpassword')}}" method="POST">
+                              @csrf
                             <div class="form-group row">
                                 <label for="example-text-input" class="col-sm-3 col-form-label">Current Password</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" value="" id="example-text-input">
+                                    <input class="form-control" type="password" value="" id="example-text-input" name="currentpassword">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-search-input" class="col-sm-3 col-form-label">New Password</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="search" value="" id="example-search-input">
+                                    <input class="form-control" type="password" value="" id="example-search-input" name="newpassword">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="example-email-input" class="col-sm-3 col-form-label">Re-enter New Password</label>
+                                <label for="example-email-input" class="col-sm-3 col-form-label">Confirm Password</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="email" value="" id="example-email-input">
+                                    <input class="form-control" type="password" value="" id="example-email-input" name="confirmpassword">
                                 </div>
                             </div>
                             
-                            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="button" aria-pressed="false">
+                            <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="button" aria-pressed="false">
                                Change Password
                           </button>
-                           
+                        </form>
                         </div>
                         </p>
                     </div>

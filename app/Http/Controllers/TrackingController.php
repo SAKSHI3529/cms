@@ -4,10 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Branch;
 use App\models\tracking;
+use App\models\parcels;
 use Illuminate\Http\Request;
 
 class TrackingController extends Controller
 {
+    public function __construct()
+    {
+   
+    $this->middleware(['permission:status-view']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -104,5 +110,19 @@ class TrackingController extends Controller
         $branchs=Branch::all();
         return view('tracking.search' , compact('branchs'));
         
+    }
+
+    public function landingPageShow(){
+        return view('landingPage.index');
+    }
+
+    public function track($refno){
+        $details = parcels::where('referanceNumber',$refno)->first();
+        if(!$details){
+            flash("Invliad parcel id");
+            return back();
+        }
+        $track_details = tracking::where('referanceNumber',$refno)->get();
+        return view('landingPage.tracking',compact('details','track_details'));
     }
 }

@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 use DB;
 class BranchController extends Controller
 {
+    public function __construct()
+    {
+    $this->middleware(['permission:branch-create'])->only('create');
+    $this->middleware(['permission:branch-list'])->only('index');
+    $this->middleware(['permission:branch-view']);
+    }
     /**
      * Display a listing of the resource.
      *

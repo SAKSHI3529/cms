@@ -19,6 +19,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware(['auth'])->group( function()
 {
+    
+
+
     Route::get('/', function () {
         return view('welcome');
     });
@@ -48,9 +51,8 @@ Route::get('/parcels-status', "TrackingController@parcelStatus");
 Route::get('/reports/{refno}','ParcelsController@invoicepage');
 
 
-Route::get('/landingPage/home', function () {
-    return view('landingPage.home.index');
-});
+Route::get('/landingPage', "TrackingController@landingPageShow");
+Route::get('/track/{id}', "TrackingController@track");
 
 
 
@@ -60,3 +62,6 @@ Route::get('/permissions/{role}',"RoleController@permissions" );
 Route::post('/update-permissions/{role}',"RoleController@updatePermssions" );
 
 Route::post('/reviewsubmited','Usercontroller@reviewsubmited');
+
+
+Route::post('/resetpassword','Usercontroller@resetPassword');

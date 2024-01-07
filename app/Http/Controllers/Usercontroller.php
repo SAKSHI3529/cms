@@ -8,6 +8,7 @@ use DB;
 use App\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use Auth;
 
 class Usercontroller extends Controller
 {
@@ -141,4 +142,29 @@ class Usercontroller extends Controller
         flash("Submmited");
         return back();
     }
+
+
+    public function resetPassword(Request $request){
+        $currentpassword = $request->currentpassword;
+        $newpassword  = $request->newpassword;
+        $confirmpassword  = $request->confirmpassword;
+
+        if($confirmpassword==$newpassword)
+        {
+    
+        if(!Hash::check($currentpassword,Auth::user()->password)){
+            flash('The specified password does not match');
+         
+         }
+       else{
+        $request->user()->fill(['password' => Hash::make($newpassword)])->save();
+             flash('Updated Successfully') ;
+    
+         }
+    }
+    else{
+        flash('Confirm password is incorrect, Try Again!!');
+    }
+    return back();
+}
 }

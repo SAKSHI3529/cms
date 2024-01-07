@@ -37,9 +37,11 @@
                                 <td>{{$parcel->senderName}}</td>
                                 <td>{{$parcel->receiverName}}</td>
                                @if($parcel->trackingstatus->count()>0) 
-                                <td>{{$parcel->trackingstatus->first()->trackinginfo}}</td>
+                                <td> {{$parcel->trackingstatus->first()->trackinginfo}}</td>
                                  @else <td>Not updated</td>
                                @endif
+
+                               {{-- <span class="badge badge-light">Light</span> --}}
                               <td>
                                     <div class="button-container" style="display:flex; gap:5px">
 

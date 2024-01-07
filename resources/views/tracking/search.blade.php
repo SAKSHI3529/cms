@@ -34,7 +34,7 @@
                 <div class="col-sm-6 mt-2">
                     <label class="col-sm-4 col-form-label">Select Status</label>
                     <select class="form-control" id="trackinginfo" name="trackinginfo">
-                        <option>Select</option>
+                        <option>Select </option>
                         <option>Order Confirmed</option>
                         <option>Order Processed</option>
                         <option>Out for Delivery</option>
@@ -44,6 +44,16 @@
                         <option>Failed Delivery Attempt</option>
 
                     </select>
+
+                    {{-- <div>
+                        <span class="badge badge-light">Light</span>
+                        <span class="badge badge-primary">Primary</span>
+                        <span class="badge badge-success">Success</span>
+                        <span class="badge badge-info">Info</span>
+                        <span class="badge badge-warning">Warning</span>
+                        <span class="badge badge-danger">Danger</span>
+                        <span class="badge badge-dark">Dark</span>
+                    </div> --}}
                 </div>
             </div>
             

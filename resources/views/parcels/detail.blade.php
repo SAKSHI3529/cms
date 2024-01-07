@@ -145,14 +145,13 @@
                     
                     
                 </div>
-
-                {{-- <div class="form-group">
-                    <label for=" status " style="font-size: medium">Status:</label>
-                    @foreach ($parcels as $parcels)
-                    <label for="status">{{$parcels->trackingstatus->first()->trackinginfo}}</label>
-                    @endforeach
+                <div class="form-group">
+                    <label for=" PickupBranch " style="font-size: medium">Status:</label>
+                    <label for="PickupBranch">{{$parcel->trackingstatus->first()->trackinginfo}}</label>
                     
-                </div> --}}
+                </div>
+
+             
 
                 
                    <a href="{{url('/parcels')}}" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
