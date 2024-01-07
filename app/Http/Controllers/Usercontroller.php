@@ -80,7 +80,7 @@ class Usercontroller extends Controller
     public function edit($id)
     {
         $u = user :: find($id);
-        return view('user.profile')->with("user",$u);
+        return view('users.edit')->with("user",$u);
     }
 
     /**
@@ -92,7 +92,10 @@ class Usercontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        $input = $request -> input();
+        $u= user:: find ($id);
+        $u-> update($input);
+        return redirect()-> route("users.index");
     }
 
     /**

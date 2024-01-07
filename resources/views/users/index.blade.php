@@ -42,11 +42,11 @@
 
                                 <td>
                                     <div class="button-container" style="display:flex; gap:5px">
-                                        <a href="{{url("/user/".$user->id."/edit")}}" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                                        <a href="{{url("/users/".$user->id."/edit")}}" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                             <i class="fas fa-pen"></i>
                                         </a>
 
-                                        <form action="{{url('/user/'.$user->id)}}" method="POST">
+                                        <form action="{{url('/users/'.$user->id)}}" method="POST">
                                             @csrf
                                             @method('delete')
                                            <button type="submit" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Delete">
