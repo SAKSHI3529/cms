@@ -117,9 +117,11 @@ class TrackingController extends Controller
     }
 
     public function track($refno){
+        
         $details = parcels::where('referanceNumber',$refno)->first();
         if(!$details){
-            flash("Invliad parcel id");
+            
+            flash("Invliad Referance Number");
             return back();
         }
         $track_details = tracking::where('referanceNumber',$refno)->get();

@@ -42,6 +42,7 @@
                         <option>Arrived at </option>
                         <option>Delivered</option>
                         <option>Failed Delivery Attempt</option>
+                       <option> <span class="badge badge-pill badge-success">Delivered</span></option>
 
                     </select>
 

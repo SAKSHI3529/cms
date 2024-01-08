@@ -6,14 +6,18 @@
     
         <!-- Hero Section - Home Page -->
         <section id="hero" class="hero">
-    
           <img src="{{url('assets2/img/my-img/home-bg.jpg')}}" alt="" data-aos="fade-in" class="aos-init aos-animate">
     
           <div class="container">
             <div class="row">
               <div class="col-lg-10">
+               
+                <div class="sent-message">@include('flash::message')</div>
+
                 <h2 data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">Track Your Package</h2>
                 <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Enter your 10 digit Referance Number</p>
+               
+                
               </div>
               <div class="col-lg-5">
                 <form  class="sign-up-form d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" onsubmit="return false;">

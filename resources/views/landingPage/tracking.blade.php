@@ -20,6 +20,22 @@
 
 @include('partials.headerscript2')
 
+<style>
+  /* Add this style to remove the border from all cards */
+  .card {
+    border: none;
+    border-color: #e84545;
+    border-left-style: solid;
+    border-left-width: 5px;
+    margin-bottom:20px; 
+  }
+  .card span{
+    color: #e21a1a9c;
+    padding-right:15px; 
+    
+  }
+</style>
+
 </head>
 
 <body class="blog-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -31,7 +47,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Append</h1>
+        <h1>Madhur</h1>
         <span>.</span>
       </a>
 
@@ -42,32 +58,14 @@
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-                <ul class="dd-box-shadow">
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+          <li><a href="index.html#team">contact</a></li>
+          <li><a href="blog.html" class="active">Tracking Details</a></li>
+          
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      
 
     </div>
   </header><!-- End Header -->
@@ -75,26 +73,7 @@
   <main id="main">
 
     <!-- Blog Page Title & Breadcrumbs -->
-    <div data-aos="fade" class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Blog</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Blog</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+    
 
     <!-- Blog Section - Blog Page -->
     <section id="blog" class="blog">
@@ -110,159 +89,137 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Tracking Number: </h5>
-        <p class="card-text">ABC123456</p>
+        <p class="card-text"><span>{{$details->referanceNumber}}</span></p>
       </div>
 
     </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="row justify-content-evenly">
-            <div class="col-4">
-                <h5 class="card-title">Sender Information</h5>
-
-                <div class="form-group">
-                    <label for="Address" style="font-size: medium">Name:</label>
-                    <label for="senderAddress">//name</label>
-                   
-                </div>
-
-                <div class="form-group">
-                    <label for="Address" style="font-size: medium">Address:</label>
-                    <label for="senderAddress">//senderAddress</label>
-                   
-                </div>
-                <div class="form-group">
-                    <label for="contact" style="font-size: medium">Contact:</label>
-                    <label for="sendercontact">//sendercontact</label>
-                    
-                </div>
-
-            </div>
-            <div class="col-4">
-                <h5 class="card-title">Receiver Information</h5>
-
-                <div class="form-group">
-                    <label for="Address" style="font-size: medium">Name:</label>
-                    <label for="senderAddress">//name</label>
-                   
-                </div>
-
-                <div class="form-group">
-                    <label for="Address" style="font-size: medium">Address:</label>
-                    <label for="senderAddress">//senderAddress</label>
-                   
-                </div>
-                <div class="form-group">
-                    <label for="contact" style="font-size: medium">Contact:</label>
-                    <label for="sendercontact">//sendercontact</label>
-                    
-                </div>
+    
+    <section class="section"  >
+      <div class="row">
+        <div class="col-lg-6">
+  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Sender Information</h4>
+              <h6 class="card-text"><span>Name:</span>{{$details->senderName}}</h6>
+              <h6 class="card-text"><span>Address:</span>{{$details->senderAddress}}</h6>
+              <h6 class="card-text"><span>Contact:</span>{{$details->sendercontact}}</h6>
             </div>
           </div>
+  
         </div>
-        
-        <div class="card-body">
+  
+        <div class="col-lg-6">
+  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Receiver Information</h4>
+              <h6 class="card-text"><span>Name:</span>{{$details->receiverName}}</h6>
+              <h6 class="card-text"><span>Address:</span>{{$details->receiverAddress}}</h6>
+              <h6 class="card-text"><span>Contact:</span>{{$details->receivercontact}}</h6>
+            </div>
+          </div>
+  
+        </div>
+      </div>
 
-            <h4>Parsal Information</h4>
+      
+      <div class="col-lg-12">
+  
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Parsal Information</h4>
             <div class="row">
 
-                <div class="col-md-2 ml-5 ">
-                    <div class="form-group">
-                        <label for="weight" style="font-size: medium" >Weight:</label><br>
-                        <label for="weight">weight</label>
-                        
-                    </div>
+              <div class="col-md-2 ml-5 ">
+                  <div class="form-group">
+                      <label for="weight" style="font-size: medium" ><span>Weight:</span>{{$details->weight}}</label><br>
+                     
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-2 mr-5">
+                  <div class="form-group">
+                      <label for="height" style="font-size: medium"><span>Height:</span>{{$details->height}}</label><br>
+                      
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-2 mr-5">
+                  <div class="form-group">
+                      <label for="length" style="font-size: medium"><span>Length:</span>{{$details->length}}</label><br>
+                      
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-2 mr-5">
+                  <div class="form-group">
+                      <label for="width" style="font-size: medium"><span>Width:</span>{{$details->width}}</label><br>
+                      
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-2 ">
+                  <div class="form-group">
+                      <label for="price" style="font-size: medium"><span>Price:</span>{{$details->price}}</label><br>
+                    
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-2 ">
+                <div class="form-group">
+                    <label for="price" style="font-size: medium"><span>Product Name:</span>{{$details->Productdetails}}</label><br>
+                  
                 </div>
-
-                <div class="col-md-2 mr-5">
-                    <div class="form-group">
-                        <label for="height" style="font-size: medium">Height:</label><br>
-                        <label for="height">height</label>
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-2 mr-5">
-                    <div class="form-group">
-                        <label for="length" style="font-size: medium">Length:</label><br>
-                        <label for="length">length</label>
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-2 mr-5">
-                    <div class="form-group">
-                        <label for="width" style="font-size: medium">Width:</label><br>
-                        <label for="width">width</label>
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-2 ">
-                    <div class="form-group">
-                        <label for="price" style="font-size: medium">Price:</label><br>
-                        <label for="price">price</label>
-                        
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-  </div>
-</div>
-
-<div class="container mt-5">
-    <div class="card ">
-      <div class="card-body">
-        <!-- Card content goes here -->
-        <h5 class="card-title">Traking Number</h5>
-        <p class="card-text">referanceNumber</p>
-      </div>
-    </div>
-
-    <div class="container">
-       
-
-        <div class="row justify-content-evenly">
-          <div class="col-4">
-            <div class="form-group">
-                <h4 class="card-title">Sender Information</h4>
-
-                <div class="card-text">
-                    <label for="fname" style="font-size: medium"> Name:</label>
-                     <label for="senderName">senderName</label>
-                </div>
-                
-                
-                
             </div>
 
-            <div class="form-group">
-                <label for="Address" style="font-size: medium">Address:</label>
-                <label for="senderAddress">senderAddress</label>
-               
-            </div>
-            <div class="form-group">
-                <label for="contact" style="font-size: medium">Contact:</label>
-                <label for="sendercontact">sendercontact</label>
-                
-            </div>
+
           </div>
-          
+          </div>
         </div>
-
-  </div>
-</div>
-    
-
-
-
 
       </div>
 
-    </section><!-- End Blog Section -->
+      <div class="col-lg-12">
+  
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Status Information</h4>
+            <div class="row">
+             
+            {{-- <h6>{{$details->created_at}}</h6> --}}
+              
+
+          </div>
+          </div>
+        </div>
+
+      </div>
+    
+    </section>
+
+
+
+</div>
+
+
+
+ 
+
+</main>
+
+
+
+
+      
+
+  
 
   </main>
 
