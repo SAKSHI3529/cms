@@ -81,7 +81,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         
 
-  {{$details}}
+
 <div class="container mt-5 ">
     <div class="card">
       <div class="card-header">
@@ -190,7 +190,8 @@
   
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Status Information</h4>
+            <h4 class="card-title">Status:</h4>
+            <label>{{$details->trackingstatus->first()->trackinginfo}}</label>
             <div class="row">
              
             {{-- <h6>{{$details->created_at}}</h6> --}}
