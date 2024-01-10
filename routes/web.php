@@ -26,9 +26,7 @@ Route::middleware(['auth'])->group( function()
         return view('welcome');
     });
     
-    Route::get('/dashboard', function () {
-        return view("dashboard.index");
-    });
+    Route::get('/dashboard',"Dashboard@index");
     
     Route::get('/blank', function () {
         return view('blank');
