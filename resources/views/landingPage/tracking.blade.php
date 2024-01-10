@@ -34,9 +34,34 @@
     padding-right:15px; 
     
   }
+  .timeline {
+  border-left: 1px solid hsl(0, 100%, 48%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 100%, 35%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
 </style>
 
 </head>
+
 
 <body class="blog-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
@@ -45,8 +70,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+     
         <h1>Madhur</h1>
         <span>.</span>
       </a>
@@ -66,8 +90,7 @@
       </nav><!-- End Nav Menu -->
 
       
-
-    </div>
+0
   </header><!-- End Header -->
 
   <main id="main">
@@ -191,7 +214,9 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Status:</h4>
-            <label>{{$details->trackingstatus->first()->trackinginfo}}</label>
+
+           
+            
             <div class="row">
              
             {{-- <h6>{{$details->created_at}}</h6> --}}
@@ -202,7 +227,36 @@
         </div>
 
       </div>
-    
+
+      <h4>Tracking History</h4>
+     
+      {{-- <div class="col-lg-12 mt-3">
+      
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">{{$details->trackinginfo}}</h6>
+            <label>Updated At :{{$details->created_at}}</label>
+           
+            
+          </div>
+        </div>
+
+      </div> --}}
+
+      <section class="py-5">
+        <ul class="timeline">
+          @foreach ($track_details as $details)
+          <li class="timeline-item mb-5">
+            <h5 class="fw-bold">{{$details->trackinginfo}}</h5>
+            <p class="text-muted mb-2 fw-bold">{{$details->created_at}}</p>
+           
+          </li>
+          @endforeach
+          
+        </ul>
+      </section>
+
+
     </section>
 
 

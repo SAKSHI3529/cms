@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\parcels;
 use Illuminate\Http\Request;
 use App\Models\Branch;
+use App\Notifications\ParcalUpdate;
+use Illuminate\Support\Facades\Notification;
 
 class ParcelsController extends Controller
 {
@@ -70,6 +72,8 @@ class ParcelsController extends Controller
 
      
         $par=parcels::create($inputs);
+
+        Notification::route('mail', $par->email)->notify(new ParcalUpdate());
         // return back();
         if($par)
         flash('parcel is added')->important();
@@ -148,6 +152,8 @@ class ParcelsController extends Controller
         // return $par;
         return view('reports.create' , compact('par'));
     }
+
+    
 
   
 }
