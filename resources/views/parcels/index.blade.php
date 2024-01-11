@@ -36,10 +36,24 @@
                                 <td>{{$parcel ->referanceNumber}}</td>
                                 <td>{{$parcel->senderName}}</td>
                                 <td>{{$parcel->receiverName}}</td>
-                               @if($parcel->trackingstatus->count()>0) 
+                               {{-- @if($parcel->trackingstatus->count()>0) 
                                 <td> {{$parcel->trackingstatus->first()->trackinginfo}}</td>
                                  @else <td>Not updated</td>
+                               @endif --}}
+
+
+                               <td>
+                                <?php $stat=$parcel->trackingstatus->first()->trackinginfo??' ' ?>
+                                <span class="badge badge-pill {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
+                                {{($stat=='Order Processed' || $stat=='Out for Delivery ')?' badge-warning':''}}
+                                {{($stat=='Arrived at Destination City')?' badge-warning':''}}
+                                {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
+                                    @if($parcel->trackingstatus->count()>0) 
+                                 {{$stat}}
+                                 @else Not updated
                                @endif
+                             </span></td>
+                            <td>
 
                                {{-- <span class="badge badge-light">Light</span> --}}
                               <td>

@@ -119,13 +119,14 @@
                                                     <td>
                                                         <?php $stat=$p->trackingstatus->first()->trackinginfo??' ' ?>
                                                         <span class="badge badge-pill {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
-                                                        {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
-                                                        "> 
+                                                        {{($stat=='Order Processed' || $stat=='Out for Delivery ')?' badge-warning':''}}
+                                                        {{($stat=='Arrived at Destination City')?' badge-warning':''}}
+                                                        {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                                             @if($p->trackingstatus->count()>0) 
                                                          {{$stat}}
                                                          @else Not updated
                                                        @endif
-                        </span></td>
+                                                     </span></td>
                                                     <td>
                                                         {{$p->price}}
                                                     </td>
