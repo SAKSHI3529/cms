@@ -15,8 +15,8 @@
                     <br>
                     <br>
                     
-
-                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <div class="table-responsive">
+                    <table id="datatable" class="table table-bordered nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
                                 <th>id</th>
@@ -50,10 +50,10 @@
                                 {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                     @if($parcel->trackingstatus->count()>0) 
                                  {{$stat}}
-                                 @else Not updated
-                               @endif
-                             </span></td>
-                            <td>
+                                 @else <span class="badge badge-dark">Not Updated</span>
+                                  @endif
+                                 </span></td>
+                                    
 
                                {{-- <span class="badge badge-light">Light</span> --}}
                               <td>
@@ -88,7 +88,7 @@
                       
                         </tbody>
                     </table>
-
+                </div>
                 </div>
             </div>
         </div>
