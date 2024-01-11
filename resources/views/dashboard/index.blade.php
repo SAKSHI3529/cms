@@ -111,10 +111,10 @@
                                                 <tr>
                                                     <td>{{$p->referanceNumber}}</td>
                                                     <td>
-                                                        <img src="assets/images/users/user-2.jpg" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->senderName}}
+                                                        <img src="assets/images/my-img/pngwing.com.png" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->senderName}}
                                                     </td>
                                                     <td>
-                                                        <img src="assets/images/users/user-2.jpg" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->receiverName}}
+                                                        <img src="assets/images/my-img/pngwing.com.png" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->receiverName}}
                                                     </td>
                                                     <td><span class="badge badge-pill badge-success"> @if($p->trackingstatus->count()>0) 
                                                          {{$p->trackingstatus->first()->trackinginfo}}
