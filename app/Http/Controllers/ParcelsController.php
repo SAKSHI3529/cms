@@ -72,8 +72,12 @@ class ParcelsController extends Controller
 
      
         $par=parcels::create($inputs);
+        try{
+            Notification::route('mail', $par->email)->notify(new ParcalUpdate());
+        }catch(\Exception $e){
 
-        Notification::route('mail', $par->email)->notify(new ParcalUpdate($par));
+        }
+           
         // return back();
         if($par)
         flash('Parcel placed Successfully!')->important();
