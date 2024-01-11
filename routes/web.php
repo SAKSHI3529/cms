@@ -52,6 +52,9 @@ Route::get('/reports/{refno}','ParcelsController@invoicepage');
 Route::get('/landingPage', "TrackingController@landingPageShow");
 Route::get('/track/{id}', "TrackingController@track");
 
+Route::get('/orderform',"TrackingController@orderformshow" );
+
+
 
 
 Route::get('/profile',"Usercontroller@showprofile" );
@@ -63,3 +66,5 @@ Route::post('/reviewsubmited','Usercontroller@reviewsubmited');
 
 
 Route::post('/resetpassword','Usercontroller@resetPassword');
+
+

@@ -12,7 +12,7 @@ class TrackingController extends Controller
     public function __construct()
     {
    
-    $this->middleware(['permission:status-view']);
+   
     }
     /**
      * Display a listing of the resource.
@@ -127,4 +127,9 @@ class TrackingController extends Controller
         $track_details = tracking::where('referanceNumber',$refno)->get();
         return view('landingPage.tracking',compact('details','track_details'));
     }
+
+    public function orderformshow(){
+        return view('landingpage.orderform');
+    }
+
 }

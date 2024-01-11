@@ -49,6 +49,11 @@
                                     @endif
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="email" id="email" name="email">
+                                </div>
+
 
 
                                 {{-- <div class="form-group">
