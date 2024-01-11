@@ -35,30 +35,17 @@
                             <div class="card mini-stat bg-primary">
                                 <div class="card-body mini-stat-img">
                                     <div class="mini-stat-icon">
-                                        <i class="mdi mdi-cube-outline float-right"></i>
+                                        <i class="fas fa-boxes float-right"></i>
                                     </div>
                                     <div class="text-white">
-                                        <h6 class="text-uppercase mb-3 font-size-16">Orders</h6>
-                                        <h2 class="mb-4">1,587</h2>
-                                        <span class="badge badge-info"> +11% </span> <span class="ml-2">From previous period</span>
+                                        <h6 class="text-uppercase mb-3 font-size-16">Parcels</h6>
+                                        <h2 class="mb-4">{{$parcelscounts}}</h2>
+                                        {{-- <span class="badge badge-info"> +11% </span> <span class="ml-2">From previous period</span> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card mini-stat bg-primary">
-                                <div class="card-body mini-stat-img">
-                                    <div class="mini-stat-icon">
-                                        <i class="mdi mdi-buffer float-right"></i>
-                                    </div>
-                                    <div class="text-white">
-                                        <h6 class="text-uppercase mb-3 font-size-16">Revenue</h6>
-                                        <h2 class="mb-4">$46,782</h2>
-                                        <span class="badge badge-danger"> -29% </span> <span class="ml-2">From previous period</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                         <div class="col-xl-3 col-md-6">
                             <div class="card mini-stat bg-primary">
                                 <div class="card-body mini-stat-img">
@@ -66,9 +53,9 @@
                                         <i class="mdi mdi-tag-text-outline float-right"></i>
                                     </div>
                                     <div class="text-white">
-                                        <h6 class="text-uppercase mb-3 font-size-16">Average Price</h6>
-                                        <h2 class="mb-4">$15.9</h2>
-                                        <span class="badge badge-warning"> 0% </span> <span class="ml-2">From previous period</span>
+                                        <h6 class="text-uppercase mb-3 font-size-16">Branches</h6>
+                                        <h2 class="mb-4">{{$branchscounts}}</h2>
+                                        {{-- <span class="badge badge-warning"> 0% </span> <span class="ml-2">From previous period</span> --}}
                                     </div>
                                 </div>
                             </div>
@@ -77,19 +64,32 @@
                             <div class="card mini-stat bg-primary">
                                 <div class="card-body mini-stat-img">
                                     <div class="mini-stat-icon">
-                                        <i class="mdi mdi-briefcase-check float-right"></i>
+                                        <i class="mdi mdi-account-supervisor-outline float-right"></i>
                                     </div>
                                     <div class="text-white">
-                                        <h6 class="text-uppercase mb-3 font-size-16">Product Sold</h6>
-                                        <h2 class="mb-4">1890</h2>
-                                        <span class="badge badge-info"> +89% </span> <span class="ml-2">From previous period</span>
+                                        <h6 class="text-uppercase mb-3 font-size-16">Staff</h6>
+                                        <h2 class="mb-4">{{$userscounts}}</h2>
+                                        {{-- <span class="badge badge-info"> +89% </span> <span class="ml-2">From previous period</span> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  
                     
+                   <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat bg-primary">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class=" float-right">₹</i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3 font-size-16">Revenue</h6>
+                                        <h2 class="mb-4">{{$p}}</h2>
+                                        {{-- <span class="badge badge-danger"> -29% </span> <span class="ml-2">From previous period</span> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <
                         
 
                         <div class="col-xl-12">
