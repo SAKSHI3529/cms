@@ -124,7 +124,7 @@
                                                         {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                                             @if($p->trackingstatus->count()>0) 
                                                          {{$stat}}
-                                                         @else Not updated
+                                                         @else <span class="badge badge-dark">Not Updated</span>
                                                        @endif
                                                      </span></td>
                                                     <td>
