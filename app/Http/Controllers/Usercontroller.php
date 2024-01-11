@@ -54,7 +54,7 @@ class Usercontroller extends Controller
         $user = User::Create($inputs);
         $user->assignRole($request->roles);
         if($user)
-            flash('Users with name '.$user->name.' is created')->important();
+            flash('Users with name '.$user->name.' is created, Successfully!')->important();
         else
             flash('Unable to add Users');
         return back()->withInput();

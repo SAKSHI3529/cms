@@ -58,7 +58,7 @@ class BranchController extends Controller
         $inputs = $request->input();
         $branch = Branch::Create($inputs);
         if($branch)
-            flash('Branch with name '.$branch->name.' is created')->important();
+            flash('Branch with name '.$branch->name.' is created Successfully!')->important();
         else
             flash('Unable to create branch');
         return back()->withInput();

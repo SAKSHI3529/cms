@@ -39,10 +39,10 @@
                         <option>Order Processed</option>
                         <option>Out for Delivery</option>
                         <option>Arrived at Destination City</option>
-                        <option>Arrived at </option>
+                        
                         <option>Delivered</option>
                         <option>Failed Delivery Attempt</option>
-                       <option> <span class="badge badge-pill badge-success">Delivered</span></option>
+                         <option>Cancel</option>
 
                     </select>
 

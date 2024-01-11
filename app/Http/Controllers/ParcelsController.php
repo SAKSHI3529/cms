@@ -73,10 +73,10 @@ class ParcelsController extends Controller
      
         $par=parcels::create($inputs);
 
-        Notification::route('mail', $par->email)->notify(new ParcalUpdate());
+        Notification::route('mail', $par->email)->notify(new ParcalUpdate($par));
         // return back();
         if($par)
-        flash('parcel is added')->important();
+        flash('Parcel placed Successfully!')->important();
     else
         flash('Unable to load your details ');
         return back()->withInput();

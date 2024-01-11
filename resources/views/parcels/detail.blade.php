@@ -37,6 +37,12 @@
                 
             </div>
 
+            <div class="form-group">
+                <label for="contact" style="font-size: medium">Email:</label>
+                <label for="sendercontact">{{$parcel->email}}</label>
+                
+            </div>
+
           
 
         </div>

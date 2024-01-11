@@ -116,8 +116,13 @@
                                                     <td>
                                                         <img src="assets/images/users/user-2.jpg" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->receiverName}}
                                                     </td>
-                                                    <td><span class="badge badge-pill badge-success"> @if($p->trackingstatus->count()>0) 
-                                                         {{$p->trackingstatus->first()->trackinginfo}}
+                                                    <td>
+                                                        <?php $stat=$p->trackingstatus->first()->trackinginfo??' ' ?>
+                                                        <span class="badge badge-pill {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
+                                                        {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
+                                                        "> 
+                                                            @if($p->trackingstatus->count()>0) 
+                                                         {{$stat}}
                                                          @else Not updated
                                                        @endif
                         </span></td>

@@ -60,8 +60,8 @@
 
     
  
-        <div class="container-fluid mt-3 ">
-            <div class="card col-md-10 ">
+        <div class="container mt-3 ">
+            <div class="card col-md-12 mb-5 ">
     
                 <div class="card-body">
     
@@ -186,8 +186,8 @@
 
                         
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary waves-effect waves-light mr-3">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary  active mt-5 align-center" style="background-color:#e84545">
                             Submit
                         </button>
                        

@@ -10,15 +10,15 @@ use Illuminate\Notifications\Notification;
 class ParcalUpdate extends Notification
 {
     use Queueable;
-
+    protected $parcel;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($par)
     {
-        //
+        $this->parcel=$par;
     }
 
     /**
@@ -41,8 +41,8 @@ class ParcalUpdate extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
+                    ->line('Your Parcel is Booked.')
+                    ->action('Track Parcel', url("track/".$this->parcel->referanceNumber))
                     ->line('Thank you for using our application!');
     }
 
