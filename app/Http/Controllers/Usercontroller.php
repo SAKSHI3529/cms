@@ -9,6 +9,7 @@ use App\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 use Auth;
+use AppRating;
 
 class Usercontroller extends Controller
 {
@@ -58,6 +59,10 @@ class Usercontroller extends Controller
         else
             flash('Unable to add Users');
         return back()->withInput();
+    //     $rating = new AppRating;
+    //      $rating->rating = 5;
+    //   $rating->user_id = Auth::id();
+    //   $post->ratings()->save($rating);
     }
 
     /**
@@ -169,5 +174,14 @@ class Usercontroller extends Controller
         flash('Confirm password is incorrect, Try Again!!');
     }
     return back();
+
 }
+
+// public function postStar (Request $request, Post $post) {
+//     $rating = new Rating;
+//     $rating->user_id = Auth::id();
+//     $rating->rating = $request->input('star');
+//     $post->ratings()->save($rating);
+//     return redirect()->back();
+// }
 }

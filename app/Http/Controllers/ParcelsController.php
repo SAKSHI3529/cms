@@ -8,6 +8,7 @@ use App\Models\Branch;
 use App\Notifications\ParcalUpdate;
 use Illuminate\Support\Facades\Notification;
 
+
 class ParcelsController extends Controller
 {
     public function __construct()
