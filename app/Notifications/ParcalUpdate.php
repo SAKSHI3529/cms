@@ -41,9 +41,10 @@ class ParcalUpdate extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Your Parcel is Booked.')
+                    ->greeting('Greetings from Madhur Transport!!!')
+                    ->line('Your product is out for delivery,plz share your experience when your product is delivered')
                     ->action('Track Parcel', url("track/".$this->parcel->referanceNumber))
-                    ->line('Thank you for using our application!');
+                    ->line('Thank you for choosing us!!!');
     }
 
     /**

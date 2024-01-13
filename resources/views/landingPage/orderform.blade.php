@@ -69,7 +69,7 @@
     
     
     
-                        <form action="" method="POST">
+                        <form action="{{url('/orderform')}}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">
@@ -90,7 +90,10 @@
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="contact" id="sendercontact" name="sendercontact">
                                     </div>
-    
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input class="form-control" type="email" id="email" name="email">
+                                  </div>
                                     `
     
     
@@ -187,7 +190,7 @@
                         
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" class="btn btn-primary  active mt-5 align-center" style="background-color:#e84545">
+                        <button type="submit" class="btn btn-primary  active mt-5 align-center"  style="background-color:#e84545">
                             Submit
                         </button>
                        

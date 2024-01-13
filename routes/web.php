@@ -52,9 +52,9 @@ Route::get('/reports/{refno}','ParcelsController@invoicepage');
 Route::get('/landingPage', "TrackingController@landingPageShow");
 Route::get('/track/{id}', "TrackingController@track");
 
-Route::get('/orderform',"TrackingController@orderformshow" );
+Route::POST('/orderform',"LandingPageController@store" );
 
-
+Route::GET('/orderform',"LandingPageController@index" );
 
 
 Route::get('/profile',"Usercontroller@showprofile" );
