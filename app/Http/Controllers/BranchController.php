@@ -52,7 +52,7 @@ class BranchController extends Controller
             'name' => 'required|max:255',
             'ad_line' => 'required',
             'zip_code'=>'required',
-            'contact'=>'required|max:15'
+            'contact'=>'required|max:10'
         ]);
 
         $inputs = $request->input();

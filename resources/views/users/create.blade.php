@@ -15,14 +15,14 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="fname" >Name</label>
-                            <input class="form-control" type="fname" value="" id="name" name="name">
+                            <input class="form-control" type="fname" value="" id="name" name="name" required>
                         </div>
 
                        
                         
                         <div class="form-group">
                             <label for="email" >Email</label>
-                            <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com" name="email">
+                            <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com" name="email" required>
                         </div>
 
                         
@@ -34,12 +34,12 @@
 
                         <div class="form-group">
                             <label for="address" >Address</label>
-                            <input class="form-control" type="address" value="" id="address" placeholder="" name="address">
+                            <input class="form-control" type="address" value="" id="address" placeholder="" name="address" required>
                         </div>
 
                         <div class="form-group">
                             <label for="contact">Contact</label>
-                            <input class="form-control" type="contact"  id="contact" name="contact">
+                            <input class="form-control" type="contact"  id="contact" name="contact" required>
                         </div>
 
                         {{-- <div class="form-group">

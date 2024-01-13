@@ -48,7 +48,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="zip_code">Zip Code/ Portal Code</label>
-                                    <input class="form-control" type="zip_code" id="zip_code" name="zip_code" value="{{old('zip_code')}}">
+                                    <input class="form-control" type="zip_code" id="zip_code" name="zip_code" value="{{old('zip_code')}} "required>
                                     @if($errors->has('zip_code'))
                                         <div class="error">{{ $errors->first('zip_code') }}</div>
                                     @endif
@@ -57,7 +57,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="contact">contact</label>
-                                    <input class="form-control" type="contact" id="contact" name="contact">
+                                    <input class="form-control" type="number" id="contact" name="contact" required>
                                     @if($errors->has('contact'))
                                         <div class="error">{{ $errors->first('contact') }}</div>
                                     @endif

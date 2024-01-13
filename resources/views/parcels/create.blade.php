@@ -16,7 +16,7 @@
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
                                     <label for="fname"> Name</label>
-                                    <input class="form-control" type="name" value="" id="senderName" name="senderName">
+                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required>
                                     @if($errors->has('senderName'))
                                     <div class="error">{{ $errors->first('senderName') }}</div>
                                 @endif
@@ -24,11 +24,11 @@
 
                                 <div class="form-group">
                                     <label for="Address">Address</label>
-                                    <input class="form-control" type="Address" value="" id="senderAddress" name="senderAddress">
+                                    <input class="form-control" type="Address" value="" id="senderAddress" name="senderAddress" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
-                                    <input class="form-control" type="contact" id="sendercontact" name="sendercontact">
+                                    <input class="form-control" type="number" id="sendercontact" name="sendercontact" required>
                                 </div>
 
                                 <div class="form-group">
@@ -71,19 +71,19 @@
                                 <div class="form-group">
                                     <h4> Receiver Information</h4>
                                     <label for="Name">Name</label>
-                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName">
+                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName" required>
                                     @if($errors->has('receiverName'))
                                         <div class="error">{{ $errors->first('receiverName') }}</div>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>
-                                    <input class="form-control" type="Address" value="" id="receiverAddress" name="receiverAddress">
+                                    <input class="form-control" type="Address" value="" id="receiverAddress" name="receiverAddress" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
-                                    <input class="form-control" type="contact" id="receivercontact" name="receivercontact">
+                                    <input class="form-control" type="number" id="receivercontact" name="receivercontact" required>
                                 </div>
 
                                 <div class="form-group">
@@ -113,41 +113,41 @@
                                         <div class="col-md-2 mr-5 ">
                                             <div class="form-group">
                                                 <label for="weight">Weight</label>
-                                                <input class="form-control" type="number" value="" id="weight" name="weight">
+                                                <input class="form-control" type="number" value="" id="weight" name="weight" required>
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="height">Height</label>
-                                                <input class="form-control" type="number" value="" id="height" name="height">
+                                                <input class="form-control" type="number" value="" id="height" name="height" required>
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="length">Length</label>
-                                                <input class="form-control" type="number" value="" id="length" name="length">
+                                                <input class="form-control" type="number" value="" id="length" name="length" required>
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="width">Width</label>
-                                                <input class="form-control" type="number" value="" id="width" name="width">
+                                                <input class="form-control" type="number" value="" id="width" name="width" required>
                                             </div>
                                         </div>
 
                                         <div class="col-md-2 ">
                                             <div class="form-group">
                                                 <label for="price">Price</label>
-                                                <input class="form-control" type="number" value="" id="price" name="price">
+                                                <input class="form-control" type="number" value="" id="price" name="price" required>
                                             </div>
                                         </div>
                                         <div class="col-md-2 ">
                                             <div class="form-group">
                                                 <label for="Productdetails">Product details</label>
-                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
+                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails" required>
                                             </div>
                                         </div>
 

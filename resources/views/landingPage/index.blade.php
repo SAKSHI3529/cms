@@ -22,7 +22,7 @@
               <div class="col-lg-5">
                 <form  class="sign-up-form d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" onsubmit="return false;">
                   <input type="text" class="form-control" placeholder="Enter Referance Number Here" id="searchrefno">
-                  <button class="btn btn-primary" type="submit" onclick="searchParcel()"><i class="fa-fa-search"></i> Search</button>
+                  <button class="btn btn-primary" type="submit" onclick="searchParcel()" style="background-color: #e84545; border:none"><i class="fa-fa-search" ></i> Search</button>
                 </form>
               </div>
             </div>
