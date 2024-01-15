@@ -39,7 +39,7 @@
           <div class="col-xl-5 content">
             <h3>About Us</h3>
             <h2>Madhur Transport</h2>
-            <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top player in the category Courier Services For Africa in the Kolhapur. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Kolhapur. Over the course of its joumey, this business has established a firm foothold in it's industry products and services, have helped this establishment garner a vast base The belief that customer satisfaction is as important tas their of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective rales and put in a lot of effort to In the near future, this business aims occupies a prominent location in readily available. It is to expand its line of products Bhausinghji Road. and services achieve the common vision and larger goals of the and cater to a It is an effortless taski kin commuting to at CPR Hospital Road, Near Pudhari Office, which makes it easy provide top service in the larger client base.in this establishment os company Kolhapur, this establishment there are various modes of transport for first-time visitors in locoting this establishment, it is known to following categories: Courier Services, Domestic Courier Services, International Courier Services Courier Services For Pune Courier Services For Mumbai, Courier Services Speed Post, Courier Services For Bangalore,Mumbai,And many more.
+            <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top player in the category Courier Services For Africa in the Kolhapur. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Kolhapur. Over the course of its joumey, this business has established a firm foothold in it's industry products and services, have helped this establishment garner a vast base The belief that customer satisfaction is as important tas their of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective rales and put in a lot of effort to In the near future, this business aims occupies a prominent location in readily available.{{-- It is to expand its line of products Bhausinghji Road. and services achieve the common vision and larger goals of the and cater to a It is an effortless taski kin commuting to at CPR Hospital Road, Near Pudhari Office, which makes it easy provide top service in the larger client base.in this establishment os company Kolhapur, this establishment there are various modes of transport for first-time visitors in locoting this establishment, it is known to following categories: Courier Services, Domestic Courier Services, International Courier Services Courier Services For Pune Courier Services For Mumbai, Courier Services Speed Post, Courier Services For Bangalore,Mumbai,And many more.--}}
               .</p>
             <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
@@ -167,7 +167,7 @@
   
     <section id="contact" class="contact">
   
-      <!--  Section Title -->
+      {{-- <!--  Section Title -->
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
         <h2>Review</h2>
   
@@ -497,7 +497,7 @@
     
         </section>
         
-      </div><!-- End Section Title -->
+      </div><!-- End Section Title --> --}}
   
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   
@@ -519,8 +519,8 @@
                 <div class="info-item aos-init aos-animate" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <p>+91 7596481236</p>
+                  <p>+91 8659412358</p>
                 </div>
               </div><!-- End Info Item -->
   
