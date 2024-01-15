@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Branch;
 use App\models\tracking;
 use App\models\parcels;
+use App\Notifications\ParcalDelivared;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
 
 class TrackingController extends Controller
 {
@@ -51,13 +53,27 @@ class TrackingController extends Controller
             'trackinginfo'=>'required',
         ]);
 
+        $parcle = parcels::where("referanceNumber", $request->referanceNumber)->first();
+
         $inputs = $request->input();
         $track = tracking::Create($inputs);
+
+
+        try{
+            if($request->trackinginfo=="Delivered")
+                Notification::route('mail', $parcle->email)->notify(new ParcalDelivared($track));
+        }catch(\Exception $e){
+
+        }
+
         if($track)
             flash('Tracking status updated')->important();
         else
             flash('Unable to update status');
         return back()->withInput();
+
+        
+        
     }
 
     /**

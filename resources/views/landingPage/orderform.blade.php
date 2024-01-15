@@ -58,9 +58,9 @@
 
   <main id="main">
 
-    
  
         <div class="container mt-3 ">
+          @include('flash::message')
             <div class="card col-md-12 mb-5 ">
     
                 <div class="card-body">
@@ -69,7 +69,10 @@
     
     
     
-                        <form action="{{url('/orderform')}}" method="POST">
+                      
+                      
+ 
+                      <form action="{{url('/orderform')}}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">

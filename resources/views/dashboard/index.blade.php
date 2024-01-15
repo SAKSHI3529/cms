@@ -111,10 +111,10 @@
                                                 <tr>
                                                     <td>{{$p->referanceNumber}}</td>
                                                     <td>
-                                                        <img src="assets/images/my-img/pngwing.com.png" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->senderName}}
+                                                        {{$p->senderName}}
                                                     </td>
                                                     <td>
-                                                        <img src="assets/images/my-img/pngwing.com.png" alt="user-image" class="avatar-xs mr-2 rounded-circle" />{{$p->receiverName}}
+                                                        {{$p->receiverName}}
                                                     </td>
                                                     <td>
                                                         <?php $stat=$p->trackingstatus->first()->trackinginfo??' ' ?>
