@@ -82,7 +82,7 @@ class ParcelsController extends Controller
         // return back();
         if($par)
         flash('Parcel placed Successfully!')->important();
-    else
+        else
         flash('Unable to load your details ');
         return back()->withInput();
 

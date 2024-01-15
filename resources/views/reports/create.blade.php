@@ -137,13 +137,14 @@
                                                             <strong>Total</strong>
                                                         </td>
                                                         <td class="no-line text-right">
-                                                            {{-- <h4 class="m-0">$685.99</h4></td> --}}
+                                                            
+                                                            <h4 class="m-0">{{$par->price}}</h4></td>
                                                     </tr>
                                                 </tr>
                                                 <td></td>
                                                 <td class="text-center"></td>
                                                 <td class="text-center"></td>
-                                                <td class="text-right">{{$par->price}}</td>
+                                                <td class="text-right"></td>
                                             </tr>
                                                 </tbody>
                                             </table>

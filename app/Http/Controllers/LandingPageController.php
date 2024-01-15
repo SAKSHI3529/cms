@@ -16,7 +16,7 @@ class LandingPageController extends Controller
 {
     public function store(Request $request )
     {
-        $user=$request->user();
+        
        
         // return $user;
         
@@ -31,7 +31,7 @@ class LandingPageController extends Controller
 
         $request -> merge([
             'referanceNumber' => $str,
-            'userID'=>$user->id,
+            
            
         ]);
         $inputs=$request->input();
@@ -45,7 +45,7 @@ class LandingPageController extends Controller
 
         }
            
-        // return back();
+        
         if($par)
         flash('Parcel placed Successfully!')->important();
     else

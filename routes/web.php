@@ -22,9 +22,7 @@ Route::middleware(['auth'])->group( function()
     
 
 
-    Route::get('/', function () {
-        return view('welcome');
-    });
+   
     
     Route::get('/dashboard',"Dashboard@index");
     
@@ -49,7 +47,7 @@ Route::get('/parcels-status', "TrackingController@parcelStatus");
 Route::get('/reports/{refno}','ParcelsController@invoicepage');
 
 
-Route::get('/landingPage', "LandingPageController@landingPageShow");
+Route::get('/', "TrackingController@landingPageShow");
 Route::get('/track/{id}', "TrackingController@track");
 
 Route::POST('/orderform',"LandingPageController@store" );
