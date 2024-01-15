@@ -8,7 +8,7 @@
                     <div class="navbar-brand-box">
                         <a href="index.html" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <img src="{{url('assets/images/logo-sm.png')}}" alt="" height="22">
                             </span>
                             <span class="logo-lg">
                                 <img src="assets/images/logo-dark.png" alt="" height="17">
@@ -20,7 +20,7 @@
                                 <img src="assets/images/my-img/logo-sm.jpg" alt="" height="30">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/my-img/logo-lg.jpg" alt="" height="40" width="180">
+                                <img src="{{url('assets/images/my-img/logo-lg.jpg')}}" alt="" height="40" width="180">
                             </span>
                         </a>
                     </div>
