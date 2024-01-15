@@ -49,7 +49,7 @@ Route::get('/parcels-status', "TrackingController@parcelStatus");
 Route::get('/reports/{refno}','ParcelsController@invoicepage');
 
 
-Route::get('/landingPage', "TrackingController@landingPageShow");
+Route::get('/landingPage', "LandingPageController@landingPageShow");
 Route::get('/track/{id}', "TrackingController@track");
 
 Route::POST('/orderform',"LandingPageController@store" );

@@ -19,7 +19,7 @@ class Customer extends Migration
             $table->id();
             $table->string('name',50);
             $table->string('email')->unique();
-            $table->string('message',200);
+            $table->string('message',1000);
             $table->timestamps();
 
         });

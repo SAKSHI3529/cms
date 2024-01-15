@@ -128,10 +128,7 @@ class TrackingController extends Controller
         
     }
 
-    public function landingPageShow(){
-        return view('landingPage.index');
-    }
-
+    
     public function track($refno){
         
         $details = parcels::where('referanceNumber',$refno)->first();
@@ -144,8 +141,8 @@ class TrackingController extends Controller
         return view('landingPage.tracking',compact('details','track_details'));
     }
 
-    public function orderformshow(){
-        return view('landingpage.orderform');
-    }
+    // public function orderformshow(){
+    //     return view('landingpage.orderform');
+    // }
 
 }

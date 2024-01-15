@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Branch;
 use App\models\tracking;
+use App\models\customer;
 use App\models\parcels;
 use App\Notifications\ParcalUpdate;
 use Illuminate\Support\Facades\Notification;
@@ -56,8 +57,15 @@ class LandingPageController extends Controller
     }
     public function index()
     {
-        
+       
         return view('landingPage.orderform');
     }
+
+    public function landingPageShow(){
+        $reviews = customer::latest()->limit(5)->get();
+        
+        return view('landingPage.index', compact('reviews'));
+    }
+
     
 }
