@@ -20,7 +20,7 @@
                                 <img src="assets/images/my-img/logo-sm.jpg" alt="" height="30">
                             </span>
                             <span class="logo-lg">
-                                <img src="{{url('assets/images/my-img/logo-lg.jpg')}}" alt="" height="40" width="180">
+                                <img src="{{url('assets/images/my-img/Frame217.png')}}" alt="" height="50" width="150">
                             </span>
                         </a>
                     </div>

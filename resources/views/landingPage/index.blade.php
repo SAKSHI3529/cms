@@ -167,7 +167,7 @@
   
     <section id="contact" class="contact">
   
-      {{-- <!--  Section Title -->
+      <!--  Section Title -->
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
         <h2>Review</h2>
   
@@ -230,9 +230,9 @@
                           <div>
                             <h3>{{$review->name}}</h3>
                             <h4>{{$review->created_at}}</h4>
-                            {{-- <div class="stars">
+                             <div class="stars">
                               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div> --}}
+                            </div>
                           </div>
                         </div>
                         <p>
@@ -356,7 +356,7 @@
     
         </section>
         
-      </div><!-- End Section Title --> --}}
+      </div><!-- End Section Title --> 
   
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   

@@ -121,6 +121,10 @@ class TrackingController extends Controller
         //
     }
 
+    // public function landingPageShow(){
+    //     return view('landingpage.index');
+    // }
+
     public function parcelStatus(){
        // return 'hi';
         $branchs=Branch::all();
@@ -141,8 +145,6 @@ class TrackingController extends Controller
         return view('landingPage.tracking',compact('details','track_details'));
     }
 
-    // public function orderformshow(){
-    //     return view('landingpage.orderform');
-    // }
+   
 
 }

@@ -14,6 +14,8 @@ use DB;
 
 class LandingPageController extends Controller
 {
+
+    
     public function store(Request $request )
     {
         
