@@ -20,7 +20,7 @@
                                 <img src="assets/images/my-img/logo-sm.jpg" alt="" height="30">
                             </span>
                             <span class="logo-lg">
-                                <img src="{{url('assets/images/my-img/Frame217.png')}}" alt="" height="50" width="150">
+                                <img src="{{url('assets/images/my-img/Frame20.png')}}" alt="" height="50" width="150">
                             </span>
                         </a>
                     </div>
@@ -61,7 +61,7 @@
 
                    
 
-                    <div class="dropdown d-inline-block ml-1">
+                    {{-- <div class="dropdown d-inline-block ml-1">
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="ti-bell"></i>
@@ -163,7 +163,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
             
 
                     <div class="dropdown d-inline-block">

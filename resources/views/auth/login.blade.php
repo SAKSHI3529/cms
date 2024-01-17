@@ -9,8 +9,8 @@
                 <div class="card overflow-hidden">
                     <div class="card-body pt-0">
                         <h3 class="text-center mt-4">
-                            <a href="index.html" class="logo logo-admin"><img src="assets/images/logo-dark.png"
-                                    height="30" alt="logo"></a>
+                            <a href="index.html" class="logo logo-admin"><img src="{{url('assets/images/my-img/Frame19.png')}}"
+                                    height="80" width="250" alt="logo"></a>
                         </h3>
                         <div class="p-3">
                             <h4 class="text-muted font-size-18 mb-1 text-center">Welcome Back !</h4>
@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-check text-right">
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-primary" style="background-color: #E84545; border:none">
                                                 {{ __('Login') }}
                                             </button>
                                         </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="mt-5 text-center">
-                    <p>Don't have an account ? <a href="{{url('/register')}}" class="text-primary"> Signup Now </a></p>
+                    <p>Don't have an account ? <a href="{{url('/register')}}" class="text-primary"  > Signup Now </a></p>
                     <p>© 2013 - {{date('Y')}}  <i class="mdi mdi-heart text-danger"></i> </p>
                 </div>
             </div>

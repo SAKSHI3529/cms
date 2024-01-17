@@ -50,6 +50,7 @@
               <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <i class="bi bi-buildings"></i>
+                  
                   <h3>Order Processing:</h3>
                   <p>Collecting and managing customer details for order processing.
                     Recording and processing incoming orders.
@@ -230,9 +231,9 @@
                           <div>
                             <h3>{{$review->name}}</h3>
                             <h4>{{$review->created_at}}</h4>
-                             <div class="stars">
+                            {{-- <div class="stars">
                               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
+                            </div> --}}
                           </div>
                         </div>
                         <p>
@@ -356,7 +357,7 @@
     
         </section>
         
-      </div><!-- End Section Title --> 
+      </div><!-- End Section Title --> --}}
   
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   
