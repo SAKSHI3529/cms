@@ -82,6 +82,10 @@
 <script>
     $('#datatable').DataTable( {
     responsive: true
+    // dom: 'lBfrtip',
+    // buttons: [ 
+    //     'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'
+    // ]
 } );
     </script>
 

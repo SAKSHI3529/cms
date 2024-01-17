@@ -47,7 +47,7 @@ Route::get('/parcels-status', "TrackingController@parcelStatus");
 Route::get('/reports/{refno}','ParcelsController@invoicepage');
 
 
-Route::get('/landingPage', "landingPageController@landingPageShow");
+Route::get('/', "landingPageController@landingPageShow");
 Route::get('/track/{id}', "TrackingController@track");
 
 Route::POST('/orderform',"LandingPageController@store" );
