@@ -1,4 +1,5 @@
 @extends('layouts.cms2')
+@section('title','Landing Page')
 @section('content')
       
     

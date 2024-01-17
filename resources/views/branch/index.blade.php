@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Branch')
 @section('content')
 
 <div class="card-body">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Dashboard | Lexa - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>CMS | @yield('title') </title>
     @include('partials.headerscript')
 </head>
 <body data-sidebar="dark">

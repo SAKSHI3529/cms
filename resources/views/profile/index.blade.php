@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Profile')
 @section('content')
     
 

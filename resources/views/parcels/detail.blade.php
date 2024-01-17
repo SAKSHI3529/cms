@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Parcels Details')
 @section('content')
 <div class="container-fluid mt-2 ">
     <div class="card">

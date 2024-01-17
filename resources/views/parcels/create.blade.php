@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Parcels creates')
 @section('content')
     <div class="container-fluid mt-3">
         <div class="card">
@@ -83,7 +84,8 @@
 
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
-                                    <input class="form-control" type="number" id="receivercontact" name="receivercontact" required>
+                                    <input class="form-control" type="number" id="receivercontact" name="receivercontact"  required>
+                                    
                                 </div>
 
                                 <div class="form-group">

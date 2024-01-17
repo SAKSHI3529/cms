@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Users edit')
 @section('content')
 <div class="container-fluid mt-3">
     <form action="{{url('/users/'.$user->id)}}" method="POST">

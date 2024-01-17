@@ -1,4 +1,5 @@
 @extends('layouts.cms2')
+@section('title','Tracking Page')
 @section('content')
 
 <div data-aos="fade" class="page-title aos-init aos-animate">

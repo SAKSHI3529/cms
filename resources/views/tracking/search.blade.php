@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Track Parcels')
 @section('content')
 
 <form action="{{url('/tracking')}}" method="POST">

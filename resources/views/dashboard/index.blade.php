@@ -1,5 +1,6 @@
 
 @extends('layouts.cms')
+@section('title','Dashboard')
 @section('content')
     <div class="container-fluid">
 
@@ -9,13 +10,13 @@
                             <div class="page-title-box">
                                 <h4>Dashboard</h4>
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Lexa</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Madhur.</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
                                         <li class="breadcrumb-item active">Dashboard</li>
                                     </ol>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        {{-- <div class="col-sm-6">
                             <div class="state-information d-none d-sm-block">
                                 <div class="state-graph">
                                     <div id="header-chart-1"></div>
@@ -26,7 +27,7 @@
                                     <div class="info">Item Sold 1230</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <!-- end page title -->
 

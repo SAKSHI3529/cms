@@ -1,4 +1,5 @@
 @extends('layouts.cms')
+@section('title','Users create')
 @section('content')
 <div class="container-fluid mt-3">
     <form action="{{url('users')}}" method="POST">

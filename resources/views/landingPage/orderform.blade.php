@@ -128,7 +128,7 @@
     
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
-                                        <input class="form-control" type="contact" id="receivercontact" name="receivercontact">
+                                        <input class="form-control" type="number" id="receivercontact" name="receivercontact" required>
                                     </div>
     
                                     
