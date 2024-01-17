@@ -102,11 +102,10 @@
 <script>
     $('#datatable').DataTable( {
     responsive: true,
-    dom: 'Bfrtip', 
-        buttons: [ 'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5' ] , 
+    
     dom: 'lBfrtip',
     buttons: [ 
-        'excelHtml5', 
+        'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'
     ]
 
 } );

@@ -29,6 +29,9 @@
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
                                     <input class="form-control" type="number" id="sendercontact" name="sendercontact" required>
+                                    @if($errors->has('sendercontact'))
+                                    <div class="error">{{ $errors->first('sendercontact') }}</div>
+                                @endif
                                 </div>
 
                                 <div class="form-group">
@@ -52,6 +55,9 @@
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input class="form-control" type="email" id="email" name="email">
+                                    @if($errors->has('email'))
+                                    <div class="error">{{ $errors->first('email') }}</div>
+                                @endif
                                 </div>
 
 

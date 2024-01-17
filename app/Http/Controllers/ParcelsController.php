@@ -56,8 +56,10 @@ class ParcelsController extends Controller
         $request->validate([
             'senderName' => 'required|max:255',
             'receiverName' => 'required',
-            'BranchProcessed'=>'required',
-            'PickupBranch'=>'required|max:100'
+            // 'BranchProcessed'=>'required',
+            // 'PickupBranch'=>'required|max:100'
+            'sendercontact'=>'required|max:10',
+            'email' =>'required'
         ]);
         //
         $rno = rand();
