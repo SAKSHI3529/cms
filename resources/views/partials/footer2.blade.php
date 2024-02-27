@@ -6,16 +6,16 @@
           <a href="index.html" class="logo d-flex align-items-center">
         <span>Madhur</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
+          <p>Courier management services.</p>
+          {{-- <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+          </div> --}}
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -24,7 +24,7 @@
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
-        </div>
+        </div> --}}
 
         {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
@@ -45,7 +45,9 @@
           {{-- <p>A108 Adam Street</p>
           <p>New York, NY 535022</p>
           <p>United States</p> --}}
-          <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
+        </div>
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+             <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
           <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
         </div>
 

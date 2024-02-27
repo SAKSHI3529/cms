@@ -7,7 +7,7 @@
     
         <!-- Hero Section - Home Page -->
         <section id="hero" class="hero">
-          <img src="{{url('assets2/img/my-img/home-bg.jpg')}}" alt="" data-aos="fade-in" class="aos-init aos-animate">
+          <img src="{{url('assets2/img/my-img/home-bg2.jpg')}}" alt="" data-aos="fade-in" class="aos-init aos-animate">
     
           <div class="container">
             <div class="row">
@@ -37,15 +37,15 @@
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
   
-          <div class="col-xl-5 content">
+          <div class="col-xl-12 content">
             <h3>About Us</h3>
             <h2>Madhur Transport</h2>
-            <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top player in the category Courier Services For Africa in the Kolhapur. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Kolhapur. Over the course of its joumey, this business has established a firm foothold in it's industry products and services, have helped this establishment garner a vast base The belief that customer satisfaction is as important tas their of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective rales and put in a lot of effort to In the near future, this business aims occupies a prominent location in readily available.{{-- It is to expand its line of products Bhausinghji Road. and services achieve the common vision and larger goals of the and cater to a It is an effortless taski kin commuting to at CPR Hospital Road, Near Pudhari Office, which makes it easy provide top service in the larger client base.in this establishment os company Kolhapur, this establishment there are various modes of transport for first-time visitors in locoting this establishment, it is known to following categories: Courier Services, Domestic Courier Services, International Courier Services Courier Services For Pune Courier Services For Mumbai, Courier Services Speed Post, Courier Services For Bangalore,Mumbai,And many more.--}}
+            <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top player in the category Courier Services For Africa in the Kolhapur. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Kolhapur. Over the course of its joumey, this business has established a firm foothold in it's industry products and services, have helped this establishment garner a vast base.<br> The belief that customer satisfaction is as important tas their of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective rales and put in a lot of effort to In the near future, this business aims occupies a prominent location in readily available.{{-- It is to expand its line of products Bhausinghji Road. and services achieve the common vision and larger goals of the and cater to a It is an effortless taski kin commuting to at CPR Hospital Road, Near Pudhari Office, which makes it easy provide top service in the larger client base.in this establishment os company Kolhapur, this establishment there are various modes of transport for first-time visitors in locoting this establishment, it is known to following categories: Courier Services, Domestic Courier Services, International Courier Services Courier Services For Pune Courier Services For Mumbai, Courier Services Speed Post, Courier Services For Bangalore,Mumbai,And many more.--}}
               .</p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            {{-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> --}}
           </div>
   
-          <div class="col-xl-7">
+          {{-- <div class="col-xl-7">
             <div class="row gy-4 icon-boxes">
   
               <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
@@ -57,16 +57,16 @@
                     Recording and processing incoming orders.
                     Sending order confirmation notifications to customers.</p>
                 </div>
-              </div> <!-- End Icon Box -->
+              </div> <!-- End Icon Box --> --}}
   
-              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              {{-- <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-clipboard-pulse"></i>
                   <h3>Package Tracking:</h3>
                   <p>Assigning unique identifiers for tracking.
                     Providing real-time updates on package status and location.</p>
                 </div>
-              </div> <!-- End Icon Box -->
+              </div> <!-- End Icon Box --> --}}
   
               {{-- <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
@@ -180,10 +180,10 @@
             <div class="row align-items-center">
     
               <div class="col-lg-5 info aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <h3>Testimonials</h3>
+                <h3>Review</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                  Our customer's valuable feedback and reviews.
+ 
                 </p>
               </div>
     
@@ -358,7 +358,7 @@
     
         </section>
         
-      </div><!-- End Section Title --> --}}
+      </div><!-- End Section Title --> 
   
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   
@@ -389,8 +389,8 @@
                 <div class="info-item aos-init aos-animate" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>madhur@gmail.com</p>
+                 
+                  <p>madhurtransports@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
   

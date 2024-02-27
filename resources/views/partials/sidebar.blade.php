@@ -44,7 +44,7 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect" aria-expanded="false">
                         <i class="typcn typcn-group"></i>
-                        <span>Users</span>
+                        <span>Staff</span>
                     </a>
                     <ul class="sub-menu mm-collapse" aria-expanded="false">
                         @can('user-create')
@@ -86,14 +86,14 @@
                 </li>
                 @endcan
 
-                @can('role-view')
+                {{-- @can('role-view')
                 <li>
                     <a href="{{url('/roles')}}" class="waves-effect">
                         <i class="mdi mdi-chart-line"></i>
                         <span>Roles</span>
                     </a>
                 </li>
-                @endcan
+                @endcan --}}
 
         </div>
         <!-- Sidebar -->
