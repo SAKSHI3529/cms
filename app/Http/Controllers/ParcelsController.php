@@ -59,6 +59,7 @@ class ParcelsController extends Controller
             // 'BranchProcessed'=>'required',
             // 'PickupBranch'=>'required|max:100'
             'sendercontact'=>'required|max:10',
+            'receivercontact'=>'required|max:10',
             'email' =>'required'
         ]);
         //

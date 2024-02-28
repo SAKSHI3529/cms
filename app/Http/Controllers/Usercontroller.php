@@ -45,11 +45,18 @@ class Usercontroller extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+             'contact'=>'required|max:10'
+        ]);
+
         $request -> merge([
             'password' => Hash::make($request->contact),
             
            
         ]);
+
+        
+        
 
         $inputs = $request->input();
         $user = User::Create($inputs);

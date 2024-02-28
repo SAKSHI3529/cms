@@ -51,7 +51,7 @@ class BranchController extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'ad_line' => 'required',
-            'zip_code'=>'required',
+            'zip_code'=>'required|max:6',
             'contact'=>'required|max:10'
         ]);
 

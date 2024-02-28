@@ -40,7 +40,10 @@
 
                         <div class="form-group">
                             <label for="contact">Contact</label>
-                            <input class="form-control" type="contact"  id="contact" name="contact" required>
+                            <input class="form-control" type="number"  id="contact" name="contact" required>
+                            @if($errors->has('contact'))
+                            <div class="error">{{ $errors->first('contact') }}</div>
+                        @endif
                         </div>
 
                         {{-- <div class="form-group">
