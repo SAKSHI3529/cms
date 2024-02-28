@@ -81,6 +81,9 @@
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
                                         <input class="form-control" type="name" value="" id="senderName" name="senderName">
+                                        @if($errors->has('senderName'))
+                                        <div class="error">{{ $errors->first('senderName') }}</div>
+                                    @endif
                                        
                                     </div>
     
@@ -91,10 +94,16 @@
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="contact" id="sendercontact" name="sendercontact">
+                                        @if($errors->has('sendercontact'))
+                                        <div class="error">{{ $errors->first('sendercontact') }}</div>
+                                    @endif
                                     </div>
                                     <div class="form-group">
                                       <label for="email">Email</label>
                                       <input class="form-control" type="email" id="email" name="email">
+                                      @if($errors->has('email'))
+                                      <div class="error">{{ $errors->first('email') }}</div>
+                                  @endif
                                   </div>
                                     `
     
@@ -126,6 +135,9 @@
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="number" id="receivercontact" name="receivercontact" required>
+                                        @if($errors->has('receivercontact'))
+                                        <div class="error">{{ $errors->first('receivercontact') }}</div>
+                                    @endif
                                     </div>
     
                                     
