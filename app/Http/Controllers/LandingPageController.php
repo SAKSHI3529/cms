@@ -27,7 +27,7 @@ class LandingPageController extends Controller
             'receiverName' => 'required',
             'sendercontact'=>'required|min:10',
             'receivercontact'=>'required|min:10',
-            'email'=>'required| unique'
+            'email'=>'required'
             
         ]);
         //
