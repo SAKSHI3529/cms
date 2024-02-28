@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Blog - Append Bootstrap Temlate</title>
+  <title>Madhur</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,6 +66,7 @@
                 <div class="card-body">
     
                     <div class="card-body">
+                     
     
     
     
@@ -138,6 +139,12 @@
     
                                         <h4>Parcal Information</h4>
                                         <div class="row">
+                                          <div class="col-md-2 ">
+                                            <div class="form-group">
+                                                <label for="Productdetails">Product details(type)</label>
+                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
+                                            </div>
+                                        </div>
     
                                             <div class="col-md-2 mr-5 ">
                                                 <div class="form-group">
@@ -146,26 +153,26 @@
                                                 </div>
                                             </div>
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="height">Height</label>
                                                     <input class="form-control" type="number" value="" id="height" name="height">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="length">Length</label>
                                                     <input class="form-control" type="number" value="" id="length" name="length">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="width">Width</label>
                                                     <input class="form-control" type="number" value="" id="width" name="width">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
                                             <div class="col-md-2 ">
                                                 <div class="form-group">
@@ -173,12 +180,7 @@
                                                     <input class="form-control" type="number" value="" id="price" name="price">
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 ">
-                                                <div class="form-group">
-                                                    <label for="Productdetails">Product details</label>
-                                                    <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
-                                                </div>
-                                            </div>
+                                           
     
     
                                         </div>
@@ -189,7 +191,7 @@
                         
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" class="btn btn-primary  active mt-5 align-center"  style="background-color:#e84545">
+                        <button type="submit" class="btn btn-primary  active mt-5 align-center"  style="background-color:#f83b3b">
                             Submit
                         </button>
                        

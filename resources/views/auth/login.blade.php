@@ -60,6 +60,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h6>Choose Roles</h6>
+
+                                <div class="form-group row mb-0">
+                                    <div class="col-md-8">
+  <label for="employee">Employee</label>
+  <input type="checkbox" id="employee" name="role" value="employee">
+
+  <label for="deliveryboy">Delivery Boy</label>
+  <input type="checkbox" id="deliveryboy" name="role" value="delivery boy">
+
+  <label for="admin">Admin</label>
+  <input type="checkbox" id="admin" name="role" value="admin">
+                                    </div>
+                                </div>
         
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8">
