@@ -3,6 +3,7 @@
 @section('content')
     <div class="container-fluid mt-3">
         <div class="card">
+           <center> <h1>Parcel Details</h1></center>
 
             <div class="card-body">
 
@@ -63,12 +64,7 @@
 
 
 
-                                {{-- <div class="form-group">
-                            <label for="password">Password</label>
-                            <input class="form-control" type="password" value="" id="password">
-                        </div>
-                        --}}
-                                <!-- Add more form groups here as needed -->
+                               
                         </div>
 
 
@@ -117,7 +113,7 @@
 
                                 <div class="card-body">
 
-                                    <h4>Parsal Information</h4>
+                                    <h4>Parcel Information</h4>
                                     <div class="row">
 
                                         <div class="col-md-2 mr-5 ">
@@ -127,26 +123,26 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-2 mr-5">
+                                        {{-- <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="height">Height</label>
                                                 <input class="form-control" type="number" value="" id="height" name="height" required>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
-                                        <div class="col-md-2 mr-5">
+                                        {{-- <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="length">Length</label>
                                                 <input class="form-control" type="number" value="" id="length" name="length" required>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
-                                        <div class="col-md-2 mr-5">
+                                        {{-- <div class="col-md-2 mr-5">
                                             <div class="form-group">
                                                 <label for="width">Width</label>
                                                 <input class="form-control" type="number" value="" id="width" name="width" required>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="col-md-2 ">
                                             <div class="form-group">
@@ -156,7 +152,7 @@
                                         </div>
                                         <div class="col-md-2 ">
                                             <div class="form-group">
-                                                <label for="Productdetails">Product details</label>
+                                                <label for="Productdetails">Product details (Type)</label>
                                                 <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails" required>
                                             </div>
                                         </div>

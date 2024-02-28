@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Blog - Append Bootstrap Temlate</title>
+  <title>Madhur</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,6 +66,7 @@
                 <div class="card-body">
     
                     <div class="card-body">
+                     
     
     
     
@@ -80,9 +81,10 @@
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
                                         <input class="form-control" type="name" value="" id="senderName" name="senderName">
-                                        {{-- @if($errors->has('senderName'))
+                                        @if($errors->has('senderName'))
                                         <div class="error">{{ $errors->first('senderName') }}</div>
-                                    @endif --}}
+                                    @endif
+                                       
                                     </div>
     
                                     <div class="form-group">
@@ -92,10 +94,16 @@
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="contact" id="sendercontact" name="sendercontact">
+                                        @if($errors->has('sendercontact'))
+                                        <div class="error">{{ $errors->first('sendercontact') }}</div>
+                                    @endif
                                     </div>
                                     <div class="form-group">
                                       <label for="email">Email</label>
                                       <input class="form-control" type="email" id="email" name="email">
+                                      @if($errors->has('email'))
+                                      <div class="error">{{ $errors->first('email') }}</div>
+                                  @endif
                                   </div>
                                     `
     
@@ -117,9 +125,7 @@
                                         <h4> Receiver Information</h4>
                                         <label for="Name">Name</label>
                                         <input class="form-control" type="Name" value="" id="receiverName" name="receiverName">
-                                        {{-- @if($errors->has('receiverName'))
-                                            <div class="error">{{ $errors->first('receiverName') }}</div>
-                                        @endif --}}
+                                       
                                     </div>
                                     <div class="form-group">
                                         <label for="Address">Address</label>
@@ -129,6 +135,9 @@
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="number" id="receivercontact" name="receivercontact" required>
+                                        @if($errors->has('receivercontact'))
+                                        <div class="error">{{ $errors->first('receivercontact') }}</div>
+                                    @endif
                                     </div>
     
                                     
@@ -142,6 +151,12 @@
     
                                         <h4>Parcal Information</h4>
                                         <div class="row">
+                                          <div class="col-md-2 ">
+                                            <div class="form-group">
+                                                <label for="Productdetails">Product details(type)</label>
+                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
+                                            </div>
+                                        </div>
     
                                             <div class="col-md-2 mr-5 ">
                                                 <div class="form-group">
@@ -150,26 +165,26 @@
                                                 </div>
                                             </div>
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="height">Height</label>
                                                     <input class="form-control" type="number" value="" id="height" name="height">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="length">Length</label>
                                                     <input class="form-control" type="number" value="" id="length" name="length">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
-                                            <div class="col-md-2 mr-5">
+                                            {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
                                                     <label for="width">Width</label>
                                                     <input class="form-control" type="number" value="" id="width" name="width">
                                                 </div>
-                                            </div>
+                                            </div> --}}
     
                                             <div class="col-md-2 ">
                                                 <div class="form-group">
@@ -177,12 +192,7 @@
                                                     <input class="form-control" type="number" value="" id="price" name="price">
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 ">
-                                                <div class="form-group">
-                                                    <label for="Productdetails">Product details</label>
-                                                    <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails">
-                                                </div>
-                                            </div>
+                                           
     
     
                                         </div>
@@ -193,7 +203,7 @@
                         
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" class="btn btn-primary  active mt-5 align-center"  style="background-color:#e84545">
+                        <button type="submit" class="btn btn-primary  active mt-5 align-center"  style="background-color:#f83b3b">
                             Submit
                         </button>
                        

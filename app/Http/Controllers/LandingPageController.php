@@ -25,6 +25,9 @@ class LandingPageController extends Controller
         $request->validate([
             'senderName' => 'required|max:255',
             'receiverName' => 'required',
+            'sendercontact'=>'required|min:10',
+            'receivercontact'=>'required|min:10',
+            'email'=>'required| unique'
             
         ]);
         //
