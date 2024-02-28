@@ -92,7 +92,7 @@
                                                 <td></td>
                                                 <td class="text-center"></td>
                                                 <td class="text-center"></td>
-                                                <td class="text-right">56</td>
+                                                <td class="text-right"></td>
                                             </tr>
                                             {{-- <tr>
                                                 <td class="thick-line"></td>
