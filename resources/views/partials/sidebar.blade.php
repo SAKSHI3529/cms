@@ -86,14 +86,14 @@
                 </li>
                 @endcan
 
-                {{-- @can('role-view')
+                 @can('role-view')
                 <li>
                     <a href="{{url('/roles')}}" class="waves-effect">
                         <i class="mdi mdi-chart-line"></i>
                         <span>Roles</span>
                     </a>
                 </li>
-                @endcan --}}
+                @endcan 
 
         </div>
         <!-- Sidebar -->
