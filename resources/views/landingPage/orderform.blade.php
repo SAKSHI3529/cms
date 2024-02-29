@@ -87,7 +87,9 @@
                                     <div class="form-group">
                                         <label for="Address">Address</label>
                                         <input class="form-control" type="Address" value="" id="senderAddress" name="senderAddress">
+                                        <h6 class="text-muted">fill the form in:plot no,street name,landmark,city</h6>
                                     </div>
+                                    
                                     <div class="form-group">
                                         <label for="contact">Contact</label>
                                         <input class="form-control" type="contact" id="sendercontact" name="sendercontact">
@@ -96,7 +98,7 @@
                                       <label for="email">Email</label>
                                       <input class="form-control" type="email" id="email" name="email">
                                   </div>
-                                    `
+                                    
     
     
     

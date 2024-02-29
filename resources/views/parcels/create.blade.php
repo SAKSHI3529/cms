@@ -9,6 +9,8 @@
 
                 <div class="card-body">
 
+                    <h3>Parcels Form</h3>
+
 
 
                     <form action="{{ url('/parcels') }}" method="POST">
