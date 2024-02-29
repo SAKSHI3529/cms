@@ -92,6 +92,60 @@
   
     </section>
   {{-- About section end --}}
+
+
+  <section class="price container" id="price">
+    <div class="row">
+    <div class="col-md-6 content">
+    <aside >
+      <section id="courier-charges" itemscope="" itemtype="https://schema.org/Table">
+      <table class="table table-striped" style="text-align:center; vertical-align: middle;">
+  <h3 itemprop="about" class="widget-title">Courier Charges</h3>
+  <thead><tr><th title="Weight">Weight</th><th title="Express Courier">Express Charges</th><th title="Economy Courier">Economy Charges</th></tr></thead>
+          <tbody><tr><td title="1Kg"> 0-1 Kg </td><td><a href="" title="Express courier charges  for Pune for 1Kg" class="reserve-button scroll-to"><b>₹ 49</b></a></td><td><a href="" title="Economy courier charges  for Pune for 1Kg" class="reserve-button scroll-to"><b>₹ 24</b></a></td></tr>
+          <tr><td title="2Kg"> 1-2 Kg</td><td><a href="" title="Express courier charges  for Pune for 2Kg" class="reserve-button scroll-to"><b>₹ 96</b></a></td><td><a href="" title="Economy courier charges  for Punefor 2Kg" class="reserve-button scroll-to"><b>₹ 45</b></a></td></tr>
+          <tr><td title="3Kg"> 2-5 Kg</td><td><a href="" title="Express courier charges  for Pune for 3Kg" class="reserve-button scroll-to"><b>₹ 142</b></a></td><td><a href="" title="Economy courier charges  for Punefor 3Kg" class="reserve-button scroll-to"><b>₹ 93</b></a></td></tr>
+          <tr><td title="5Kg"> 5-10 Kg</td><td><a href="" title="Express courier charges  for Pune fro 5Kg" class="reserve-button scroll-to"><b>₹ 193</b></a></td><td><a href="" title="Economy courier charges  for Punefor 5Kg" class="reserve-button scroll-to"><b>₹ 145</b></a></td></tr>
+          <tr><td title="10Kg"> 10-15 Kg</td><td><a href="" title="Express courier charges  for Pune for 10Kg" class="reserve-button scroll-to"><b>₹ 345</b></a></td><td><a href="" title="Economy courier charges  for Punefor 10Kg" class="reserve-button scroll-to"><b>₹ 296</b></a></td></tr>
+         <tr><td title="25Kg"> 15-25 Kg</td><td><a href="" title="Express courier charges  for Pune for 25Kg" class="reserve-button scroll-to"><b>₹ 746</b></a></td><td><a href="" title="Economy courier charges  for Punefor 15kg" class="reserve-button scroll-to"><b>₹ 595</b></a></td></tr>
+         <tr><td title="50Kg"> 25-50 Kg</td><td><a href="" title="Express courier charges  for Punefor 50Kg" class="reserve-button scroll-to"><b>₹ 1093</b></a></td><td><a href="" title="Economy courier charges  for Punefor 25kg" class="reserve-button scroll-to"><b>₹ 741</b></a></td></tr>
+  </tbody></table>
+      </section>
+      </aside>
+    </div>
+
+      <div class="col-md-6">
+      <aside>
+        <section id="courier-charges" itemscope="" itemtype="https://schema.org/Table">
+        <table class="table table-striped" style="text-align:center; vertical-align: middle;">
+    <h2 itemprop="about" class="widget-title">Delivery Time </h2>
+    <thead><tr><th title="Weight">Weight</th><th title="Express Delivery Time">Express Delivery</th><th title="Economy Delivery Time">Economy Delivery</th></tr></thead>
+            <tbody><tr><td title="1-5Kg">1-5 Kg </td><td><a href="" title="Express Delivery Time  for Pune for 1-5Kg" class="reserve-button scroll-to"><b>2-3 Days</b></a></td><td><a href="" title="Economy Delivery Time  for Pune for 1-5Kg" class="reserve-button scroll-to"><b>4-5 Days</b></a></td></tr>
+            <tr><td title="5-15Kg">5-15 Kg</td><td><a href="" title="Express Delivery Time  for Pune for 5-15Kg" class="reserve-button scroll-to"><b>5-6 Days</b></a></td><td><a href="" title="Economy Delivery Time  for Punefor 5-15Kg" class="reserve-button scroll-to"><b>7-10 Days</b></a></td></tr>
+            <tr><td title="15-50Kg">15-50 Kg</td><td><a href="" title="Express Delivery Time  for Pune for 15-50Kg" class="reserve-button scroll-to"><b>7-10 Days</b></a></td><td><a href="" title="Economy Delivery Time  for Punefor 15-50Kg" class="reserve-button scroll-to"><b>12-15 Days</b></a></td></tr>
+            
+    </tbody></table>
+        </section>
+        </aside>
+      </div>
+    </div>
+
+    <aside class="alert alert-danger" role="alert">
+      <div id="important-note-3" class="willalert">
+      <h2 class="widget-title" style="text-align:center">Important Points</h2>
+      <table class="table-danger"><tbody><tr><td><b>Our Policy &amp; Government Tax/Duty</b></td></tr>
+      <tr>
+   <td>
+          <p><span class="glyphicon glyphicon-info-sign" ><i class="bi bi-exclamation-circle-fill"></i></span>&nbsp;Rates are inclusive of GST as per government rule</p>
+          <p><span class="glyphicon glyphicon-info-sign"><i class="bi bi-exclamation-circle-fill"></i></span>&nbsp;Charges are based on higher side of Size or Weight.</p>
+          <p><span class="glyphicon glyphicon-info-sign"><i class="bi bi-exclamation-circle-fill"></i></span>&nbsp;Payment need to make after pickup or during the pickup.</p>
+          <p><span class="glyphicon glyphicon-info-sign"><i class="bi bi-exclamation-circle-fill"></i></span>&nbsp;Consignee will have to pay custom duty if charged by govt.</p>
+          <p><span class="glyphicon glyphicon-info-sign"><i class="bi bi-exclamation-circle-fill"></i></span>&nbsp;Madhur Courier Will not be responsible for any delays if the shimpent got delayed due to National &amp; religious Holidays, inclement weather conditions</p>
+       </td></tr>
+       </tbody></table>
+      </div>
+     </aside>
+  </section>
   
   
   <section id="services" class="services">
