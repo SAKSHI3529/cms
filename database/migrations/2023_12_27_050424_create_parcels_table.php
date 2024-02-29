@@ -32,6 +32,8 @@ class CreateParcelsTable extends Migration
             $table->string('Productdetails',200);
             $table->string('userID',10);
             $table->string('status',100)->nullable();
+            $table->string('pick-up-date',100)->nullable();
+            $table->string('pick-up-time',100)->nullable();
 
             $table->timestamps();
         });

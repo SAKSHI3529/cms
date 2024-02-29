@@ -196,9 +196,103 @@
                                                       <option value="15-20kg">15-20 kg</option>
                                                     </select>
 
-                                                     {{-- type="number" value="" id="weight" > --}} 
+                                                    
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-2 mr-5 ">
+                                              <div class="form-group">
+                                                  <label for="pick-up-date">Date</label>
+                                                  <input type="date" class="form-control" name="pick-up-date">
+                                                  <br>
+                                                
+                                               </div>
+                                          </div>
+
+                                            <div class="col-md-2 mr-5 ">
+                                              <div class="form-group">
+                                                  <label for="pick-up-time">Pickup Time</label>
+                                                  <br>
+                                                  <select id="pick-up-time" input class="form-control" name="pick-up-time" >
+                                                
+                                                    <option value="">Pickup Time</option>
+                                                    <option value="08:00 AM">08:00 AM</option>
+                                                    <option value="08:30 AM">08:30 AM</option>
+                                                    <option value="09:00 AM">09:00 AM</option>
+                                                    <option value="09:30 AM">09:30 AM</option>
+                                                    <option value="10:00 AM">10:00 AM</option>
+                                                    <option value="10:30 AM">10:30 AM</option>
+                                                    <option value="11:00 AM">11:00 AM</option>
+                                                    <option value="11:30 AM">11:30 AM</option>
+                                                    <option value="12:00 PM">12:00 PM</option>
+                                                    <option value="12:30 PM">12:30 PM</option>
+                                                    <option value="01:00 PM">01:00 PM</option>
+                                                    <option value="01:30 PM">01:30 PM</option>
+                                                    <option value="02:00 PM">02:00 PM</option>
+                                                    <option value="02:30 PM">02:30 PM</option>
+                                                    <option value="03:00 PM">03:00 PM</option>
+                                                    <option value="03:30 PM">03:30 PM</option>
+                                                    <option value="04:00 PM">04:00 PM</option>
+                                                    <option value="04:30 PM">04:30 PM</option>
+                                                    <option value="05:00 PM">05:00 PM</option>
+                                                    <option value="05:30 PM">05:30 PM</option>
+                                                    <option value="06:00 PM">06:00 PM</option>
+                                                    <option value="06:30 PM">06:30 PM</option>
+                                                    <option value="07:00 PM">07:00 PM</option>
+                                                    <option value="07:30 PM">07:30 PM</option>
+                                                    <option value="08:00 PM">08:00 PM</option>
+                                                    <option value="08:30 PM">08:30 PM</option>
+                                                    <option value="09:00 PM">09:00 PM</option>
+                                                  </select>
+
+                                                  
+                                              </div>
+                                          </div>
+
+
+                                            {{-- <div class="datetime pickup">
+                                              <div class="date pull-left">
+                                              <div class="input-group">
+                                                <span class="input-group-addon pixelfix"><span class="glyphicon glyphicon-calendar"></span> Date</span>
+                                                <input type="text" readonly="true" name="pick-up-date" id="pick-up-date" class="form-control datepicker" placeholder="Pickup Date">
+                                              </div>
+                                              </div>
+                                              <div class="time pull-right">
+                                              <div class="styled-select-time">
+                                                <select name="pick-up-time" id="pick-up-time">
+                                                  <option value="">Pickup Time</option>
+                                                <option value="08:00 AM">08:00 AM</option>
+                                                <option value="08:30 AM">08:30 AM</option>
+                                                <option value="09:00 AM">09:00 AM</option>
+                                                <option value="09:30 AM">09:30 AM</option>
+                                                <option value="10:00 AM">10:00 AM</option>
+                                                <option value="10:30 AM">10:30 AM</option>
+                                                <option value="11:00 AM">11:00 AM</option>
+                                                <option value="11:30 AM">11:30 AM</option>
+                                                <option value="12:00 PM">12:00 PM</option>
+                                                <option value="12:30 PM">12:30 PM</option>
+                                                <option value="01:00 PM">01:00 PM</option>
+                                                <option value="01:30 PM">01:30 PM</option>
+                                                <option value="02:00 PM">02:00 PM</option>
+                                                <option value="02:30 PM">02:30 PM</option>
+                                                <option value="03:00 PM">03:00 PM</option>
+                                                <option value="03:30 PM">03:30 PM</option>
+                                                <option value="04:00 PM">04:00 PM</option>
+                                                <option value="04:30 PM">04:30 PM</option>
+                                                <option value="05:00 PM">05:00 PM</option>
+                                                <option value="05:30 PM">05:30 PM</option>
+                                                <option value="06:00 PM">06:00 PM</option>
+                                                <option value="06:30 PM">06:30 PM</option>
+                                                <option value="07:00 PM">07:00 PM</option>
+                                                <option value="07:30 PM">07:30 PM</option>
+                                                <option value="08:00 PM">08:00 PM</option>
+                                                <option value="08:30 PM">08:30 PM</option>
+                                                <option value="09:00 PM">09:00 PM</option>
+                                                </select>
+                                              </div>
+                                              </div>
+                                            
+                                            </div> --}}
     
                                             {{-- <div class="col-md-2 mr-5">
                                                 <div class="form-group">
@@ -244,10 +338,29 @@
                        
                       
                     </div>
+
+
+
+                    
+
+                    {{-- <p>Book a trusted courier Call Now: +91-971-893-4101
+                      >> Upon completing this booking enquiry, you will receive a call from the delivery boy assigned for your order.
+                      
+                      >> Low-priced & fast delivery, Urgent delivery at no extra cost</p> --}}
                 </div>
+
+                <div class="checkout-info-box ">
+                  <h4><i class="fa fa-info-circle"></i> &nbsp;Book a trusted courier Call Now: +91-971-893-4101</h4>
+                  <p>&gt;&gt; Upon completing this booking enquiry, you will receive a Mail from us assigned for your order.</p>
+                  <p>&gt;&gt; Low-priced &amp; fast delivery, Urgent delivery at no extra cost</p>
+                </div>
+                
             </div>
+
+            
         </div>
-   
+
+       
     
 
 
