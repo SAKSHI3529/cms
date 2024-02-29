@@ -2,11 +2,9 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+       
         <img src="{{url('assets/images/my-img/Frame14.png')}}" alt="logo"> 
-        {{-- <img src="{{url('assets/images/my-img/Frame20.png')}}" alt="" height="50" width="150"> --}}
-        {{-- <h1>Madhur</h1>
-        <span>.</span> --}}
+        
       </a>
 
       <!-- Nav Menu -->

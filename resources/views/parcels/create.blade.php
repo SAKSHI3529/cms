@@ -58,7 +58,7 @@
 
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input class="form-control" type="email" id="email" name="email">
+                                    <input class="form-control" type="email" id="email" name="email" required>
                                     @if($errors->has('email'))
                                     <div class="error">{{ $errors->first('email') }}</div>
                                 @endif
@@ -89,7 +89,9 @@
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
                                     <input class="form-control" type="number" id="receivercontact" name="receivercontact"  required>
-                                    
+                                    @if($errors->has('receivercontact'))
+                                    <div class="error">{{ $errors->first('receivercontact') }}</div>
+                                @endif
                                 </div>
 
                                 <div class="form-group">
@@ -114,12 +116,42 @@
                                 <div class="card-body">
 
                                     <h4>Parcel Information</h4>
-                                    <div class="row">
+                                    <div class="row"> <div class="col-md-3 ">
+                                        <div class="form-group">
+                                            <label for="Productdetails">Product details (Type)</label>
+                                            <select id="dropdown" input class="form-control" name="Productdetails">
+                                                  
+                                                <option value="Documents">Documents</option>
+                                                <option value="Electronic">Electronic</option>
+                                                <option value="KitchenProducts">KitchenProducts</option>
+                                                <option value="GiftProducts">Gift Products</option>
+                                                <option value="Books">Books</option>
+                                                <option value="Clothes">Clothes</option>
+                                                <option value="Glass products">Glass products</option>
+                                                <option value="food">food</option>
+                                                <option value="Jewelry">Jewelry</option>
+                                                <option value="Medicines">Medicines</option>
+                                                <option value="Household">Household</option>
+                                                <option value="other">other</option>
+                                                 {{--  type="Productdetails" value="" id="Productdetails" name="Productdetails"> --}}
+                                            </select>
+                                             
+                                        </div>
+                                    </div>
 
-                                        <div class="col-md-2 mr-5 ">
+
+                                        <div class="col-md-3 mr-5 ">
                                             <div class="form-group">
                                                 <label for="weight">Weight</label>
-                                                <input class="form-control" type="number" value="" id="weight" name="weight" required>
+                                                <select id="dropdown" input class="form-control"name="weight">
+                                                  
+                                                    <option value="0-1kg">0-1 kg</option>
+                                                    <option value="1-2kg">1-2 kg</option>
+                                                    <option value="2-5kg">2-5 kg</option>
+                                                    <option value="5-10kg">5-10 kg</option>
+                                                    <option value="10-15kg">10-15kg</option>
+                                                    <option value="15-20kg">15-20 kg</option>
+                                                  </select>
                                             </div>
                                         </div>
 
@@ -144,19 +176,13 @@
                                             </div>
                                         </div> --}}
 
-                                        <div class="col-md-2 ">
+                                        <div class="col-md-3 ">
                                             <div class="form-group">
                                                 <label for="price">Price</label>
                                                 <input class="form-control" type="number" value="" id="price" name="price" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 ">
-                                            <div class="form-group">
-                                                <label for="Productdetails">Product details (Type)</label>
-                                                <input class="form-control" type="Productdetails" value="" id="Productdetails" name="Productdetails" required>
-                                            </div>
-                                        </div>
-
+                                       
 
                                     </div>
                                 </div>

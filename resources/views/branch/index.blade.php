@@ -17,6 +17,7 @@
                     <table id="datatable" class="table table-bordered nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Name</th>
                                 <th>State</th>
                                 <th>City</th>
@@ -29,6 +30,7 @@
                         <tbody>
                             @foreach ($branchs as $branch)
                             <tr>
+                                <td>{{$branch->id}}</td>
                                 <td>{{$branch->name}}</td>
                                 <td>{{$branch->state}}</td>
                                 <td>{{$branch->city}}</td>

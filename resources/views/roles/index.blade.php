@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h3>Branches Information</h3>
+                    <h3>Role Allignment</h3>
                     <br>
                     <br>
                     

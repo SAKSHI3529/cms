@@ -66,6 +66,7 @@
                                     <div class="col-md-8">
   <label for="employee">Employee</label>
   <input type="checkbox" id="employee" name="role" value="employee">
+  
 
   <label for="deliveryboy">Delivery Boy</label>
   <input type="checkbox" id="deliveryboy" name="role" value="delivery boy">
@@ -90,7 +91,7 @@
                 </div>
                 <div class="mt-5 text-center">
                     <p>Don't have an account ? <a href="{{url('/register')}}" class="text-primary"  > Signup Now </a></p>
-                    <p>© 2013 - {{date('Y')}}  <i class="mdi mdi-heart text-danger"></i> </p>
+                    <p>© 2023- {{date('Y')}}s Designed   <i class="mdi mdi-heart text-danger"></i> </p>
                 </div>
             </div>
         </div>
