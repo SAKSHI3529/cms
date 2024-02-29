@@ -147,6 +147,7 @@
                                                     <option value="5-10kg">5-10 kg</option>
                                                     <option value="10-15kg">10-15kg</option>
                                                     <option value="15-20kg">15-20 kg</option>
+                                                    <option value="20-25kg">20-25 kg</option>
                                                   </select>
                                             </div>
                                         </div>
