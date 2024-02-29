@@ -140,20 +140,36 @@
                                     </div>
 
 
-                                        <div class="col-md-3 mr-5 ">
-                                            <div class="form-group">
-                                                <label for="weight">Weight</label>
-                                                <select id="dropdown" input class="form-control"name="weight">
-                                                  
-                                                    <option value="0-1kg">0-1 kg</option>
-                                                    <option value="1-2kg">1-2 kg</option>
-                                                    <option value="2-5kg">2-5 kg</option>
-                                                    <option value="5-10kg">5-10 kg</option>
-                                                    <option value="10-15kg">10-15kg</option>
-                                                    <option value="15-20kg">15-20 kg</option>
-                                                  </select>
-                                            </div>
+                                    <div class="col-md-2 mr-5 ">
+                                        <div class="form-group">
+                                            <label for="weight">Weight</label>
+                                            <br>
+                                            <select id="pricelist" input class="form-control" name="weight"
+                                                onchange="getprice()">
+
+                                                <option value="0-1kg">0-1 kg</option>
+                                                <option value="1-2kg">1-2 kg</option>
+                                                <option value="2-5kg">2-5 kg</option>
+                                                <option value="5-10kg">5-10 kg</option>
+                                                <option value="10-15kg">10-15kg</option>
+                                                <option value="15-20kg">15-20 kg</option>
+                                                <option value="20-25kg">20-25 kg</option>
+                                                <option value="25-50kg">25-50kg</option>
+                                            </select>
+
+                                            {{-- type="number" value="" id="weight" > --}}
                                         </div>
+                                    </div>
+                                    <div class="col-md-2 mr-5 ">
+                                        <div class="form-group">
+                                            <label for="Shippingtype">Shippingtype</label>
+
+                                            <select id="Shippingtype" input class="form-control" name="Shippingtype" onchange="getprice()">
+                                                <option value="ExpressCharges">ExpressCharges</option>
+                                                <option value="EconomicCharges">EconomicCharges</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
                                         {{-- <div class="col-md-2 mr-5">
                                             <div class="form-group">
@@ -197,6 +213,88 @@
                     </form>
                 </div>
             </div>
+            <script>
+                function getprice() {
+               
+               
+        
+           
+        
+                 var valux = $('#pricelist').val();
+                    var parceltype = $('#Shippingtype').val();
+                    console.log(valux);
+                    console.log(parceltype);
+                    let price = 0;
+                    switch (valux) {
+                      
+                        case "0-1kg":
+                          if(parceltype=="EconomicCharges"){
+                            price=24;
+                          }
+                          else
+        
+                            price = 49
+                            break;
+        
+                        case "1-2kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=45;
+                          }
+                          else
+                            price = 96
+                            break;
+        
+                        case "2-5kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=93;
+                          }
+                          else
+                            price = 142
+                            break;
+        
+                        case "5-10kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=145;
+                          }
+                          else
+                            price = 193
+                            break;
+        
+                        case "10-15kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=296;
+                          }
+                          else
+                            price = 345
+                            break;
+        
+                        case "15-20kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=595;
+                          }
+                          else
+                            price = 746
+                            break;
+        
+                        case "20-25kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=741;
+                          }
+                          else
+                            price = 1093
+                            break;
+        
+                        case "25-50kg":
+                        if(parceltype=="EconomicCharges"){
+                            price=1200;
+                          }
+                          else
+                            price = 1500
+                            break;
+                    }
+                    $('#price').val(price)
+                };
+            </script>
         </div>
     </div>
 @endsection
