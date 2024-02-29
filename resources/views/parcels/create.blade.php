@@ -9,6 +9,8 @@
 
                 <div class="card-body">
 
+                    <h3>Parcels Form</h3>
+
 
 
                     <form action="{{ url('/parcels') }}" method="POST">
@@ -56,7 +58,7 @@
 
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input class="form-control" type="email" id="email" name="email">
+                                    <input class="form-control" type="email" id="email" name="email" required>
                                     @if($errors->has('email'))
                                     <div class="error">{{ $errors->first('email') }}</div>
                                 @endif
@@ -87,7 +89,9 @@
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
                                     <input class="form-control" type="number" id="receivercontact" name="receivercontact"  required>
-                                    
+                                    @if($errors->has('receivercontact'))
+                                    <div class="error">{{ $errors->first('receivercontact') }}</div>
+                                @endif
                                 </div>
 
                                 <div class="form-group">

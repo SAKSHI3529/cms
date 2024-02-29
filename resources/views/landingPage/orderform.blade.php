@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Madhur</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+
+
+  <title>Madhur</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -41,6 +43,19 @@
 
             <!-- Nav Menu -->
             {{-- <nav id="navmenu" class="navmenu">
+      {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+     
+        <h1>Madhur</h1>
+        <span>.</span>
+      </a> --}}
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+       
+        <img src="{{url('assets/images/my-img/Frame14.png')}}" alt="logo"> 
+        
+      </a>
+      <!-- Nav Menu -->
+      {{-- <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero">Home</a></li>
           <li><a href="index.html#about">About</a></li>
@@ -82,38 +97,36 @@
                                     <div class="form-group">
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
-                                        <input class="form-control" type="name" value="" id="senderName"
-                                            name="senderName">
-                                        @if ($errors->has('senderName'))
-                                            <div class="error">{{ $errors->first('senderName') }}</div>
-                                        @endif
-
+                                        <input class="form-control" type="name" value="{{old('senderName')}}" id="senderName" name="senderName" required>
+                                        @if($errors->has('senderName'))
+                                        <div class="error">{{ $errors->first('senderName') }}</div>
+                                    @endif
+                                       
                                     </div>
 
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-                                        <input class="form-control" type="Address" value="" id="senderAddress"
-                                            name="senderAddress">
+                                        <input class="form-control" type="Address" value="{{old('senderAddress')}}" id="senderAddress" name="senderAddress" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="sendercontact">Sender Contact</label>
+                                        <input class="form-control" type="number" id="sendercontact" name="sendercontact" value="{{old('sendercontact')}}">
+                                        @if($errors->has('sendercontact'))
+                                        <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
+                                    @endif
                                     </div>
                                     <div class="form-group">
-                                        <label for="contact">Contact</label>
-                                        <input class="form-control" type="contact" id="sendercontact"
-                                            name="sendercontact">
-                                        @if ($errors->has('sendercontact'))
-                                            <div class="error">{{ $errors->first('sendercontact') }}</div>
-                                        @endif
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input class="form-control" type="email" id="email" name="email">
-                                        @if ($errors->has('email'))
-                                            <div class="error">{{ $errors->first('email') }}</div>
-                                        @endif
-                                    </div>
-                                    `
-
-
-
+                                      <label for="email">Email</label>
+                                      <input class="form-control" type="email" id="email" name="email" required>
+                                      @if($errors->has('email'))
+                                      <div class="error">{{ $errors->first('email') }}</div>
+                                  @endif
+                                  </div>
+                                    
+    
+    
+    
                                     {{-- <div class="form-group">
                                 <label for="password">Password</label>
                                 <input class="form-control" type="password" value="" id="password">
@@ -129,22 +142,19 @@
                                     <div class="form-group">
                                         <h4> Receiver Information</h4>
                                         <label for="Name">Name</label>
-                                        <input class="form-control" type="Name" value="" id="receiverName"
-                                            name="receiverName">
-
+                                        <input class="form-control" type="Name" value="{{old('receiverName')}}" id="receiverName" name="receiverName" required>
+                                       
                                     </div>
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-                                        <input class="form-control" type="Address" value="" id="receiverAddress"
-                                            name="receiverAddress">
+                                        <input class="form-control" type="Address" value="{{old('receiverAddress')}}" id="receiverAddress" name="receiverAddress" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="contact">Contact</label>
-                                        <input class="form-control" type="number" id="receivercontact"
-                                            name="receivercontact" required>
-                                        @if ($errors->has('receivercontact'))
-                                            <div class="error">{{ $errors->first('receivercontact') }}</div>
+                                        <label for="receivercontact">Receiver Contact</label>
+                                        <input class="form-control" type="number" id="receivercontact" name="receivercontact" required value="{{old('receivercontact')}}">
+                                        @if($errors->has('receivercontact'))
+                                          <div class="error text-danger">{{ $errors->first('receivercontact') }}</div>
                                         @endif
                                     </div>
 
@@ -236,8 +246,7 @@
                                             <div class="col-md-2 ">
                                                 <div class="form-group">
                                                     <label for="price">Price</label>
-                                                    <input class="form-control" type="number" value=""
-                                                        id="price" name="price">
+                                                    <input class="form-control" type="number" value="" id="price" name="price" required>
                                                 </div>
                                             </div>
 
@@ -328,6 +337,19 @@
                 </div>
 
             </div>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Madhur.</span>
+          </a>
+          <p>Courier Management System</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
 
         <div class="container copyright text-center mt-4">
@@ -357,10 +379,24 @@
     </div>
 
     @include('partials.footerscript2')
+    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+      <h3>Address</h3>
+              <p>Bhausinghji Road,</p>
+              <p>Kolhapur 416002</p>
+      <p class="mt-4"><strong>Phone:</strong> <span>+91 7596481236</span></p>
+      <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
+    </div>
+    
+  </div>
+</div>
     <script>
         function getprice() {
+       
+       
 
-            var valux = $('#pricelist').val();
+   
+
+         var valux = $('#pricelist').val();
             var parceltype = $('#Shippingtype').val();
             console.log(valux);
             console.log(parceltype);

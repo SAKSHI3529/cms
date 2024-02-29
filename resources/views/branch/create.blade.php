@@ -6,6 +6,8 @@
             <div class="card-body">
                 <div class="card-body">
 
+                    <h3>Branch Form</h3>
+
                     <form action="{{ url('/branch') }}" method="POST">
                         @csrf
                         <div class="row">

@@ -26,6 +26,16 @@
                             <input class="form-control" type="email" value="" id="email" placeholder="abc@example.com" name="email" required>
                         </div>
 
+                            
+                        <div class="form-group">
+                            <label for="experiance" >Experiance</label>
+                            <input class="form-control" type="text" value="" id="experiance" placeholder="" name="experiance" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary" >Salary</label>
+                            <input class="form-control" type="number" value="" id="salary" placeholder="" name="salary" required>
+                        </div>
                         
                        
                         <!-- Add more form groups here as needed -->
@@ -40,7 +50,10 @@
 
                         <div class="form-group">
                             <label for="contact">Contact</label>
-                            <input class="form-control" type="contact"  id="contact" name="contact" required>
+                            <input class="form-control" type="number"  id="contact" name="contact" required>
+                            @if($errors->has('contact'))
+                            <div class="error">{{ $errors->first('contact') }}</div>
+                        @endif
                         </div>
 
                         {{-- <div class="form-group">
@@ -48,7 +61,12 @@
                             <input class="form-control" type="text" value="" id="role">
                         </div> --}}
 
+                        <div class="form-group">
+                            <label for="education" >Education</label>
+                            <input class="form-control" type="text" value="" id="education" placeholder="" name="education" required>
+                        </div>
 
+                       
 
                         
                             <div class="form-group">

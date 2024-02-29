@@ -15,8 +15,14 @@
                                     <h4 class="float-right font-size-16"><strong>Reference Number :</strong> {{$par->referanceNumber}} </h4>
                                     
                                     <h3 class="mt-0">
-                                        <img src="assets/images/logo-dark.png" alt="image" height="24" />
+                                        <img src="{{url('assets/images/my-img/Frame14.png')}}" alt="image" height="50px" />
                                     </h3>
+
+                                    {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+       
+                                        <img src="{{url('assets/images/my-img/Frame14.png')}}" alt="logo"> 
+                                        
+                                      </a> --}}
                                 </div>
                                 <hr>
                                 <div class="row">
