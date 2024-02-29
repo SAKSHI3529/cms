@@ -98,6 +98,7 @@
                                         <label for="Address">Address</label>
                                         <input class="form-control" type="Address" value="{{old('senderAddress')}}" id="senderAddress" name="senderAddress" required>
                                     </div>
+                                    
                                     <div class="form-group">
                                         <label for="sendercontact">Sender Contact</label>
                                         <input class="form-control" type="number" id="sendercontact" name="sendercontact" value="{{old('sendercontact')}}">
@@ -112,7 +113,7 @@
                                       <div class="error">{{ $errors->first('email') }}</div>
                                   @endif
                                   </div>
-                                    `
+                                    
     
     
     
