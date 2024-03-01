@@ -42,48 +42,10 @@
             <h2>Madhur Transport</h2>
             <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top player in the category Courier Services For Africa in the Kolhapur. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Kolhapur. Over the course of its joumey, this business has established a firm foothold in it's industry products and services, have helped this establishment garner a vast base.<br> The belief that customer satisfaction is as important tas their of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective rales and put in a lot of effort to In the near future, this business aims occupies a prominent location in readily available.{{-- It is to expand its line of products Bhausinghji Road. and services achieve the common vision and larger goals of the and cater to a It is an effortless taski kin commuting to at CPR Hospital Road, Near Pudhari Office, which makes it easy provide top service in the larger client base.in this establishment os company Kolhapur, this establishment there are various modes of transport for first-time visitors in locoting this establishment, it is known to following categories: Courier Services, Domestic Courier Services, International Courier Services Courier Services For Pune Courier Services For Mumbai, Courier Services Speed Post, Courier Services For Bangalore,Mumbai,And many more.--}}
               .</p>
-            {{-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> --}}
+           
           </div>
   
-          {{-- <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
-  
-              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <i class="bi bi-buildings"></i>
-                  
-                  <h3>Order Processing:</h3>
-                  <p>Collecting and managing customer details for order processing.
-                    Recording and processing incoming orders.
-                    Sending order confirmation notifications to customers.</p>
-                </div>
-              </div> <!-- End Icon Box --> --}}
-  
-              {{-- <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-clipboard-pulse"></i>
-                  <h3>Package Tracking:</h3>
-                  <p>Assigning unique identifiers for tracking.
-                    Providing real-time updates on package status and location.</p>
-                </div>
-              </div> <!-- End Icon Box --> --}}
-  
-              {{-- <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-command"></i>
-                  <h3>Veniam omnis</h3>
-                  <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
-                </div>
-              </div> <!-- End Icon Box -->
-  
-              <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h3>Delares sapiente</h3>
-                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
-                </div>
-              </div> <!-- End Icon Box -->
-   --}}
+          
             </div>
           </div>
   

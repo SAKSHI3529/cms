@@ -81,7 +81,7 @@
 
             <div class="card-body">
 
-                <h4>Parsal Information</h4>
+                <h4>Parcel Information</h4>
                 <div class="row">
 
                     <div class="col-md-2 mr-5 ">

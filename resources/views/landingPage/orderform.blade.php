@@ -176,7 +176,7 @@
 
                                     <div class="card-body">
 
-                                        <h4>Parcal Information</h4>
+                                        <h4>Parcel Information</h4>
                                         <div class="row">
                                             <div class="col-md-3 mb-4 ">
                                                 <div class="form-group">
@@ -196,7 +196,7 @@
                                                         <option value="Medicines">Medicines</option>
                                                         <option value="Household">Household</option>
                                                         <option value="other">other</option>
-                                                        {{--  type="Productdetails" value="" id="Productdetails" name="Productdetails"> --}}
+                                                        
                                                     </select>
 
                                                 </div>
@@ -316,30 +316,14 @@
 
                                            
     
-                                            {{-- <div class="col-md-2 mr-5">
-                                                    {{-- type="number" value="" id="weight" > --}}
-                                                {{-- </div>
-                                            </div> --}}
-                                            
+                                           
 
 
 
 
 
-                                            {{-- <div class="col-md-2 mr-5">
-                                                <div class="form-group">
-                                                    <label for="length">Length</label>
-                                                    <input class="form-control" type="number" value="" id="length" name="length">
-                                                </div>
-                                            </div> 
-                                            
-    
-                                            {{-- <div class="col-md-2 mr-5">
-                                                <div class="form-group">
-                                                    <label for="width">Width</label>
-                                                    <input class="form-control" type="number" value="" id="width" name="width">
-                                                </div>
-                                            </div> --}}
+                                           
+                                           
 
                                           
 
@@ -365,16 +349,13 @@
 
                     
 
-                    {{-- <p>Book a trusted courier Call Now: +91-971-893-4101
-                      >> Upon completing this booking enquiry, you will receive a call from the delivery boy assigned for your order.
-                      
-                      >> Low-priced & fast delivery, Urgent delivery at no extra cost</p> --}}
+                   
                 </div>
 
                 <div class="checkout-info-box text-secondary m-5">
-                  <h4 class="text-secondary"><i class="fa fa-info-circle "></i> &nbsp;Book a trusted courier Call Now: +91-971-893-4101</h4>
+                  <h4 class="text-secondary"><i class="fa fa-info-circle "></i> &nbsp;Book a trusted courier Call Now: +91-8975058970</h4>
                   <p>&gt;&gt; Upon completing this booking enquiry, you will receive a Mail from us assigned for your order.</p>
-                  <p>&gt;&gt; Low-priced &amp; fast delivery, Urgent delivery at no extra cost</p>
+                  <p>&gt;&gt; Low-priced &amp; fast delivery, Urgent delivery at  extra cost</p>
                 </div>
                 
             </div>
@@ -427,55 +408,22 @@
                     </ul>
                 </div>
 
-                {{-- <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                    </ul>
-                </div> --}}
+               
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p>United States</p>
+                    <p>Bhausinghji Road,<br>
+
+                        Kolhapur 416002</p>
+                    
                     <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
                     <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
                 </div>
 
             </div>
-    {{-- <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Madhur.</span>
-          </a>
-          <p>Courier Management System</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+    
 
-        <div class="container copyright text-center mt-4">
-            <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span>
-            </p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-
-    </footer><!-- End Footer --> --}}
+    </footer><!-- End Footer --> 
 
     <!-- Scroll Top Button -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -490,14 +438,7 @@
     </div>
 
     @include('partials.footerscript2')
-    {{-- <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-      <h3>Address</h3>
-              <p>Bhausinghji Road,</p>
-              <p>Kolhapur 416002</p>
-      <p class="mt-4"><strong>Phone:</strong> <span>+91 7596481236</span></p>
-      <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
-    </div>
-     --}}
+    
   </div>
 </div>
     <script>
