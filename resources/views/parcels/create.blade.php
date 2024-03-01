@@ -3,13 +3,13 @@
 @section('content')
     <div class="container-fluid mt-3">
         <div class="card">
-           <center> <h1>Parcel Details</h1></center>
+          
 
             <div class="card-body">
 
                 <div class="card-body">
 
-                    <h3>Parcels Form</h3>
+                    <h1 class="pb-3">Parcels Form</h1>
 
 
 
@@ -111,16 +111,17 @@
                             </div>
 
 
-                            <div class="card mt-5">
+                            <div class="card mt-5 col-md-12">
 
                                 <div class="card-body">
 
-                                    <h4>Parcel Information</h4>
-                                    <div class="row"> <div class="col-md-3 ">
+                                    <h3>Parcel Details</h3>
+                                    <div class="row"> 
+                                        <div class="col-md-4 ">
                                         <div class="form-group">
                                             <label for="Productdetails">Product details (Type)</label>
                                             <select id="dropdown" input class="form-control" name="Productdetails">
-                                                  
+                                                <option value="">Select</option>
                                                 <option value="Documents">Documents</option>
                                                 <option value="Electronic">Electronic</option>
                                                 <option value="KitchenProducts">KitchenProducts</option>
@@ -140,13 +141,13 @@
                                     </div>
 
 
-                                    <div class="col-md-2 mr-5 ">
+                                    <div class="col-md-4 mr-5 ">
                                         <div class="form-group">
                                             <label for="weight">Weight</label>
                                             <br>
                                             <select id="pricelist" input class="form-control" name="weight"
                                                 onchange="getprice()">
-
+                                                <option value="">Select</option>
                                                 <option value="0-1kg">0-1 kg</option>
                                                 <option value="1-2kg">1-2 kg</option>
                                                 <option value="2-5kg">2-5 kg</option>
@@ -160,11 +161,12 @@
                                            
                                         </div>
                                     </div>
-                                    <div class="col-md-2 mr-5 ">
+                                    <div class="col-md-4 mr-5 ">
                                         <div class="form-group">
                                             <label for="Shippingtype">Shippingtype</label>
 
                                             <select id="Shippingtype" input class="form-control" name="Shippingtype" onchange="getprice()">
+                                                
                                                 <option value="ExpressCharges">ExpressCharges</option>
                                                 <option value="EconomicCharges">EconomicCharges</option>
                                             </select>
@@ -192,16 +194,35 @@
                                             </div>
                                         </div> --}}
 
-                                        <div class="col-md-3 ">
+                                        <div class="col-md-4 ">
                                             <div class="form-group">
+                                                
+
+                                            
                                                 <label for="price">Price</label>
-                                                <input class="form-control" type="number" value="" id="price" name="price" required>
-                                            </div>
+                                                <div class="input-group mb-2">
+                                                  <div class="input-group-prepend">
+                                                    <div class="input-group-text">₹</div>
+                                                  </div>
+                                                  <input class="form-control" type="number" value="" id="price" name="price" disabled   required>
+                                                </div>
+                                              </div>
+                                        
                                         </div>
+
+                                       
                                        
 
+                                        {{-- <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                              <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"></path>
+                            </svg>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
+                                          </div> --}}
                                     </div>
-                                </div>
+                                {{-- </div> --}}
                                 <div>
                                     <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
                                         Submit
