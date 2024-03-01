@@ -3,8 +3,7 @@
 @section('content')
     <div class="container-fluid mt-3">
         <div class="card">
-           <center> <h1>Parcel Details</h1></center>
-
+          
             <div class="card-body">
 
                 <div class="card-body">

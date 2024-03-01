@@ -164,6 +164,7 @@
                                                 <label for="Productdetails">Product details(type)</label>
                                                 <select id="dropdown" input class="form-control" name="Productdetails">
                                                   
+                                                  <option value="select">Select</option>
                                                   <option value="Documents">Documents</option>
                                                   <option value="Electronic">Electronic</option>
                                                   <option value="KitchenProducts">KitchenProducts</option>
@@ -187,7 +188,8 @@
                                                     <label for="weight">Weight</label>
                                                     <br>
                                                     <select id="dropdown" input class="form-control"name="weight">
-                                                  
+                                                      
+                                                      <option value="select">Select</option>
                                                       <option value="0-1kg">0-1 kg</option>
                                                       <option value="1-2kg">1-2 kg</option>
                                                       <option value="2-5kg">2-5 kg</option>

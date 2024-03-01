@@ -16,12 +16,13 @@ class Dashboard extends Controller
     {
         $parcels= parcels::limit(5)->latest()->get();
         $parcelscounts= parcels::all()->count();
+        $todaysparcelscounts= parcels::whereDate("created_at",date("Y-m-d"))->get()->count();
         $branchscounts = Branch::all()->count();
         $userscounts = User::all()->count();
         $p = DB::table('parcels')
         // ->where('parcels.price', '=', 1)
         ->sum('parcels.price');
-        return view('dashboard.index',compact('parcels','branchscounts','parcelscounts','userscounts','p'));
+        return view('dashboard.index',compact('parcels','branchscounts','parcelscounts','userscounts','p','todaysparcelscounts'));
     }
     
 }
