@@ -369,8 +369,8 @@
 
             Kolhapur 416002</p>
           
-          <p class="mt-4"><strong>Phone:</strong> <span>+91  8659412358</span></p>
-          <p><strong>Email:</strong> <span>madhur@example.com</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 89-7505-8970</span></p>
+          <p><strong>Email:</strong> <span>madhurtransports@gmail.com</span></p>
         </div>
 
       </div>
