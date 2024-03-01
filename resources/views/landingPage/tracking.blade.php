@@ -70,27 +70,25 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-     
-        <h1>Madhur</h1>
-        <span>.</span>
+       
+        <img src="{{url('assets/images/my-img/Frame14.png')}}" alt="logo"> 
+        
       </a>
 
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">contact</a></li>
-          <li><a href="blog.html" class="active">Tracking Details</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
+          
+          <li><a href="{{url('/#contact')}}">Contact</a></li>
+         
           
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
       
-0
+
   </header><!-- End Header -->
 
   <main id="main">
@@ -209,7 +207,7 @@
 
       </div>
 
-      <div class="col-lg-12">
+      {{-- <div class="col-lg-12">
   
         <div class="card">
           <div class="card-body">
@@ -219,14 +217,14 @@
             
             <div class="row">
              
-            {{-- <h6>{{$details->created_at}}</h6> --}}
+             <h6>{{$details->created_at}}</h6> 
               
 
           </div>
           </div>
         </div>
 
-      </div>
+      </div> --}}
 
       <h4>Tracking History</h4>
      
