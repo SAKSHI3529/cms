@@ -35,11 +35,11 @@
     <header id="header" class="header sticky-top d-flex align-items-center">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
 
                 <h1>Madhur</h1>
                 <span>.</span>
-            </a>
+            </a> --}}
 
             <!-- Nav Menu -->
             {{-- <nav id="navmenu" class="navmenu">
@@ -55,18 +55,18 @@
         
       </a>
       <!-- Nav Menu -->
-      {{-- <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
+          {{-- <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">contact</a></li>
-          <li><a href="blog.html" class="active">Tracking Details</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li> --}}
+          <li><a href="{{url('/#contact')}}">Contact</a></li>
+          {{-- <li><a href="blog.html" class="active">Tracking Details</a></li> --}}
           
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav><!-- End Nav Menu --> --}}
+      </nav><!-- End Nav Menu -->
 
 
 
@@ -75,15 +75,24 @@
 
     <main id="main">
 
+        <div class="container">
+        <div class="header  p-3" style="background-color: #f8903b9e" >
+                           
+            <h3 class="modal-title fw-bold" id="myModalLabel">Online Courier Service - Booking Form</h3>
+            <p><i class="fa fa-info-circle"></i>Fill Required Information to Schedule Pickup - No Registration Needed.</p>
+         </div>
+        </div>
 
         <div class="container mt-3 ">
             @include('flash::message')
+
+            
             <div class="card col-md-12 mb-5 ">
 
                 <div class="card-body">
 
                     <div class="card-body">
-
+                        
 
 
 
@@ -169,12 +178,12 @@
 
                                         <h4>Parcal Information</h4>
                                         <div class="row">
-                                            <div class="col-md-2 ">
+                                            <div class="col-md-3 mb-4 ">
                                                 <div class="form-group">
                                                     <label for="Productdetails">Product details(type)</label>
                                                     <select id="dropdown" input class="form-control"
                                                         name="Productdetails">
-
+                                                        <option value="Documents">Select</option>
                                                         <option value="Documents">Documents</option>
                                                         <option value="Electronic">Electronic</option>
                                                         <option value="KitchenProducts">KitchenProducts</option>
@@ -193,13 +202,13 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-2 mr-5 ">
+                                            <div class="col-md-3 mr-5 ">
                                                 <div class="form-group">
                                                     <label for="weight">Weight</label>
                                                     <br>
                                                     <select id="pricelist" input class="form-control" name="weight"
                                                         onchange="getprice()">
-
+                                                        <option value="">Select</option>
                                                         <option value="0-1kg">0-1 kg</option>
                                                         <option value="1-2kg">1-2 kg</option>
                                                         <option value="2-5kg">2-5 kg</option>
@@ -210,19 +219,87 @@
                                                         <option value="25-50kg">25-50kg</option>
                                                     </select>
 
-                                                    {{-- type="number" value="" id="weight" > --}}
+                                                    
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 mr-5 ">
+
+                                            <div class="col-md-3 mr-5 ">
                                                 <div class="form-group">
                                                     <label for="Shippingtype">Shippingtype</label>
 
-                                                    <select id="Shippingtype" input class="form-control" name="Shippingtype" onchange="getprice()">
+                                                    <select id="Shippingtype" input class="form-control" name="Shippingtype" onchange="getprice()" required>
+                                                        <option value="">Select </option>
                                                         <option value="ExpressCharges">ExpressCharges</option>
                                                         <option value="EconomicCharges">EconomicCharges</option>
                                                     </select>
                                                 </div>
                                             </div>
+
+
+                                            <div class="col-md-3 ">
+                                                <div class="form-group">
+                                                    <label for="price">Price</label>
+                                                    <input class="form-control" type="number" value="" id="price" name="price" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 mr-5 ">
+                                              <div class="form-group">
+                                                  <label for="pick-up-date">Pickup Date</label>
+                                                  <input type="date" class="form-control" name="pick-up-date" required>
+                                                  <br>
+                                                
+                                               </div>
+                                          </div>
+
+                                            <div class="col-md-3 mr-5 ">
+                                              <div class="form-group">
+                                                  <label for="pick-up-time">Pickup Time</label>
+                                                  <br>
+                                                  <select id="pick-up-time" input class="form-control" name="pick-up-time" required >
+                                                
+                                                    <option value="">Select Time</option>
+                                                    <option value="08:00 AM">08:00 AM</option>
+                                                    <option value="08:30 AM">08:30 AM</option>
+                                                    <option value="09:00 AM">09:00 AM</option>
+                                                    <option value="09:30 AM">09:30 AM</option>
+                                                    <option value="10:00 AM">10:00 AM</option>
+                                                    <option value="10:30 AM">10:30 AM</option>
+                                                    <option value="11:00 AM">11:00 AM</option>
+                                                    <option value="11:30 AM">11:30 AM</option>
+                                                    <option value="12:00 PM">12:00 PM</option>
+                                                    <option value="12:30 PM">12:30 PM</option>
+                                                    <option value="01:00 PM">01:00 PM</option>
+                                                    <option value="01:30 PM">01:30 PM</option>
+                                                    <option value="02:00 PM">02:00 PM</option>
+                                                    <option value="02:30 PM">02:30 PM</option>
+                                                    <option value="03:00 PM">03:00 PM</option>
+                                                    <option value="03:30 PM">03:30 PM</option>
+                                                    <option value="04:00 PM">04:00 PM</option>
+                                                    <option value="04:30 PM">04:30 PM</option>
+                                                    <option value="05:00 PM">05:00 PM</option>
+                                                    <option value="05:30 PM">05:30 PM</option>
+                                                    <option value="06:00 PM">06:00 PM</option>
+                                                    <option value="06:30 PM">06:30 PM</option>
+                                                    <option value="07:00 PM">07:00 PM</option>
+                                                    <option value="07:30 PM">07:30 PM</option>
+                                                    <option value="08:00 PM">08:00 PM</option>
+                                                    <option value="08:30 PM">08:30 PM</option>
+                                                    <option value="09:00 PM">09:00 PM</option>
+                                                  </select>
+
+                                                  
+                                              </div>
+                                          </div>
+
+
+                                           
+    
+                                            {{-- <div class="col-md-2 mr-5">
+                                                    {{-- type="number" value="" id="weight" > --}}
+                                                {{-- </div>
+                                            </div> --}}
+                                            
 
 
 
@@ -243,12 +320,7 @@
                                                 </div>
                                             </div> --}}
 
-                                            <div class="col-md-2 ">
-                                                <div class="form-group">
-                                                    <label for="price">Price</label>
-                                                    <input class="form-control" type="number" value="" id="price" name="price" required>
-                                                </div>
-                                            </div>
+                                          
 
 
 
@@ -267,8 +339,26 @@
 
 
                     </div>
+
+
+
+                    
+
+                    {{-- <p>Book a trusted courier Call Now: +91-971-893-4101
+                      >> Upon completing this booking enquiry, you will receive a call from the delivery boy assigned for your order.
+                      
+                      >> Low-priced & fast delivery, Urgent delivery at no extra cost</p> --}}
                 </div>
+
+                <div class="checkout-info-box text-secondary m-5">
+                  <h4 class="text-secondary"><i class="fa fa-info-circle "></i> &nbsp;Book a trusted courier Call Now: +91-971-893-4101</h4>
+                  <p>&gt;&gt; Upon completing this booking enquiry, you will receive a Mail from us assigned for your order.</p>
+                  <p>&gt;&gt; Low-priced &amp; fast delivery, Urgent delivery at no extra cost</p>
+                </div>
+                
             </div>
+
+            
         </div>
 
 
@@ -316,7 +406,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links">
+                {{-- <div class="col-lg-2 col-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
                         <li><a href="#">Web Design</a></li>
@@ -325,7 +415,7 @@
                         <li><a href="#">Marketing</a></li>
                         <li><a href="#">Graphic Design</a></li>
                     </ul>
-                </div>
+                </div> --}}
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
@@ -337,7 +427,7 @@
                 </div>
 
             </div>
-    <div class="container footer-top">
+    {{-- <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
@@ -364,7 +454,7 @@
             </div>
         </div>
 
-    </footer><!-- End Footer -->
+    </footer><!-- End Footer --> --}}
 
     <!-- Scroll Top Button -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -379,14 +469,14 @@
     </div>
 
     @include('partials.footerscript2')
-    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+    {{-- <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
       <h3>Address</h3>
               <p>Bhausinghji Road,</p>
               <p>Kolhapur 416002</p>
       <p class="mt-4"><strong>Phone:</strong> <span>+91 7596481236</span></p>
       <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
     </div>
-    
+     --}}
   </div>
 </div>
     <script>

@@ -47,8 +47,7 @@ class LandingPageController extends Controller
         try{
             Notification::route('mail', $par->email)->notify(new ParcalUpdate($par));
         }catch(\Exception $e){
-
-        }
+       }
            
         
         if($par)

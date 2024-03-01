@@ -94,13 +94,22 @@
   {{-- About section end --}}
 
 
-  <section class="price container" id="price">
+  <section class="price container " id="price">
+   
     <div class="row">
+      <h3 style="font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 10px 20px;
+      background: rgba(var(--primary-color-rgb), 0.05);
+      color: var(--primary-color);
+      border-radius: 7px;
+      display: inline-block;">Price</h3>
     <div class="col-md-6 content">
     <aside >
       <section id="courier-charges" itemscope="" itemtype="https://schema.org/Table">
       <table class="table table-striped" style="text-align:center; vertical-align: middle;">
-  <h3 itemprop="about" class="widget-title">Courier Charges</h3>
+  <h2 itemprop="about" class="widget-title" style="font-weight: 700;">Courier Charges</h2>
   <thead><tr><th title="Weight">Weight</th><th title="Express Courier">Express Charges</th><th title="Economy Courier">Economy Charges</th></tr></thead>
           <tbody><tr><td title="1Kg"> 0-1 Kg </td><td><a href="" title="Express courier charges  for Pune for 1Kg" class="reserve-button scroll-to"><b>₹ 49</b></a></td><td><a href="" title="Economy courier charges  for Pune for 1Kg" class="reserve-button scroll-to"><b>₹ 24</b></a></td></tr>
           <tr><td title="2Kg"> 1-2 Kg</td><td><a href="" title="Express courier charges  for Pune for 2Kg" class="reserve-button scroll-to"><b>₹ 96</b></a></td><td><a href="" title="Economy courier charges  for Punefor 2Kg" class="reserve-button scroll-to"><b>₹ 45</b></a></td></tr>
@@ -118,7 +127,7 @@
       <aside>
         <section id="courier-charges" itemscope="" itemtype="https://schema.org/Table">
         <table class="table table-striped" style="text-align:center; vertical-align: middle;">
-    <h2 itemprop="about" class="widget-title">Delivery Time </h2>
+    <h2 itemprop="about" class="widget-title" style="font-weight: 700;">Delivery Time </h2>
     <thead><tr><th title="Weight">Weight</th><th title="Express Delivery Time">Express Delivery</th><th title="Economy Delivery Time">Economy Delivery</th></tr></thead>
             <tbody><tr><td title="1-5Kg">1-5 Kg </td><td><a href="" title="Express Delivery Time  for Pune for 1-5Kg" class="reserve-button scroll-to"><b>2-3 Days</b></a></td><td><a href="" title="Economy Delivery Time  for Pune for 1-5Kg" class="reserve-button scroll-to"><b>4-5 Days</b></a></td></tr>
             <tr><td title="5-15Kg">5-15 Kg</td><td><a href="" title="Express Delivery Time  for Pune for 5-15Kg" class="reserve-button scroll-to"><b>5-6 Days</b></a></td><td><a href="" title="Economy Delivery Time  for Punefor 5-15Kg" class="reserve-button scroll-to"><b>7-10 Days</b></a></td></tr>

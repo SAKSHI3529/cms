@@ -152,11 +152,11 @@
                     
                     
                 </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for=" PickupBranch " style="font-size: medium">Status:</label>
                     <label for="PickupBranch">{{$parcel->trackingstatus->first()->trackinginfo}}</label>
                     
-                </div>
+                </div> --}}
 
              
 
