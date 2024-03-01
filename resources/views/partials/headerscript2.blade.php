@@ -2,7 +2,7 @@
 <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Home - Append Bootstrap Temlate</title>
+    <title>Madhur courier Services</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
   

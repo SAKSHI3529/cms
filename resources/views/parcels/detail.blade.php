@@ -81,7 +81,7 @@
 
             <div class="card-body">
 
-                <h4>Parsal Information</h4>
+                <h4>Parcel Information</h4>
                 <div class="row">
 
                     <div class="col-md-2 mr-5 ">
@@ -152,11 +152,11 @@
                     
                     
                 </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for=" PickupBranch " style="font-size: medium">Status:</label>
                     <label for="PickupBranch">{{$parcel->trackingstatus->first()->trackinginfo}}</label>
                     
-                </div>
+                </div> --}}
 
              
 

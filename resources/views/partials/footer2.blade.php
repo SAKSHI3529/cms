@@ -15,7 +15,7 @@
           </div> --}}
         </div>
 
-        {{-- <div class="col-lg-2 col-6 footer-links">
+        <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -24,7 +24,7 @@
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
-        </div> --}}
+        </div>
 
         {{-- <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
@@ -45,11 +45,12 @@
           {{-- <p>A108 Adam Street</p>
           <p>New York, NY 535022</p>
           <p>United States</p> --}}
+          
+            <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
+         <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
+       
         </div>
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-             <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
-          <p><strong>Email:</strong> <span>madhur@gmail.com</span></p>
-        </div>
+         
 
       </div>
     </div>

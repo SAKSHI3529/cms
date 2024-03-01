@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h6>Choose Roles</h6>
+                                {{-- <h6>Choose Roles</h6>
 
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8">
@@ -74,7 +74,7 @@
   <label for="admin">Admin</label>
   <input type="checkbox" id="admin" name="role" value="admin">
                                     </div>
-                                </div>
+                                </div> --}}
         
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8">

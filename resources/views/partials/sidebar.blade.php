@@ -89,7 +89,7 @@
                  @can('role-view')
                 <li>
                     <a href="{{url('/roles')}}" class="waves-effect">
-                        <i class="mdi mdi-chart-line"></i>
+                        <i class="fas fa-user-shield"></i>
                         <span>Roles</span>
                     </a>
                 </li>

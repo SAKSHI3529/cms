@@ -26,12 +26,14 @@ class CreateParcelsTable extends Migration
             $table->string('PickupBranch',100);
             $table->string('weight',10)->nullable();
             $table->string('height',10)->nullable();
-            $table->string('length',10)->nullable();
+            $table->string('Shippingtype',20)->nullable();
             $table->string('width',10)->nullable();
             $table->string('price',10);
             $table->string('Productdetails',200);
             $table->string('userID',10);
             $table->string('status',100)->nullable();
+            $table->string('pick-up-date',100)->nullable();
+            $table->string('pick-up-time',100)->nullable();
 
             $table->timestamps();
         });
