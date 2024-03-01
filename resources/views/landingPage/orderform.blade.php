@@ -206,17 +206,14 @@
                                                 <div class="form-group">
                                                     <label for="weight">Weight</label>
                                                     <br>
-                                                    <select id="pricelist" input class="form-control" name="weight"
-                                                        onchange="getprice()">
-                                                        <option value="">Select</option>
-                                                        <option value="0-1kg">0-1 kg</option>
-                                                        <option value="1-2kg">1-2 kg</option>
-                                                        <option value="2-5kg">2-5 kg</option>
-                                                        <option value="5-10kg">5-10 kg</option>
-                                                        <option value="10-15kg">10-15kg</option>
-                                                        <option value="15-20kg">15-20 kg</option>
-                                                        <option value="20-25kg">20-25 kg</option>
-                                                        <option value="25-50kg">25-50kg</option>
+                                                    <select id="dropdown" input class="form-control"name="weight">
+                                                  
+                                                      <option value="0-1kg">0-1 kg</option>
+                                                      <option value="1-2kg">1-2 kg</option>
+                                                      <option value="2-5kg">2-5 kg</option>
+                                                      <option value="5-10kg">5-10 kg</option>
+                                                      <option value="10-15kg">10-15kg</option>
+                                                      <option value="15-20kg">15-20 kg</option>
                                                     </select>
 
                                                     
@@ -239,9 +236,30 @@
                                             <div class="col-md-3 ">
                                                 <div class="form-group">
                                                     <label for="price">Price</label>
-                                                    <input class="form-control" type="number" value="" id="price" name="price" required>
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">₹</div>
+                                                        </div>
+                                                        <input class="form-control" type="number" value="" id="price" name="price" disabled required>
+                                                      </div>
+                                                    
                                                 </div>
                                             </div>
+
+                                            {{-- <div class="form-group">
+                                                
+
+                                            
+                                                <label for="price">Price</label>
+                                                <div class="input-group mb-2">
+                                                  <div class="input-group-prepend">
+                                                    <div class="input-group-text">₹</div>
+                                                  </div>
+                                                  <input class="form-control" type="number" value="" id="price" name="price" disabled   required>
+                                                </div>
+                                              </div>
+                                        
+                                        </div> --}}
 
                                             <div class="col-md-3 mr-5 ">
                                               <div class="form-group">

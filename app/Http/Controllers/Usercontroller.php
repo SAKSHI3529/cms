@@ -48,12 +48,14 @@ class Usercontroller extends Controller
         $request->validate([
              'contact'=>'required|max:10'
         ]);
-
+        $path = $request->file('resume')->store('resume');
         $request -> merge([
             'password' => Hash::make($request->contact),
-            
+            'resume' =>$path
            
         ]);
+
+        
 
         
         

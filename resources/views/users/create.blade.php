@@ -2,7 +2,7 @@
 @section('title','Users create')
 @section('content')
 <div class="container-fluid mt-3">
-    <form action="{{url('users')}}" method="POST">
+    <form action="{{url('users')}}" method="POST" enctype="multipart/form-data">
         @csrf
     <div class="card">
         <div class="card-body">
@@ -80,7 +80,8 @@
                                     </select>
                                 </div>
                             </div>
-                     
+                            <input type="file" class="btn btn-primary btn-lg  waves-effect waves-light" name="resume">
+                           
 
                         {{-- <div class="col-md-6">
                             <div class="form-group">
@@ -96,8 +97,12 @@
                             </div>
                         </div> --}}
 
+
+
                     </div>
                        
+
+                  
                         <div>
                             <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
                                 Submit

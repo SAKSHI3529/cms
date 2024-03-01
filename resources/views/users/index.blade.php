@@ -21,6 +21,7 @@
                                 <th>Address</th>
                                 <th>Contact</th>
                                 <th>email</th>
+                                <th>resume</th>
                                 <th>Roles</th>
                                 <th>Action</th>
                             </tr>
@@ -33,6 +34,7 @@
                                 <td>{{$user->address}}</td>
                                 <td>{{$user->contact}}</td>
                                 <td>{{$user->email}}</td>
+                                <td><a href="{{url('/storage/'.$user->resume)}}" target="_blank">view resume</a></td>
                                
                                 @if($user->roles->count()>0) 
                                 <td>{{$user->roles->first()->name}}</td>
