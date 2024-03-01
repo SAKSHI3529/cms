@@ -133,7 +133,7 @@
                                                 <option value="Medicines">Medicines</option>
                                                 <option value="Household">Household</option>
                                                 <option value="other">other</option>
-                                                 {{--  type="Productdetails" value="" id="Productdetails" name="Productdetails"> --}}
+                                                
                                             </select>
                                              
                                         </div>
@@ -157,7 +157,7 @@
                                                 <option value="25-50kg">25-50kg</option>
                                             </select>
 
-                                            {{-- type="number" value="" id="weight" > --}}
+                                           
                                         </div>
                                     </div>
                                     <div class="col-md-2 mr-5 ">
