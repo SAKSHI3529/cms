@@ -44,8 +44,9 @@ class ParcalUpdate extends Notification
                     ->greeting('Greetings from Madhur Transport!!!')
                     ->line('Your Courier order is successfully placed!')
                     ->line(' Your Referance number is '.$this->parcel->referanceNumber.'')
-                    ->line('plz share your experience when your product is delivered')
+                    
                     ->action('Track Parcel', url("track/".$this->parcel->referanceNumber))
+                    ->line('plz share your experience when your product is delivered')
                     ->line('Thank you for choosing us!!!');
     }
 
