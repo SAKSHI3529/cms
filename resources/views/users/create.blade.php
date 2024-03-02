@@ -29,7 +29,7 @@
                             
                         <div class="form-group">
                             <label for="experiance" >Experiance</label>
-                            <input class="form-control" type="text" value="" id="experiance" placeholder="" name="experiance" required>
+                            <input class="form-control" type="text" value="" id="experiance" placeholder="" name="experiance" >
                         </div>
 
                         <div class="form-group">
@@ -37,6 +37,10 @@
                             <input class="form-control" type="number" value="" id="salary" placeholder="" name="salary" required>
                         </div>
                         
+                        <div class="form-group">
+                            <label for="education" >Upload Resume</label>
+                            <input type="file" class="btn btn-primary btn-lg  waves-effect waves-light" name="resume" required>
+                        </div>
                        
                         <!-- Add more form groups here as needed -->
                     </div>
@@ -63,7 +67,7 @@
 
                         <div class="form-group">
                             <label for="education" >Education</label>
-                            <input class="form-control" type="text" value="" id="education" placeholder="" name="education" required>
+                            <input class="form-control" type="text" value="" id="education" placeholder="" name="education" >
                         </div>
 
                        
@@ -80,7 +84,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <input type="file" class="btn btn-primary btn-lg  waves-effect waves-light" name="resume">
+
+                           
                            
 
                         {{-- <div class="col-md-6">

@@ -30,12 +30,12 @@
                              
                         <div class="form-group">
                             <label for="experiance" >Experiance</label>
-                            <input class="form-control" type="text" value="" id="experiance" placeholder="" name="experiance" required>
+                            <input class="form-control" type="text" value="{{$user->experiance}}" id="experiance" placeholder="" name="experiance" required>
                         </div>
                        
                         <div class="form-group">
                             <label for="salary" >Salary</label>
-                            <input class="form-control" type="number" value="" id="salary" placeholder="" name="salary" required>
+                            <input class="form-control" type="number" value="{{$user->salary}}" id="salary" placeholder="" name="salary" required>
                         </div>
                         <!-- Add more form groups here as needed -->
                     </div>
@@ -75,7 +75,12 @@
 
                       <div class="form-group">
                         <label for="education" >Education</label>
-                        <input class="form-control" type="text" value="" id="education" placeholder="" name="education" required>
+                        <input class="form-control" type="text" value="{{$user->education}}" id="education" placeholder="" name="education" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume" >Upload Resume</label>
+                        <input type="file" class="btn btn-primary btn-lg  waves-effect waves-light" value="{{$user->resume}}" name="resume" >
                     </div>
 
                     </div>

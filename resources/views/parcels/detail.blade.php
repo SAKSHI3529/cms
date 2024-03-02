@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mr-5">
+                    {{-- <div class="col-md-2 mr-5">
                         <div class="form-group">
                             <label for="height" style="font-size: medium">Height:</label><br>
                             <label for="height">{{$parcel->height}}</label>
@@ -105,16 +105,16 @@
                             <label for="length" style="font-size: medium">Length:</label><br>
                             <label for="length">{{$parcel->length}}</label>
                             
-                        </div>
-                    </div>
+                        </div> --}}
+                    {{-- </div> --}}
 
-                    <div class="col-md-2 mr-5">
+                    {{-- <div class="col-md-2 mr-5">
                         <div class="form-group">
                             <label for="width" style="font-size: medium">Width:</label><br>
                             <label for="width">{{$parcel->width}}</label>
                             
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-md-2 ">
                         <div class="form-group">
