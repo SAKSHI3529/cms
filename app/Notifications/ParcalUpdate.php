@@ -41,14 +41,21 @@ class ParcalUpdate extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->greeting('Greetings from Madhur Transport!!!')
+                    ->greeting('Greetings from Madhur Transport!!!🚚💨')
+
+                    ->line('Hi  '   .$this->parcel->senderName.'')
                     ->line('Your Courier order is successfully placed!')
                     ->line(' Your Referance number is '.$this->parcel->referanceNumber.'')
-                    
+
                     ->action('Track Parcel', url("track/".$this->parcel->referanceNumber))
                     ->line('plz share your experience when your product is delivered')
                     ->line('Thank you for choosing us!!!');
+                    // @component('mail::button', ['url' => $url, 'color' => 'green'])
+                    // View Invoice
+                    // @endcomponent
+                    
     }
+    
 
     /**
      * Get the array representation of the notification.
