@@ -61,13 +61,21 @@ class Usercontroller extends Controller
         
 
         $inputs = $request->input();
-        $user = User::Create($inputs);
-        $user->assignRole($request->roles);
-        if($user)
+        // return $inputs;
+        try {
+            $user = User::Create($inputs);
+            $user->assignRole($request->roles);
+            if($user)
             flash('Users with name '.$user->name.' is created, Successfully!')->important();
         else
             flash('Unable to add Users');
+       
+        } catch (\Exception $e) {
+            flash(' something went wrong '.$e->getMessage()) ->error()->important(); 
+        }
         return back()->withInput();
+       
+       
     //     $rating = new AppRating;
     //      $rating->rating = 5;
     //   $rating->user_id = Auth::id();

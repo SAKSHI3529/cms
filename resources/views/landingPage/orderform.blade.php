@@ -106,7 +106,7 @@
                                     <div class="form-group">
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
-                                        <input class="form-control" type="name" value="{{old('senderName')}}" id="senderName" name="senderName" required>
+                                        <input class="form-control" type="name"  id="senderName" name="senderName" required>
                                         @if($errors->has('senderName'))
                                         <div class="error">{{ $errors->first('senderName') }}</div>
                                     @endif
@@ -115,12 +115,13 @@
 
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-                                        <input class="form-control" type="Address" value="{{old('senderAddress')}}" id="senderAddress" name="senderAddress" required>
+                                        <input class="form-control" type="Address" id="senderAddress" name="senderAddress" required>
+                                        
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="sendercontact">Sender Contact</label>
-                                        <input class="form-control" type="number" id="sendercontact" name="sendercontact" value="{{old('sendercontact')}}">
+                                        <input class="form-control" type="number" id="sendercontact" name="sendercontact" >
                                         @if($errors->has('sendercontact'))
                                         <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
                                     @endif
@@ -151,17 +152,17 @@
                                     <div class="form-group">
                                         <h4> Receiver Information</h4>
                                         <label for="Name">Name</label>
-                                        <input class="form-control" type="Name" value="{{old('receiverName')}}" id="receiverName" name="receiverName" required>
+                                        <input class="form-control" type="Name"  id="receiverName" name="receiverName" required>
                                        
                                     </div>
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-                                        <input class="form-control" type="Address" value="{{old('receiverAddress')}}" id="receiverAddress" name="receiverAddress" required>
+                                        <input class="form-control" type="Address"  id="receiverAddress" name="receiverAddress" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="receivercontact">Receiver Contact</label>
-                                        <input class="form-control" type="number" id="receivercontact" name="receivercontact" required value="{{old('receivercontact')}}">
+                                        <input class="form-control" type="number" id="receivercontact" name="receivercontact" >
                                         @if($errors->has('receivercontact'))
                                           <div class="error text-danger">{{ $errors->first('receivercontact') }}</div>
                                         @endif
