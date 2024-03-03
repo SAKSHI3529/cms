@@ -240,7 +240,7 @@
                                                         <div class="input-group-prepend">
                                                           <div class="input-group-text">₹</div>
                                                         </div>
-                                                        <input class="form-control" type="number" value="" id="price" name="price" disabled required>
+                                                        <input class="form-control" type="number" value="" id="price" name="price"  required>
                                                       </div>
                                                     
                                                 </div>
@@ -413,7 +413,7 @@
 
                         Kolhapur 416002</p>
                     
-                    <p class="mt-4"><strong>Phone:</strong> <span>+91 8659412358</span></p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+91 8975058970</span></p>
                     <p><strong>Email:</strong> <span>madhurtransports@gmail.com</span></p>
                 </div>
 
@@ -453,7 +453,7 @@
             switch (valux) {
               
                 case "0-1kg":
-                  if(parceltype=="EconomicCharges"){
+                if(parceltype=="EconomicCharges"){
                     price=24;
                   }
                   else
