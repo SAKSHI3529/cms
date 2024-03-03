@@ -23,7 +23,10 @@
 
                                 <div class="form-group">
                                     <label for="Address">Address</label>
+                                    
                                     <input class="form-control" type="Address" value="{{$parcels->senderAddress}}" id="senderAddress" name="senderAddress">
+                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
+                                    
                                 </div>
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
@@ -56,6 +59,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>
+                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
                                     <input class="form-control" type="Address" value="{{$parcels->receiverAddress}}" id="receiverAddress" name="receiverAddress">
                                 </div>
 
