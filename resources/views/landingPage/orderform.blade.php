@@ -206,7 +206,7 @@
                                                 <div class="form-group">
                                                     <label for="weight">Weight</label>
                                                     <br>
-                                                    <select id="dropdown" input class="form-control"name="weight">
+                                                    <select id="weight" input class="form-control"name="weight" onchange="getprice()">
                                                   
                                                       <option value="0-1kg">0-1 kg</option>
                                                       <option value="1-2kg">1-2 kg</option>
@@ -240,7 +240,7 @@
                                                         <div class="input-group-prepend">
                                                           <div class="input-group-text">₹</div>
                                                         </div>
-                                                        <input class="form-control" type="number" value="" id="price" name="price"  required>
+                                                        <input class="form-control" type="number" value="" id="price" name="price" onchange="getprice()"  required>
                                                       </div>
                                                     
                                                 </div>
@@ -438,88 +438,81 @@
     
   </div>
 </div>
-    <script>
-        function getprice() {
-       
-       
-
-   
-
-         var valux = $('#pricelist').val();
-            var parceltype = $('#Shippingtype').val();
-            console.log(valux);
-            console.log(parceltype);
-            let price = 0;
-            switch (valux) {
-              
-                case "0-1kg":
+<script>
+    function getprice() {
+        var valux = $('#weight').val();
+        var parceltype = $('#Shippingtype').val();
+        console.log(valux);
+        console.log(parceltype);
+        let price = 0;
+        switch (valux) {
+            case "0-1kg":
                 if(parceltype=="EconomicCharges"){
                     price=24;
-                  }
-                  else
+                } else {
+                    price = 49;
+                }
+                break;
 
-                    price = 49
-                    break;
-
-                case "1-2kg":
+            case "1-2kg":
                 if(parceltype=="EconomicCharges"){
                     price=45;
-                  }
-                  else
-                    price = 96
-                    break;
+                } else {
+                    price = 96;
+                }
+                break;
 
-                case "2-5kg":
+            case "2-5kg":
                 if(parceltype=="EconomicCharges"){
                     price=93;
-                  }
-                  else
-                    price = 142
-                    break;
+                } else {
+                    price = 142;
+                }
+                break;
 
-                case "5-10kg":
+            case "5-10kg":
                 if(parceltype=="EconomicCharges"){
                     price=145;
-                  }
-                  else
-                    price = 193
-                    break;
+                } else {
+                    price = 193;
+                }
+                break;
 
-                case "10-15kg":
+            case "10-15kg":
                 if(parceltype=="EconomicCharges"){
                     price=296;
-                  }
-                  else
-                    price = 345
-                    break;
+                } else {
+                    price = 345;
+                }
+                break;
 
-                case "15-20kg":
+            case "15-20kg":
                 if(parceltype=="EconomicCharges"){
                     price=595;
-                  }
-                  else
-                    price = 746
-                    break;
+                } else {
+                    price = 746;
+                }
+                break;
 
-                case "20-25kg":
+            case "20-25kg":
                 if(parceltype=="EconomicCharges"){
                     price=741;
-                  }
-                  else
-                    price = 1093
-                    break;
+                } else {
+                    price = 1093;
+                }
+                break;
 
-                case "25-50kg":
+            case "25-50kg":
                 if(parceltype=="EconomicCharges"){
                     price=1200;
-                  }
-                  else
-                    price = 1500
-                    break;
-            }
-            $('#price').val(price)
-        };
-    </script>
+                } else {
+                    price = 1500;
+                }
+                break;
+        }
+        $('#price').val(price);
+    };
+</script>
 
 </body>
 
