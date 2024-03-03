@@ -45,6 +45,7 @@
                         <div class="form-group">
                             <label for="address" >Address</label>
                             <input class="form-control" type="address" value="{{$user->address}}" id="address" placeholder="" name="address">
+                            <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
                         </div>
 
                         <div class="form-group">

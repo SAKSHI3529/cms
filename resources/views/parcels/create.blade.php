@@ -28,7 +28,10 @@
 
                                 <div class="form-group">
                                     <label for="Address">Address</label>
+                               
                                     <input class="form-control" type="Address" value="" id="senderAddress" name="senderAddress" required>
+                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
+                                    
                                 </div>
                                 <div class="form-group">
                                     <label for="contact">Contact</label>
@@ -83,7 +86,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>
+                                    
                                     <input class="form-control" type="Address" value="" id="receiverAddress" name="receiverAddress" required>
+                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
+                                   
                                 </div>
 
                                 <div class="form-group">
