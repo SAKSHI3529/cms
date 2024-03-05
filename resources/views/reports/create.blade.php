@@ -80,7 +80,8 @@
                                                         
                                                         <td class="text-center"><strong>Weight</strong>
                                                         </td>
-                                                        {{-- <td class="text-center"><strong>Shippingtype</strong></td> --}}
+                                                        <td class="text-center"><strong>Shippingtype</strong></td>
+                                                        <td class="text-center"><strong>Paymenttype</strong></td>
                                                         <td class="text-right"><strong>Totals</strong></td>
                                                     </tr>
                                                 </thead>
@@ -88,19 +89,23 @@
                                                     <td>{{$par->Productdetails}}</td>
                                                     <td class="text-center">{{$par->price}}</td>
                                                     <td class="text-center">{{$par->weight}}</td>
+                                                    <td class="text-center">{{$par->Shippingtype}}</td>
                                                     {{-- <td class="text-center">{{$par->Shippingtype}}</td> --}}
+
                                                     <td class="text-right">{{$par->price}}</td>
+
                                                 </tr>
                                                 <td></td>
                                                 <td class="text-center"></td>
                                                 <td class="text-center"></td>
+                                                <td class="text-center"></td>
                                                 <td class="text-right"></td>
                                             </tr>
-                                            {{-- <tr>
-                                                <td class="thick-line"></td>
+                                            <tr>
+                                                {{-- <td class="thick-line"></td>
                                                 <td class="thick-line"></td>
                                                 <td class="thick-line text-center">
-                                                    {{-- <strong>Subtotal</strong></td>
+                                                    <strong>Subtotal</strong></td>
                                                 <td class="thick-line text-right">$670.99</td> --}}
                                             
                                             

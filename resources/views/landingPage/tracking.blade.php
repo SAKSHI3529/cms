@@ -161,13 +161,13 @@
                   </div>
               </div>
 
-              <div class="col-md-2 mr-5">
+              {{-- <div class="col-md-2 mr-5">
                   <div class="form-group">
-                      <label for="height" style="font-size: medium"><span>Shipping type:</span>{{$details->Shippingtype}}</label><br>
+                      <label for="Shippingtype" style="font-size: medium"><span>Shipping type:</span>{{$details->Shippingtype}}</label><br>
                       
                       
                   </div>
-              </div>
+              </div> --}}
 
               {{-- <div class="col-md-2 mr-5">
                   <div class="form-group">

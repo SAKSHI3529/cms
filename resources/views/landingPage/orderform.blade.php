@@ -107,48 +107,27 @@
                                     <div class="form-group">
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
-<<<<<<< HEAD
-                                        <input class="form-control" type="name"  id="senderName" name="senderName" required>
-                                        @if($errors->has('senderName'))
-                                        <div class="error">{{ $errors->first('senderName') }}</div>
-                                    @endif
-                                       
-=======
                                         <input class="form-control" type="name" value="{{ old('senderName') }}"
                                             id="senderName" name="senderName" required>
                                         @if ($errors->has('senderName'))
                                             <div class="error">{{ $errors->first('senderName') }}</div>
                                         @endif
 
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
 
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-<<<<<<< HEAD
-                                        <input class="form-control" type="Address" id="senderAddress" name="senderAddress" required>
-                                        
-=======
                                         <input class="form-control" type="Address" value="{{ old('senderAddress') }}"
                                             id="senderAddress" name="senderAddress" required>
                                             <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
 
                                     <div class="form-group">
                                         <label for="sendercontact">Sender Contact</label>
-<<<<<<< HEAD
                                         <input class="form-control" type="number" id="sendercontact" name="sendercontact" >
                                         @if($errors->has('sendercontact'))
                                         <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
                                     @endif
-=======
-                                        <input class="form-control" type="number" id="sendercontact"
-                                            name="sendercontact" value="{{ old('sendercontact') }}">
-                                        @if ($errors->has('sendercontact'))
-                                            <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
-                                        @endif
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
@@ -177,12 +156,12 @@
                                     <div class="form-group">
                                         <h4> Receiver Information</h4>
                                         <label for="Name">Name</label>
-                                        <input class="form-control" type="Name"  id="receiverName" name="receiverName" required>
+                                        <input class="form-control" type="Name"  id="receiverName" name="receiverName" value="{{ old('receiverName') }}" required>
                                        
                                     </div>
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-                                        <input class="form-control" type="Address"  id="receiverAddress" name="receiverAddress" required>
+                                        <input class="form-control" type="Address"  id="receiverAddress" name="receiverAddress" value="{{ old('receiverAddress') }}" required>
                                     </div>
 
                                     <div class="form-group">
@@ -207,7 +186,7 @@
                                             <div class="col-md-3 mb-4 ">
                                                 <div class="form-group">
                                                     <label for="Productdetails">Product details(type)</label>
-                                                    <select id="dropdown" input class="form-control"
+                                                    <select id="dropdown" input class="form-control" 
                                                         name="Productdetails">
                                                         <option value="Documents">Select</option>
                                                         <option value="Documents">Documents</option>
@@ -258,6 +237,14 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                             {{-- <div class="col-md-3 mr-5 "> 
+                                                <div class="form-group"> --}}
+                                                    <label for="Payment">Payment</label>
+                                            <label class="radio-label">
+                                                <input type="radio" class="radio-input" name="Payment" value="cash_on_delivery">
+                                                Cash on Delivery
+                                            </label>
+                                                
 
 
                                             <div class="col-md-3 ">
@@ -267,7 +254,7 @@
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">₹</div>
                                                         </div>
-                                                        <input class="form-control" type="number" value="" id="price" name="price" onchange="getprice()"  required>
+                                                        <input class="form-control" type="number" value="" id="price" name="price" onchange="getprice()"  readonly required>
                                                       </div>
                                                     
                                                 </div>
@@ -365,6 +352,7 @@
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit" class="btn btn-primary  active mt-5 align-center"
                             style="background-color:#f8903b">
+                            {{-- <form action="{{ route('reports.create') }}" method="GET"> --}}
                             Submit
                         </button>
 
