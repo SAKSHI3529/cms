@@ -405,8 +405,8 @@
                 <div class="info-item aos-init aos-animate" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+91 7596481236</p>
-                  <p>+91 8659412358</p>
+                  <p>+91 8975058970</p>
+                  <p>+91 9405255330</p>
                 </div>
               </div><!-- End Info Item -->
   
@@ -424,7 +424,7 @@
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
                   <p>Monday - Saturday</p>
-                  <p>10:00 - 09:00PM</p>
+                  <p>08:00 - 09:00PM</p>
                 </div>
               </div><!-- End Info Item -->
   

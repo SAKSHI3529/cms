@@ -54,7 +54,7 @@
                                         <i class="fas fa-boxes float-right"></i>
                                     </div>
                                     <div class="text-white">
-                                        <h6 class="text-uppercase mb-3 font-size-16">Parcels</h6>
+                                        <h6 class="text-uppercase mb-3 font-size-16"> Today's Parcels</h6>
                                         <h2 class="mb-4">{{$todaysparcelscounts}}</h2>
                                         {{-- <span class="badge badge-info"> +11% </span> <span class="ml-2">From previous period</span> --}}
                                     </div>
@@ -125,6 +125,8 @@
                                                 
                                                 @foreach ($parcels as $p)
                                                 <tr>
+                                                    {{-- <td>{{$p->id}}</td> --}}
+
                                                     <td>{{$p->referanceNumber}}</td>
                                                     <td>
                                                         {{$p->senderName}}

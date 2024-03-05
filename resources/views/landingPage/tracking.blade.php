@@ -161,13 +161,13 @@
                   </div>
               </div>
 
-              <div class="col-md-2 mr-5">
+              {{-- <div class="col-md-2 mr-5">
                   <div class="form-group">
-                      <label for="height" style="font-size: medium"><span>Shipping type:</span>{{$details->Shippingtype}}</label><br>
+                      <label for="Shippingtype" style="font-size: medium"><span>Shipping type:</span>{{$details->Shippingtype}}</label><br>
                       
                       
                   </div>
-              </div>
+              </div> --}}
 
               {{-- <div class="col-md-2 mr-5">
                   <div class="form-group">
@@ -367,8 +367,8 @@
 
             Kolhapur 416002</p>
           
-          <p class="mt-4"><strong>Phone:</strong> <span>+91  8659412358</span></p>
-          <p><strong>Email:</strong> <span>madhur@example.com</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 89-7505-8970</span></p>
+          <p><strong>Email:</strong> <span>madhurtransports@gmail.com</span></p>
         </div>
 
       </div>
