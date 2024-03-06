@@ -371,6 +371,8 @@
                         Now: +91-8975058970</h4>
                     <p>&gt;&gt; Upon completing this booking enquiry, you will receive a Mail from us assigned for your
                         order.</p>
+                        
+                        <p>&gt;&gt;Transportation Cost Will be added Additionally</p>
                     <p>&gt;&gt; Low-priced &amp; fast delivery, Urgent delivery at extra cost</p>
                 </div>
 
