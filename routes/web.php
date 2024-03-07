@@ -55,7 +55,8 @@ Route::get('/track/{id}', "TrackingController@track");
 Route::POST('/orderform',"LandingPageController@store" );
 
 Route::GET('/orderform',"LandingPageController@index" );
-
+Route::GET('/successfull/{refid}',"LandingPageController@orderSuccessfull" );
+// Route::get('/reports/create', 'LandingPage@store')->name('reports.create');
 
 
 

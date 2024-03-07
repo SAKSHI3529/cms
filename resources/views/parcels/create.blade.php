@@ -210,7 +210,7 @@
                                                   <div class="input-group-prepend">
                                                     <div class="input-group-text">₹</div>
                                                   </div>
-                                                  <input class="form-control" type="number" value="" id="price" name="price"  required>
+                                                  <input class="form-control" type="number" value="" id="price" name="price" readonly  required>
                                                 </div>
                                               </div>
                                         
