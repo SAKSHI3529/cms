@@ -4,12 +4,17 @@
 <div class="container-fluid mt-2 ">
     <div class="card">
 
-        <div class="card-body ">  
-            <div class="row">
-                <div class="col-md-12">
+        <div class="card-body">  
+            <div class="row d-flex justify-content-end" >
+                <div class="col-md-6">
                        <h2>Traking Number</h2>
                        <h3>{{$parcel->referanceNumber}}</h3>
                 </div> 
+
+                <div class="col-md-6">
+                    <h4>Created On:</h4>
+                    <h6>{{$parcel->created_at}}</h6>
+                 </div>
             </div>
         </div>
     </div>
@@ -86,6 +91,14 @@
 
                     <div class="col-md-2 mr-5 ">
                         <div class="form-group">
+                            <label for="weight" style="font-size: medium" >Product Detail:</label><br>
+                            <label for="weight">{{$parcel->Productdetails}}</label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mr-5 ">
+                        <div class="form-group">
                             <label for="weight" style="font-size: medium" >Weight:</label><br>
                             <label for="weight">{{$parcel->weight}}</label>
                             
@@ -98,6 +111,14 @@
                         <div class="form-group">
                             <label for="Shippingtype" style="font-size: medium">Shippingtype:</label><br>
                             <label for="Shippingtype">{{$parcel->Shippingtype}}</label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mr-5">
+                        <div class="form-group">
+                            <label for="Shippingtype" style="font-size: medium">Paymeny Method:</label><br>
+                            <label for="Shippingtype">{{$parcel->Payment}}</label>
                             
                         </div>
                     </div>
