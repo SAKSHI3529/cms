@@ -30,6 +30,7 @@ class CreateParcelsTable extends Migration
             $table->string('Payment',25)->nullable();
             $table->string('price',10);
             $table->string('Productdetails',200);
+            $table->integer('delivaryboy_id',10);
             $table->string('userID',10);
             $table->string('status',100)->nullable();
             $table->string('pick-up-date',100)->nullable();

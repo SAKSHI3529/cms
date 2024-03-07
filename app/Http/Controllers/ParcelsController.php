@@ -160,7 +160,23 @@ class ParcelsController extends Controller
         // return $par;
         return view('reports.create' , compact('par'));
     }
+   public function takeParcel(Request $request,$id)
 
+   { $par=parcels::find($id);
+    $par->delivaryboy_id=$request->user()->id;
+    $par->save();
+    flash("Take parcel");
+    return back() ;
+
+
+   }
+   public function myParcel(Request $request)
+
+   {
+    $parcels = parcels::where('delivaryboy_id',$request->user()->id)->get(); 
+    // return $parcels;
+    return view('parcels.index',compact('parcels'));
+   }
     
 
   
