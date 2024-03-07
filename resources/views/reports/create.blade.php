@@ -46,13 +46,13 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    {{-- <div class="col-6 mt-4">
+                                     <div class="col-6 mt-4">
                                                     <address>
                                                             <strong>Payment Method:</strong><br>
-                                                            Visa ending **** 4242<br>
-                                                            jsmith@email.com
+                                                            {{$par->Payment}}<br>
+                                                            
                                                         </address>
-                                                </div> --}}
+                                                </div> 
                                     <div class="col-12 mt-4 text-right">
                                         <address>
                                             <strong>Order Date:</strong><br>
@@ -81,7 +81,7 @@
                                                         <td class="text-center"><strong>Weight</strong>
                                                         </td>
                                                         <td class="text-center"><strong>Shippingtype</strong></td>
-                                                        <td class="text-center"><strong>Paymenttype</strong></td>
+                                                        {{-- <td class="text-center"><strong>Paymenttype</strong></td> --}}
                                                         <td class="text-right"><strong>Totals</strong></td>
                                                     </tr>
                                                 </thead>
@@ -147,6 +147,7 @@
                                                     <tr>
                                                         <td class="no-line"></td>
                                                         <td class="no-line"></td>
+                                                        <td class="no-line"></td>
                                                         <td class="no-line text-center">
                                                             <strong>Total</strong>
                                                         </td>
@@ -158,6 +159,7 @@
                                                 <td></td>
                                                 <td class="text-center"></td>
                                                 <td class="text-center"></td>
+                                                <td class="text-right"></td>
                                                 <td class="text-right"></td>
                                             </tr>
                                                 </tbody>

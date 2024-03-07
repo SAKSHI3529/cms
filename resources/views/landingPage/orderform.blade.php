@@ -352,7 +352,7 @@
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit" class="btn btn-primary  active mt-5 align-center"
                             style="background-color:#f8903b">
-                            {{-- <form action="{{ route('reports.create') }}" method="GET"> --}}
+                            
                             Submit
                         </button>
 

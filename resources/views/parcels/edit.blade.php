@@ -147,7 +147,7 @@
                                                     <div class="form-group">
                                                         <label for="weight">Weight</label>
                                                         <br>
-                                                        <select id="pricelist" input class="form-control" name="weight"value="{{$parcels->weight}}"
+                                                        <select id="weight" input class="form-control" name="weight"value="{{$parcels->weight}}"
                                                             onchange="getprice()">
             
                                                             <option value="0-1kg">0-1 kg</option>
