@@ -50,7 +50,7 @@ class ParcalDelivared extends Notification
                      ->line(' Your Courier '.$this->track->referanceNumber.'  is Delivered Succesfully!. Please find the receipt attached.')
                     // ->line('Your Parcel Delivered Succesfully!')
                      ->action('Track Order', url("track/".$this->track->referanceNumber))
-                     ->line('plz share your experience when your product is delivered')
+                     ->line('plz share your experience with us!')
                      ->line('Thank you for using our application!');
     }
 

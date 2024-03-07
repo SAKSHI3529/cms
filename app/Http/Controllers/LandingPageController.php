@@ -50,8 +50,12 @@ class LandingPageController extends Controller
        }
            
         
-        if($par)
-        flash('Parcel placed Successfully!')->important();
+        if($par){
+            flash('Parcel placed Successfully!')->important();
+            return redirect()->to('/successfull/'.$par->referanceNumber);
+        }
+      
+
     else
         flash('Unable to load your details ');
         return back()->withInput();
@@ -71,5 +75,10 @@ class LandingPageController extends Controller
         return view('landingPage.index', compact('reviews'));
     }
 
+    public function orderSuccessfull(Request $request , $refid){
+        $par= parcels::select('*')->where("referanceNumber",$refid)->first();
+        // return $par;
+        return view('landingPage.successfullOrder' , compact('par'));
+    }
     
 }
