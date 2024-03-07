@@ -36,6 +36,8 @@ Route::middleware(['auth'])->group( function()
      Route::resource('/branch',"BranchController" );
     Route::resource('/parcels',"ParcelsController" );
     Route::resource('/roles',"RoleController" );
+    Route::get('/takeParcel/{pid}',"ParcelsController@takeParcel");
+    Route::get('/myParcel',"ParcelsController@myParcel");
     
     
 });
