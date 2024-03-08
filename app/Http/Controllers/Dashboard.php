@@ -20,9 +20,12 @@ class Dashboard extends Controller
         $branchscounts = Branch::all()->count();
         $userscounts = User::all()->count();
         $p = DB::table('parcels')
-        // ->where('parcels.price', '=', 1)
         ->sum('parcels.price');
-        return view('dashboard.index',compact('parcels','branchscounts','parcelscounts','userscounts','p','todaysparcelscounts'));
+        $pr=DB::table('parcels')
+       ->whereDate("created_at",date("Y-m-d")) ->sum('parcels.price');
+
+        
+        return view('dashboard.index',compact('parcels','branchscounts','parcelscounts','userscounts','p','todaysparcelscounts','pr'));
     }
     
 }

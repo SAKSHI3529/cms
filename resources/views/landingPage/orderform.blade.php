@@ -107,48 +107,28 @@
                                     <div class="form-group">
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
-<<<<<<< HEAD
-                                        <input class="form-control" type="name"  id="senderName" name="senderName" required>
-                                        @if($errors->has('senderName'))
-                                        <div class="error">{{ $errors->first('senderName') }}</div>
-                                    @endif
-                                       
-=======
                                         <input class="form-control" type="name" value="{{ old('senderName') }}"
                                             id="senderName" name="senderName" required>
                                         @if ($errors->has('senderName'))
                                             <div class="error">{{ $errors->first('senderName') }}</div>
                                         @endif
 
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
 
                                     <div class="form-group">
                                         <label for="Address">Address</label>
-<<<<<<< HEAD
-                                        <input class="form-control" type="Address" id="senderAddress" name="senderAddress" required>
-                                        
-=======
                                         <input class="form-control" type="Address" value="{{ old('senderAddress') }}"
                                             id="senderAddress" name="senderAddress" required>
                                             <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
 
                                     <div class="form-group">
                                         <label for="sendercontact">Sender Contact</label>
-<<<<<<< HEAD
-                                        <input class="form-control" type="number" id="sendercontact" name="sendercontact" >
-                                        @if($errors->has('sendercontact'))
-                                        <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
-                                    @endif
-=======
                                         <input class="form-control" type="number" id="sendercontact"
                                             name="sendercontact" value="{{ old('sendercontact') }}">
                                         @if ($errors->has('sendercontact'))
                                             <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
                                         @endif
->>>>>>> a9afbbb3283abfa511774f02f3a3f61ff9744e17
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>

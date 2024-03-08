@@ -99,10 +99,11 @@ class Usercontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request,$id)
     {
         $u = user :: find($id);
-        return view('users.edit')->with("user",$u);
+        $roles = DB::table('roles')->select('*')->get();
+        return view('users.edit')->with("user",$u)->with("roles",$roles);
     }
 
     /**
@@ -117,6 +118,7 @@ class Usercontroller extends Controller
         $input = $request -> input();
         $u= user:: find ($id);
         $u-> update($input);
+        $u->syncRoles($request->roles);
         return redirect()-> route("users.index");
     }
 
