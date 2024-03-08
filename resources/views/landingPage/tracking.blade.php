@@ -151,7 +151,23 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Parcel Information</h4>
+            <div class="col-md-6 ml-5 pb-4 ">
+              <div class="form-group">
+                  <label for="weight" style="font-size: 20px" ><span>Order Date:</span>{{$details->created_at}}</label><br>
+                 
+                  
+              </div>
+          </div>
             <div class="row">
+
+              
+              <div class="col-md-3 ">
+                <div class="form-group">
+                    <label for="price" style="font-size: medium"><span>Product Type:</span>{{$details->Productdetails}}</label><br>
+                  
+                </div>
+            </div>
+
 
               <div class="col-md-2 ml-5 ">
                   <div class="form-group">
@@ -161,50 +177,50 @@
                   </div>
               </div>
 
-              {{-- <div class="col-md-2 mr-5">
-                  <div class="form-group">
-                      <label for="Shippingtype" style="font-size: medium"><span>Shipping type:</span>{{$details->Shippingtype}}</label><br>
-                      
-                      
-                  </div>
-              </div> --}}
+              
+              
 
-              {{-- <div class="col-md-2 mr-5">
-                  <div class="form-group">
-                      <label for="length" style="font-size: medium"><span>Length:</span>{{$details->length}}</label><br>
-                      
-                      
-                  </div>
+            <div class="col-md-3 ">
+              <div class="form-group">
+                  <label for="price" style="font-size: medium"><span>Shipping Type:</span>{{$details->Shippingtype}}</label><br>
+                
               </div>
+          </div>
 
-              <div class="col-md-2 mr-5">
-                  <div class="form-group">
-                      <label for="width" style="font-size: medium"><span>Width:</span>{{$details->width}}</label><br>
-                      
-                      
-                  </div>
-              </div> --}}
-
-              <div class="col-md-2 ">
-                  <div class="form-group">
-                      <label for="price" style="font-size: medium"><span>Price:</span>{{$details->price}}</label><br>
-                    
-                      
-                  </div>
-              </div>
-
-              <div class="col-md-2 ">
-                <div class="form-group">
-                    <label for="price" style="font-size: medium"><span>Product Type:</span>{{$details->Productdetails}}</label><br>
-                  
-                </div>
+          <div class="col-md-3 ">
+            <div class="form-group">
+                <label for="price" style="font-size: medium"><span>Payment Method:</span>{{$details->Payment}}</label><br>
+              
+                
             </div>
+        </div>
+
+            <div class="col-md-2 ">
+              <div class="form-group">
+                  <label for="price" style="font-size: medium"><span>Price:</span>{{$details->price}}</label><br>
+                
+                  
+              </div>
+          </div>
 
 
           </div>
+
+         
           </div>
         </div>
 
+        <div class="col-lg-6">
+  
+          <div class="card">
+            <div class="card-body" style="font-size: 20px">
+              <h4 class="card-title">Total Prise</h4>
+              <h5 class="card-text"><span>Name:</span>{{$details->price}}</h5>
+              
+            </div>
+          </div>
+  
+        </div>
       </div>
 
       {{-- <div class="col-lg-12">
