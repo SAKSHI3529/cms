@@ -36,6 +36,8 @@ Route::middleware(['auth'])->group( function()
      Route::resource('/branch',"BranchController" );
     Route::resource('/parcels',"ParcelsController" );
     Route::resource('/roles',"RoleController" );
+    Route::get('/takeParcel/{pid}',"ParcelsController@takeParcel");
+    Route::get('/myParcel',"ParcelsController@myParcel");
     
     
 });
@@ -53,6 +55,9 @@ Route::get('/track/{id}', "TrackingController@track");
 Route::POST('/orderform',"LandingPageController@store" );
 
 Route::GET('/orderform',"LandingPageController@index" );
+Route::GET('/successfull/{refid}',"LandingPageController@orderSuccessfull" );
+// Route::get('/reports/create', 'LandingPage@store')->name('reports.create');
+
 
 
 Route::get('/profile',"Usercontroller@showprofile" );

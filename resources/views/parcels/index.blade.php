@@ -55,12 +55,16 @@
                                     
 
                                {{-- <span class="badge badge-light">Light</span> --}}
+                               
                               <td>
+                                
+
                                     <div class="button-container" style="display:flex; gap:5px">
 
                                         <a href="{{url("/parcels/".$parcel->id)}}" class="btn btn-success"  data-toggle="tooltip" data-placement="top" data-original-title="Details">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                        @role('admin')
 
                                         <a href="{{url("/parcels/".$parcel->id."/edit")}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                             <i class="fas fa-edit"></i>
@@ -79,6 +83,17 @@
                                         </a>
                                         
                                     </div>
+                                    @endrole
+                                    @role('delivary boy')
+                                    @if($parcel->delivaryboy_id==null)
+
+                                    <a href="{{ url('/takeParcel/'.$parcel->id)}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Take Parcel">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    @endif
+
+                                    @endrole
+
                                 </td>
                                 
                             </tr>

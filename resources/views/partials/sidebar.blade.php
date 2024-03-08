@@ -72,6 +72,16 @@
                         @can('parcel-list')
                         <li><a href="{{url('/parcels')}}">List</a></li>
                         @endcan
+                        @role('delivary boy')
+                        
+                        <li>
+                            <a href="{{url('/myParcel')}}" class="waves-effect">
+                                <i class="mdi mdi-view-dashboard"></i>
+                                <span>MyParcel</span>
+                            </a>
+                        </li>   
+                        
+                        @endrole
 
                     </ul>
                 </li>

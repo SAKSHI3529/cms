@@ -6,9 +6,8 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
   
-    <!-- Favicons -->
-    <link href="{{url('assets2/img/favicon.png" rel="icon')}}">
-    <link href="{{url('assets2/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+     <!-- App favicon -->
+     <link rel="shortcut icon" href="{{url('assets/images/my-img/favicon.png')}}" >
   
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">

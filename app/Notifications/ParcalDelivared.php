@@ -12,6 +12,7 @@ class ParcalDelivared extends Notification
     use Queueable;
     
     protected $track;
+    
 
     /**
      * Create a new notification instance.
@@ -43,9 +44,14 @@ class ParcalDelivared extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Your Parcel Delivered Succesfully!')
-                    ->action('Track Order', url("track/".$this->parcel->referanceNumber))
-                    ->line('Thank you for using our application!');
+
+                     ->greeting('Madhur Transport!!!')
+                     -> line('Hi' .$this->track->senderName.'')
+                     ->line(' Your Courier '.$this->track->referanceNumber.'  is Delivered Succesfully!. Please find the receipt attached.')
+                    // ->line('Your Parcel Delivered Succesfully!')
+                     ->action('Track Order', url("track/".$this->track->referanceNumber))
+                     ->line('plz share your experience with us!')
+                     ->line('Thank you for using our application!');
     }
 
     /**

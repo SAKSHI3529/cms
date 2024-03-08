@@ -142,8 +142,8 @@
                                                 
                                                 @foreach ($parcels as $p)
                                                 <tr>
-                                                    <td>{{$p->id}}</td>
-
+                                                    {{-- <td>{{$p->id}}</td> --}}
+ 
                                                     <td>{{$p->referanceNumber}}</td>
                                                     <td>
                                                         {{$p->senderName}}
