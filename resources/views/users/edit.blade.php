@@ -58,7 +58,17 @@
                             <input class="form-control" type="text" value="" id="role">
                         </div> --}}
 
-
+                        <div class="form-group">
+                            <label class="">Select Role</label>
+                            <div class="">
+                                <select class="form-control" name="roles">
+                                    <option>Select</option>
+                                    @foreach ($roles as $role)
+                                        <option value="{{$role->name}}">{{$role->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
 
                         
                             {{-- <div class="form-group">

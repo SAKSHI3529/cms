@@ -124,6 +124,11 @@
 
                                     <div class="form-group">
                                         <label for="sendercontact">Sender Contact</label>
+                                        <input class="form-control" type="number" id="sendercontact"
+                                            name="sendercontact" value="{{ old('sendercontact') }}">
+                                        @if ($errors->has('sendercontact'))
+                                            <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
+                                        @endif
                                         <input class="form-control" type="number" id="sendercontact" name="sendercontact" >
                                         @if($errors->has('sendercontact'))
                                         <div class="error text-danger">{{ $errors->first('sendercontact') }}</div>
