@@ -23,7 +23,7 @@
                                 <th>email</th>
                                 <th>resume</th>
                                 <th>Roles</th>
-                                <th>Action</th>
+                                <th class="noExport">Action</th>
                             </tr>
                         </thead>
 
@@ -83,11 +83,28 @@
 @section('pagescript')
 <script>
     $('#datatable').DataTable( {
-    responsive: true
-    // dom: 'lBfrtip',
-    // buttons: [ 
-    //     'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'
-    // ]
+    responsive: true,
+    dom: 'lBfrtip',
+    
+    buttons: [ 
+        
+        {
+            extend: 'excel',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        },
+        
+        {
+            extend: 'pdfHtml5',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        }
+                
+    ]
 } );
     </script>
 

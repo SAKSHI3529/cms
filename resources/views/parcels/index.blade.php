@@ -23,7 +23,8 @@
                                 <th>Sender Name</th>
                                 <th>Receiver Name</th>
                                 <th>Status</th>
-                                <th>Action</th>
+                                
+                                <th class="noExport">Action</th>
                             </tr>
                         </thead>
 
@@ -31,7 +32,7 @@
                             @foreach ($parcels as $parcel)
                             
                             <tr>
-                                <td>{{$parcel->id}}</td>
+                                <td></td>
                                 <td>{{$parcel ->referanceNumber}}</td>
                                 <td>{{$parcel->senderName}}</td>
                                 <td>{{$parcel->receiverName}}</td>
@@ -116,12 +117,30 @@
 <script>
     $('#datatable').DataTable( {
     responsive: true,
-    
     dom: 'lBfrtip',
+    "fnRowCallback" : function(nRow, aData, iDisplayIndex){
+                $("td:first", nRow).html(iDisplayIndex +1);
+               return nRow;
+            },
     buttons: [ 
-        'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'
+        
+        {
+            extend: 'excel',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        },
+        
+        {
+            extend: 'pdfHtml5',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        }
+                
     ]
-
 } );
     </script>
 
