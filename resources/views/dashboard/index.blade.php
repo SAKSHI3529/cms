@@ -61,6 +61,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat bg-primary">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class="fas fa-boxes float-right"></i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3 font-size-16"> Today's  take away Parcels</h6>
+                                        {{-- <h1>Parcels Assigned to You</h1> --}}
+{{-- <ul>
+    @foreach ($parcels as $parcel)
+        <li>{{ $parcel->id }} - {{ $parcel->Productdetails }}</li>
+        <!-- Display other parcel information as needed -->
+    @endforeach
+</ul> --}}
+                                        <h2 class="mb-4">{{$parcelCount}}</h2>
+                                        {{-- <span class="badge badge-info"> +11% </span> <span class="ml-2">From previous period</span> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @role('admin')
                        
                         <div class="col-xl-3 col-md-6">
                             <div class="card mini-stat bg-primary">
@@ -107,6 +129,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6">
+                            @endrole
                     
                             <div class="card mini-stat bg-primary">
                                 <div class="card-body mini-stat-img">
