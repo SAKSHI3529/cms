@@ -88,7 +88,7 @@
                                     @if($parcel->delivaryboy_id==null)
 
                                     <a href="{{ url('/takeParcel/'.$parcel->id)}}" class="btn btn-primary"  data-toggle="tooltip" data-placement="top" data-original-title="Take Parcel">
-                                        <i class="fas fa-edit"></i>
+                                        <i class="fas fa-check"></i>
                                     </a>
                                     @endif
 

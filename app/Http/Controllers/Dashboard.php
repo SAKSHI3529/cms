@@ -21,6 +21,10 @@ class Dashboard extends Controller
 
         
         $todaysparcelscounts= parcels::whereDate("created_at",date("Y-m-d"))->get()->count();
+        $todaysDelivared= parcels::leftjoin("trackings","trackings.referanceNumber","parcels.referanceNumber")->where("trackings.trackinginfo", "Delivered")->whereDate("trackings.created_at",date("Y-m-d"))->get()->count();
+
+        $todaysRevenue= parcels::leftjoin("trackings","trackings.referanceNumber","parcels.referanceNumber")->where("trackings.trackinginfo", "Delivered")->whereDate("trackings.created_at",date("Y-m-d"))->sum('parcels.price');
+
         $branchscounts = Branch::all()->count();
         $userscounts = User::all()->count();
         $p = DB::table('parcels')
@@ -28,8 +32,9 @@ class Dashboard extends Controller
         $pr=DB::table('parcels')
        ->whereDate("created_at",date("Y-m-d")) ->sum('parcels.price');
 
-        
-        return view('dashboard.index',compact('parcels','branchscounts','parcelCount','parcelscounts','userscounts','p','todaysparcelscounts','pr'));
+        // return $todaysRevenue;
+
+        return view('dashboard.index',compact('parcels','branchscounts','parcelCount','parcelscounts','userscounts','p','todaysparcelscounts','pr','todaysDelivared','todaysRevenue'));
     }
     
 }
