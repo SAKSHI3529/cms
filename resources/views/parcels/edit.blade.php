@@ -18,7 +18,7 @@
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
                                     <label for="fname"> Name</label>
-                                    <input class="form-control" type="name" value="{{$parcels->senderName}}" id="senderName" name="senderName">
+                                    <input class="form-control" type="name" value="{{$parcels->senderName}}" id="senderName" name="senderName" placeholder="Enter full name">
                                 </div>
 
                                 <div class="form-group">
@@ -55,7 +55,7 @@
                                 <div class="form-group">
                                     <h4> Receiver Information</h4>
                                     <label for="Name">Name</label>
-                                    <input class="form-control" type="Name" value="{{$parcels->receiverName}}" id="receiverName" name="receiverName">
+                                    <input class="form-control" type="Name" value="{{$parcels->receiverName}}" id="receiverName" name="receiverName" placeholder="Enter full name">
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>

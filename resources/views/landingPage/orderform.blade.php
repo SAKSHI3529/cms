@@ -108,7 +108,8 @@
                                         <h4>Sender Information</h4>
                                         <label for="fname"> Name</label>
                                         <input class="form-control" type="name" value="{{ old('senderName') }}"
-                                            id="senderName" name="senderName" required>
+                                            id="senderName" name="senderName" required placeholder="Enter full name">
+                                            
                                         @if ($errors->has('senderName'))
                                             <div class="error">{{ $errors->first('senderName') }}</div>
                                         @endif
@@ -161,12 +162,13 @@
                                     <div class="form-group">
                                         <h4> Receiver Information</h4>
                                         <label for="Name">Name</label>
-                                        <input class="form-control" type="Name"  id="receiverName" name="receiverName" value="{{ old('receiverName') }}" required>
+                                        <input class="form-control" type="Name"  id="receiverName" name="receiverName" value="{{ old('receiverName') }}" required placeholder="Enter full name">
                                        
                                     </div>
                                     <div class="form-group">
                                         <label for="Address">Address</label>
                                         <input class="form-control" type="Address"  id="receiverAddress" name="receiverAddress" value="{{ old('receiverAddress') }}" required>
+                                        <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6> 
                                     </div>
 
                                     <div class="form-group">
