@@ -23,14 +23,14 @@
                                 <th>City</th>
                                 <th>Contact</th>
                                 <th>Created At</th>
-                                <th>Action</th>
+                                <th class="noExport">Action</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             @foreach ($branchs as $branch)
                             <tr>
-                                <td>{{$branch->id}}</td>
+                                <td></td>
                                 <td>{{$branch->name}}</td>
                                 <td>{{$branch->state}}</td>
                                 <td>{{$branch->city}}</td>
@@ -79,7 +79,31 @@
 @section('pagescript')
 <script>
     $('#datatable').DataTable( {
-    responsive: true
+    responsive: true,
+    dom: 'lBfrtip',
+    "fnRowCallback" : function(nRow, aData, iDisplayIndex){
+                $("td:first", nRow).html(iDisplayIndex +1);
+               return nRow;
+            },
+    buttons: [ 
+        
+        {
+            extend: 'excel',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        },
+        
+        {
+            extend: 'pdfHtml5',
+            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+            exportOptions: {
+                columns: "thead th:not(.noExport)"
+            }
+        }
+                
+    ]
 } );
     </script>
 
