@@ -20,7 +20,7 @@
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
                                     <label for="fname"> Name</label>
-                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required>
+                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required placeholder="Enter full name">
                                     @if($errors->has('senderName'))
                                     <div class="error">{{ $errors->first('senderName') }}</div>
                                 @endif
@@ -79,7 +79,7 @@
                                 <div class="form-group">
                                     <h4> Receiver Information</h4>
                                     <label for="Name">Name</label>
-                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName" required>
+                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName" required placeholder="Enter full name">
                                     @if($errors->has('receiverName'))
                                         <div class="error">{{ $errors->first('receiverName') }}</div>
                                     @endif
