@@ -174,14 +174,24 @@
                 </div> --}}
                 
 
+                <div class="d-print-none">
+                    <div class="float-left">
+                        <a href="javascript:window.print()"
+                            class="btn btn-success waves-effect waves-light"><i
+                                class="fa fa-print"></i></a>
+                                <a href="{{url('/parcels')}}" class="btn btn-danger"  >
+                                    Close
+                                </a>
+                    </div>
+                </div>
              
 
-                <a href="javascript:window.print()"
+                {{-- <a href="javascript:window.print()"
                 class="btn btn-success waves-effect waves-light"><i
                     class="fa fa-print"></i></a>
                    <a href="{{url('/parcels')}}" class="btn btn-danger"  data-toggle="tooltip" data-placement="top" data-original-title="Reports">
                     Close
-                </a>
+                </a> --}}
 
             </div>
 

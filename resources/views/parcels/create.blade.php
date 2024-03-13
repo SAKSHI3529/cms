@@ -48,7 +48,7 @@
                                     <select class="form-control" name="BranchProcessed">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
-                                            <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                            <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->city}}</option>
                                            
                                         @endforeach
                                     </select>
@@ -105,7 +105,7 @@
                                     <select class="form-control" name="PickupBranch">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
-                                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->city}}</option>
                                           
                                         @endforeach
                                     </select>
@@ -113,6 +113,21 @@
                                         <div class="error">{{ $errors->first('PickupBranch') }}</div>
                                     @endif
                                 </div>
+{{-- 
+                                <div class="form-group pt-3">
+
+                                    <div>
+                                    <label for="Payment ">Payment Method</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="radio-input" name="Payment" value="cash_on_delivery">
+                                        Cash on Delivery
+                                    </div>
+                                </div> --}}
+
+                              
+
+                               
 
                             </div>
 
