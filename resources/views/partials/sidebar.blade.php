@@ -70,7 +70,7 @@
                         @endcan
 
                         @can('parcel-list')
-                        <li><a href="{{url('/parcels')}}">  <i class="fas fa-align-justify"></i>List</a></li>
+                        <li><a href="{{url('/parcels')}}">  <i class="fas fa-align-justify"></i> List </a></li>
                         @endcan
                         @role('delivary boy')
                         
