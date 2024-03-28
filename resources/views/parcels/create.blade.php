@@ -19,8 +19,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
+<<<<<<< HEAD
                                     <label for="fname"> <h6>Name</h6></label>
                                     <input class="form-control" type="name" value="" id="senderName" name="senderName" required>
+=======
+                                    <label for="fname"> Name</label>
+                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required placeholder="Enter full name">
+>>>>>>> c9d9e3b77d18da8772f4bd456b93996317661c3a
                                     @if($errors->has('senderName'))
                                     <div class="error">{{ $errors->first('senderName') }}</div>
                                 @endif
@@ -48,7 +53,7 @@
                                     <select class="form-control" name="BranchProcessed">
                                         <option><h6>Select</h6></option>
                                         @foreach ($branchs as $branch)
-                                            <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                            <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->city}}</option>
                                            
                                         @endforeach
                                     </select>
@@ -78,8 +83,8 @@
 
                                 <div class="form-group">
                                     <h4> Receiver Information</h4>
-                                    <label for="Name"><h6>Name</h6></label>
-                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName" required>
+                                    <label for="Name">Name</label>
+                                    <input class="form-control" type="Name" value="" id="receiverName" name="receiverName" required placeholder="Enter full name">
                                     @if($errors->has('receiverName'))
                                         <div class="error">{{ $errors->first('receiverName') }}</div>
                                     @endif
@@ -105,7 +110,7 @@
                                     <select class="form-control" name="PickupBranch">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
-                                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->city}}</option>
                                           
                                         @endforeach
                                     </select>
@@ -113,6 +118,21 @@
                                         <div class="error">{{ $errors->first('PickupBranch') }}</div>
                                     @endif
                                 </div>
+{{-- 
+                                <div class="form-group pt-3">
+
+                                    <div>
+                                    <label for="Payment ">Payment Method</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="radio-input" name="Payment" value="cash_on_delivery">
+                                        Cash on Delivery
+                                    </div>
+                                </div> --}}
+
+                              
+
+                               
 
                             </div>
 
