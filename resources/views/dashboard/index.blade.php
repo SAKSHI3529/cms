@@ -175,22 +175,22 @@
                                         <table class="table table-centered table-vertical table-nowrap mb-1">
 
                                             <tbody>
-                                                <th>Referance Number</th>
-                                                <th>Sender Name</th>
-                                                <th>Receiver Name</th>
-                                                <th>Status</th>
-                                                <th>Price </th>
+                                                <th><h5><b>Referance Number</b></h5></th>
+                                                <th><h5><b>Sender Name</b></h5></th>
+                                                <th><h5><b>Receiver Name</b></h5></th>
+                                                <th><h5><b>Status</b></h5></th>
+                                                <th><h5><b>Price</b></h5> </th>
                                                 
                                                 @foreach ($parcels as $p)
                                                 <tr>
                                                     {{-- <td>{{$p->id}}</td> --}}
  
-                                                    <td>{{$p->referanceNumber}}</td>
+                                                    <td><h5>{{$p->referanceNumber}}</h5></td>
                                                     <td>
-                                                        {{$p->senderName}}
+                                                        <h5> {{$p->senderName}}</h5>
                                                     </td>
                                                     <td>
-                                                        {{$p->receiverName}}
+                                                        <h5> {{$p->receiverName}}</h5>
                                                     </td>
                                                     <td>
                                                         <?php $stat=$p->trackingstatus->first()->trackinginfo??' ' ?>
@@ -199,12 +199,12 @@
                                                         {{($stat=='Arrived at Destination City')?' badge-warning':''}}
                                                         {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                                             @if($p->trackingstatus->count()>0) 
-                                                         {{$stat}}
-                                                         @else <span class="badge badge-dark">Not Updated</span>
+                                                        <h5> {{$stat}}</h5>
+                                                         @else <span class="badge badge-dark"><h6>Not Updated </h6></span>
                                                        @endif
                                                      </span></td>
                                                     <td>
-                                                        {{$p->price}}
+                                                        <h5> {{$p->price}}</h5>
                                                     </td>
                                                     
                                                     

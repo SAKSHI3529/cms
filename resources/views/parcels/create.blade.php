@@ -19,22 +19,27 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
+<<<<<<< HEAD
+                                    <label for="fname"> <h6>Name</h6></label>
+                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required>
+=======
                                     <label for="fname"> Name</label>
                                     <input class="form-control" type="name" value="" id="senderName" name="senderName" required placeholder="Enter full name">
+>>>>>>> c9d9e3b77d18da8772f4bd456b93996317661c3a
                                     @if($errors->has('senderName'))
                                     <div class="error">{{ $errors->first('senderName') }}</div>
                                 @endif
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="Address">Address</label>
+                                    <label for="Address"><h6>Address</h6></label>
                                
                                     <input class="form-control" type="Address" value="" id="senderAddress" name="senderAddress" required>
                                     <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
                                     
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact">Contact</label>
+                                    <label for="contact"><h6>Contact</h6></label>
                                     <input class="form-control" type="number" id="sendercontact" name="sendercontact" required>
                                     @if($errors->has('sendercontact'))
                                     <div class="error">{{ $errors->first('sendercontact') }}</div>
@@ -42,11 +47,11 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="BranchProcessed">Branch Processed</label>
+                                    <label for="BranchProcessed"><h6>Branch Processed</h6></label>
 
                                   
                                     <select class="form-control" name="BranchProcessed">
-                                        <option>Select</option>
+                                        <option><h6>Select</h6></option>
                                         @foreach ($branchs as $branch)
                                             <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->city}}</option>
                                            
@@ -59,7 +64,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Email</label>
+                                    <label for="email"><h6>Email</h6></label>
                                     <input class="form-control" type="email" id="email" name="email" required>
                                     @if($errors->has('email'))
                                     <div class="error">{{ $errors->first('email') }}</div>
@@ -84,7 +89,7 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
-                                    <label for="Address">Address</label>
+                                    <label for="Address"><h6>Address</h6></label>
                                     
                                     <input class="form-control" type="Address" value="" id="receiverAddress" name="receiverAddress" required>
                                     <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
@@ -92,7 +97,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="contact">Contact</label>
+                                    <label for="contact"><h6>Contact</h6></label>
                                     <input class="form-control" type="number" id="receivercontact" name="receivercontact"  required>
                                     @if($errors->has('receivercontact'))
                                     <div class="error">{{ $errors->first('receivercontact') }}</div>
@@ -100,7 +105,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for=" PickupBranch ">Pickup Branch</label>
+                                    <label for=" PickupBranch "><h6>Pickup Branch</h6></label>
                                     <select class="form-control" name="PickupBranch">
                                         <option>Select</option>
                                         @foreach ($branchs as $branch)
@@ -139,7 +144,7 @@
                                     <div class="row"> 
                                         <div class="col-md-4 ">
                                         <div class="form-group">
-                                            <label for="Productdetails">Product details (Type)</label>
+                                            <label for="Productdetails"><h6>Product details (Type)</h6></label>
                                             <select id="dropdown" input class="form-control" name="Productdetails">
                                                 <option value="">Select</option>
                                                 <option value="Documents">Documents</option>
@@ -163,7 +168,7 @@
 
                                     <div class="col-md-4 mr-5 ">
                                         <div class="form-group">
-                                            <label for="weight">Weight</label>
+                                            <label for="weight"><h6>Weight</h6></label>
                                             <br>
                                             <select id="weight" input class="form-control" name="weight"
                                                 onchange="getprice()">
@@ -183,7 +188,7 @@
                                     </div>
                                     <div class="col-md-4 mr-5 ">
                                         <div class="form-group">
-                                            <label for="Shippingtype">Shippingtype</label>
+                                            <label for="Shippingtype"><h6>Shippingtype</h6></label>
 
                                             <select id="Shippingtype" input class="form-control" name="Shippingtype" onchange="getprice()">
                                                 
@@ -199,7 +204,7 @@
                                                 
 
                                             
-                                                <label for="price">Price</label>
+                                                <label for="price"><h6>Price</h6></label>
                                                 <div class="input-group mb-2">
                                                   <div class="input-group-prepend">
                                                     <div class="input-group-text">₹</div>
@@ -209,6 +214,7 @@
                                               </div>
                                         
                                         </div>
+                                        
 
                                        
                                        

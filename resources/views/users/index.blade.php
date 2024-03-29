@@ -17,12 +17,12 @@
                     <table id="datatable" class="table table-bordered  nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact</th>
-                                <th>email</th>
-                                <th>resume</th>
-                                <th>Roles</th>
+                                <th><h5><b>Name</b></h5></th>
+                                <th><h5><b>Address</b></h5></th>
+                                <th><h5><b>Contact</b></h5></th>
+                                <th><h5><b>email</b></h5></th>
+                                <th><h5><b>resume</b></h5></th>
+                                <th><h5><b>Roles</b></h5></th>
                                 <th class="noExport">Action</th>
                             </tr>
                         </thead>
@@ -30,15 +30,15 @@
                         <tbody>
                             @foreach ($users as $user)
                             <tr>
-                                <td>{{$user->name}}</td>
-                                <td>{{$user->address}}</td>
-                                <td>{{$user->contact}}</td>
-                                <td>{{$user->email}}</td>
-                                <td><a href="{{url('/storage/'.$user->resume)}}" target="_blank">view resume</a></td>
+                                <td><h5>{{$user->name}}</h5></td>
+                                <td><h5>{{$user->address}}</h5></td>
+                                <td><h5>{{$user->contact}}</h5></td>
+                                <td><h5>{{$user->email}}</h5></td>
+                                <td><a href="{{url('/storage/'.$user->resume)}}" target="_blank"><h5>view resume</h5></a></td>
                                
                                 @if($user->roles->count()>0) 
-                                <td>{{$user->roles->first()->name}}</td>
-                                 @else <td>Not Creates</td>
+                                <td><h5>{{$user->roles->first()->name}}</h5></td>
+                                 @else <td><h5>Not Creates</h5></td>
                                @endif
                                
 

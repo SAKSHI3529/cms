@@ -10,14 +10,14 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
 
-                    <label for="example-text-input" class="col-form-label">Enter Reference Number</label>
+                    <label for="example-text-input" class="col-form-label"><h5>Enter Reference Number</h5></label>
                     <input class="form-control" type="text" value="" id="referenceNumber" name="referanceNumber">
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="form-group col-md-6 mt-4">
-                    <label for=" PickupBranch ">Select Branch</label>
+                    <label for=" PickupBranch "><h5>Select Branch</h5></label>
                     <select class="form-control "  id="branch"  name="branch">
                         <option>Select</option>
                         @foreach ($branchs as $branch)
@@ -33,7 +33,7 @@
             <div class="form-group row justify-content-center ">
 
                 <div class="col-sm-6 mt-2">
-                    <label class="col-sm-4 col-form-label">Select Status</label>
+                    <label class="col-sm-4 col-form-label"><h5>Select Status</h5></label>
                     <select class="form-control" id="trackinginfo" name="trackinginfo">
                         <option>Select </option>
                         <option>Order Confirmed</option>

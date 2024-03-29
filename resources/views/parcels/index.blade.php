@@ -19,12 +19,12 @@
                         <thead>
                             <tr>
                                 <th>id</th>
-                                <th>Referance Number</th>
-                                <th>Sender Name</th>
-                                <th>Receiver Name</th>
-                                <th>Status</th>
+                                <th><h5><b>Referance Number</h5></th>
+                                <th><h5><b>Sender Name</b></h5></th>
+                                <th><h5><b>Receiver Name</b></h5></th>
+                                <th><h5><b>Status</b></h5></th>
                                 
-                                <th class="noExport">Action</th>
+                                <th class="noExport"><h5> Action</h5></th>
                             </tr>
                         </thead>
 
@@ -33,9 +33,9 @@
                             
                             <tr>
                                 <td></td>
-                                <td>{{$parcel ->referanceNumber}}</td>
-                                <td>{{$parcel->senderName}}</td>
-                                <td>{{$parcel->receiverName}}</td>
+                                <td> <h5>{{$parcel ->referanceNumber}}</h5></td>
+                                <td><h5>{{$parcel->senderName}}</h5></td>
+                                <td><h5>{{$parcel->receiverName}}</h5></td>
                                {{-- @if($parcel->trackingstatus->count()>0) 
                                 <td> {{$parcel->trackingstatus->first()->trackinginfo}}</td>
                                  @else <td>Not updated</td>
@@ -49,8 +49,8 @@
                                 {{($stat=='Arrived at Destination City')?' badge-warning':''}}
                                 {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                     @if($parcel->trackingstatus->count()>0) 
-                                 {{$stat}}
-                                 @else <span class="badge badge-dark">Not Updated</span>
+                                 <h6>{{$stat}}</h6>
+                                 @else <span class="badge badge-dark"><h6>Not Updated</h6></span>
                                   @endif
                                  </span></td>
                                     
