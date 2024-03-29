@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h3>Users Information</h3>
+                    <h3>Staff  Information</h3>
                     <br>
                     <br>
                     

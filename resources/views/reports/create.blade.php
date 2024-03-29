@@ -4,7 +4,7 @@
 
 
 
-        <div class="row">
+        <div class="row ">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
@@ -102,48 +102,7 @@
                                                 <td class="text-right"></td>
                                             </tr>
                                             <tr>
-                                                {{-- <td class="thick-line"></td>
-                                                <td class="thick-line"></td>
-                                                <td class="thick-line text-center">
-                                                    <strong>Subtotal</strong></td>
-                                                <td class="thick-line text-right">$670.99</td> --}}
-                                            
-                                            
-
-                                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->
-                                                    {{-- <tr>
-                                                                    <td>BS-200</td>
-                                                                    <td class="text-center">$10.99</td>
-                                                                    <td class="text-center">1</td>
-                                                                    <td class="text-right">$10.99</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>BS-400</td>
-                                                                    <td class="text-center">$20.00</td>
-                                                                    <td class="text-center">3</td>
-                                                                    <td class="text-right">$60.00</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>BS-1000</td>
-                                                                    <td class="text-center">$600.00</td>
-                                                                    <td class="text-center">1</td>
-                                                                    <td class="text-right">$600.00</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="thick-line"></td>
-                                                                    <td class="thick-line"></td>
-                                                                    <td class="thick-line text-center">
-                                                                        <strong>Subtotal</strong></td>
-                                                                    <td class="thick-line text-right">$670.99</td>
-                                                                </tr> --}}
-                                                    {{-- <tr>
-                                                        <td class="no-line"></td>
-                                                        <td class="no-line"></td>
-                                                        <td class="no-line text-center">
-                                                            <strong>Shipping</strong>
-                                                        </td>
-                                                        <td class="no-line text-right"></td>
-                                                    </tr> --}}
+                                              
                                                     <tr>
                                                         <td class="no-line"></td>
                                                         <td class="no-line"></td>
@@ -171,7 +130,7 @@
                                                 <a href="javascript:window.print()"
                                                     class="btn btn-success waves-effect waves-light"><i
                                                         class="fa fa-print"></i></a>
-                                                        <a href="{{url('/parcels')}}" class="btn btn-danger" >
+              +                                          <a href="{{url('/parcels')}}" class="btn btn-danger" >
                                                             Close
                                                         </a>
                                             </div>

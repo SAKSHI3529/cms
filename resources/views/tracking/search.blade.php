@@ -21,7 +21,7 @@
                     <select class="form-control "  id="branch"  name="branch">
                         <option>Select</option>
                         @foreach ($branchs as $branch)
-                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}}</option>
+                        <option value="{{$branch->id}}">{{$branch->name}},{{$branch->ad_line}},{{$branch->City}}</option>
                         
                         @endforeach
                     </select>

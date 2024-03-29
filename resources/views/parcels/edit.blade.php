@@ -33,10 +33,10 @@
                                     <input class="form-control" type="contact" id="sendercontact" name="sendercontact" value="{{$parcels->sendercontact}}">
                                 </div>
 
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label for="BranchProcessed">Branch Processed</label>
                                     <input class="form-control" type="BranchProcessed" value="{{$parcels->BranchProcessed}}" id="BranchProcessed" name="BranchProcessed">
-                                </div>
+                                </div> --}}
 
 
 
@@ -59,8 +59,9 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="Address">Address</label>
-                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
+                                    
                                     <input class="form-control" type="Address" value="{{$parcels->receiverAddress}}" id="receiverAddress" name="receiverAddress">
+                                    <h6><p class="text-muted">Address in plot no,street/apartment name,land mark,city,pincode</p></h6>
                                 </div>
 
                                 <div class="form-group">
@@ -72,10 +73,10 @@
                                 </div>
 
 
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label for=" PickupBranch ">Pickup Branch</label>
                                     <input class="form-control" type="PickupBranch" value="{{$parcels->PickupBranch}}" id="PickupBranch" name="PickupBranch">
-                                </div>
+                                </div> --}}
 
                             </div>
 

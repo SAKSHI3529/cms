@@ -52,8 +52,7 @@
                                            
                                         @endforeach
                                     </select>
-                                    {{-- <input class="form-control" type="BranchProcessed" value="" id="BranchProcessed" name="BranchProcessed"> --}}
-
+                                    
                                     @if($errors->has('BranchProcessed'))
                                         <div class="error">{{ $errors->first('BranchProcessed') }}</div>
                                     @endif
@@ -113,7 +112,7 @@
                                         <div class="error">{{ $errors->first('PickupBranch') }}</div>
                                     @endif
                                 </div>
-{{-- 
+
                                 <div class="form-group pt-3">
 
                                     <div>
@@ -123,7 +122,7 @@
                                     <input type="radio" class="radio-input" name="Payment" value="cash_on_delivery">
                                         Cash on Delivery
                                     </div>
-                                </div> --}}
+                                </div> 
 
                               
 

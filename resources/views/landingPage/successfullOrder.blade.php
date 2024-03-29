@@ -29,54 +29,39 @@
 </head>
 
 
-<body class="blog-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+<body class="blog-page" data-bs-spy="scroll" data-bs-target="#navmenu" style="overflow-x: hidden">
 
     <!-- ======= Header ======= -->
-    <header id="header" class="header sticky-top d-flex align-items-center">
+    {{-- <header id="header" class="header sticky-top d-flex align-items-center">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-
-                <h1>Madhur</h1>
-                <span>.</span>
-            </a> --}}
-
-            <!-- Nav Menu -->
-            {{-- <nav id="navmenu" class="navmenu">
-      {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-     
-        <h1>Madhur</h1>
-        <span>.</span>
-      </a> --}}
-
+           
             <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
 
                 <img src="{{ url('assets/images/my-img/Frame14.png') }}" alt="logo">
 
             </a>
-            <!-- Nav Menu -->
+           
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    {{-- <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li> --}}
+                  
                     <li><a href="{{ url('/#contact') }}">Contact</a></li>
-                    {{-- <li><a href="blog.html" class="active">Tracking Details</a></li> --}}
+                    
 
 
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav><!-- End Nav Menu -->
+            </nav>
 
 
 
         </div>
-    </header>
+    </header> --}}
 
 
 
-        <div class="row">
-            <div class="col-8 " style=" margin-left:15%">
+        <div class="row mt-5 h5">
+            <div class="col-12 " style=" margin-left:%">
                 <div class="card">
                     <div class="card-body">
 

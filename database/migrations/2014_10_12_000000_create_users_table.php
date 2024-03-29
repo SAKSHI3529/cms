@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('salary',50);
             $table->string('experiance',50);
             $table->string('education',50);
+        
 
             $table->rememberToken();
             $table->timestamps();

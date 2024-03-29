@@ -45,7 +45,7 @@
                     <div class="col-xl-12 content">
                         <h3>About Us</h3>
                         <h2>Madhur Transport</h2>
-                        <p>Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top
+                        <p class="h5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Established in the year 2001, Madhur Courier Services in Bhausinghji Road, Kolhapur is a top
                             player in the category Courier Services For Africa in the Kolhapur. This well-known
                             establishment acts as a one-stop destination servicing customers both local and from other parts
                             of Kolhapur. Over the course of its joumey, this business has established a firm foothold in
@@ -247,7 +247,7 @@
                         <div class="service-item d-flex">
                             <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                             <div>
-                                <h4 class="title"><a href="services-details.html" class="stretched-link">FAST TRACK</a>
+                                <h4 class="title"><a  class="stretched-link">FAST TRACK</a>
                                 </h4>
                                 <p class="description"> High Priority is urgent delivery service within 24 or 48 hours
                                     (depending on the destination) for urgent documents and packages.
@@ -262,7 +262,7 @@
                         <div class="service-item d-flex">
                             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
                             <div>
-                                <h4 class="title"><a href="services-details.html" class="stretched-link">CONTRACT
+                                <h4 class="title"><a  class="stretched-link">CONTRACT
                                         BOOKING</a></h4>
                                 <p class="description">Bulk Couriers with free daily pickup and monthly billings.</p>
                             </div>
@@ -273,7 +273,7 @@
                         <div class="service-item d-flex">
                             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                             <div>
-                                <h4 class="title"><a href="services-details.html" class="stretched-link">PROOF OF
+                                <h4 class="title"><a  class="stretched-link">PROOF OF
                                         DELIVERY</a></h4>
                                 <p class="description">Immediate Delivery available online.</p>
                             </div>
@@ -284,7 +284,7 @@
                         <div class="service-item d-flex">
                             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
                             <div>
-                                <h4 class="title"><a href="services-details.html" class="stretched-link">EXPRESS COURIER
+                                <h4 class="title"><a  class="stretched-link">EXPRESS COURIER
                                         SERVICES </a></h4>
                                 <p class="description">Express Services for delivering documents and small parcels with an
                                     domestic/international logistic network.</p>
