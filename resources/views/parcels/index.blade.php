@@ -50,7 +50,7 @@
                                 {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
                                     @if($parcel->trackingstatus->count()>0) 
                                  <h6>{{$stat}}</h6>
-                                 @else <span class="badge badge-dark">Not Updated</span>
+                                 @else <span class="badge badge-dark"><h6>Not Updated</h6></span>
                                   @endif
                                  </span></td>
                                     

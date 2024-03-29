@@ -49,24 +49,24 @@
         <span>.</span>
       </a> --}}
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            {{-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
 
                 <img src="{{ url('assets/images/my-img/Frame14.png') }}" alt="logo">
 
-            </a>
+            </a> --}}
             <!-- Nav Menu -->
-            <nav id="navmenu" class="navmenu">
+            {{-- <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
                     {{-- <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#portfolio">Portfolio</a></li> --}}
-                    <li><a href="{{ url('/#contact') }}">Contact</a></li>
+                    {{-- <li><a href="{{ url('/#contact') }}">Contact</a></li>
                     {{-- <li><a href="blog.html" class="active">Tracking Details</a></li> --}}
 
 
-                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav><!-- End Nav Menu -->
+                    {{-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav><!-- End Nav Menu --> --}} 
 
 
 
