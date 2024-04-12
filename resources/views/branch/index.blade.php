@@ -4,7 +4,7 @@
 
 <div class="card-body">
 
-    <div class="row">
+    <div class="row" style="font-size: 15px;">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
@@ -17,13 +17,13 @@
                     <table id="datatable" class="table table-bordered nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
-                                <th><h5> ID</h5></th>
-                                <th><h5> Name</h5></th>
-                                <th><h5> State</h5></th>
-                                <th><h5> City</h5></th>
-                                <th><h5> Contact</h5></th>
-                                <th><h5> Created At</h5></th>
-                                <th class="noExport"><h5> Action</h5></th>
+                                <th> ID</th>
+                                <th> Name</th>
+                                <th> State</th>
+                                <th> City</th>
+                                <th> Contact</th>
+                                <th> Created At</th>
+                                <th class="noExport"> Action</th>
                             </tr>
                         </thead>
 
@@ -31,11 +31,11 @@
                             @foreach ($branchs as $branch)
                             <tr>
                                 <td></td>
-                                <td><h5> {{$branch->name}}</h5></td>
-                                <td><h5> {{$branch->state}}</h5></td>
-                                <td><h5> {{$branch->city}}</h5></td>
-                                <td><h5> {{$branch->contact}}</h5></td>
-                                <td><h5> {{$branch->created_at}}</h5></td>
+                                <td> {{$branch->name}}</td>
+                                <td> {{$branch->state}}</td>
+                                <td> {{$branch->city}}</td>
+                                <td> {{$branch->contact}}</td>
+                                <td> {{$branch->created_at}}</td>
                                
 
 

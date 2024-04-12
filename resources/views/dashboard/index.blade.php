@@ -168,43 +168,43 @@
 
                         <div class="col-xl-12">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" style="font-size: 15px;">
                                     <h4 class="card-title mb-4">Latest Orders</h4>
 
                                     <div class="table-responsive">
                                         <table class="table table-centered table-vertical table-nowrap mb-1">
 
                                             <tbody>
-                                                <th><h5><b>Referance Number</b></h5></th>
-                                                <th><h5><b>Sender Name</b></h5></th>
-                                                <th><h5><b>Receiver Name</b></h5></th>
-                                                <th><h5><b>Status</b></h5></th>
-                                                <th><h5><b>Price</b></h5> </th>
+                                                <th><b>Referance Number</b></th>
+                                                <th><b>Sender Name</b></th>
+                                                <th><b>Receiver Name</b></th>
+                                                <th><b>Status</b></th>
+                                                <th><b>Price</b> </th>
                                                 
                                                 @foreach ($parcels as $p)
                                                 <tr>
                                                     {{-- <td>{{$p->id}}</td> --}}
  
-                                                    <td><h5>{{$p->referanceNumber}}</h5></td>
+                                                    <td>{{$p->referanceNumber}}</td>
                                                     <td>
-                                                        <h5> {{$p->senderName}}</h5>
+                                                         {{$p->senderName}}
                                                     </td>
                                                     <td>
-                                                        <h5> {{$p->receiverName}}</h5>
+                                                         {{$p->receiverName}}
                                                     </td>
                                                     <td>
                                                         <?php $stat=$p->trackingstatus->first()->trackinginfo??' ' ?>
                                                         <span class="badge badge-pill {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
                                                         {{($stat=='Order Processed' || $stat=='Out for Delivery ')?' badge-warning':''}}
                                                         {{($stat=='Arrived at Destination City')?' badge-warning':''}}
-                                                        {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
+                                                        {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} " style="font-size:12px;"> 
                                                             @if($p->trackingstatus->count()>0) 
-                                                        <h5> {{$stat}}</h5>
-                                                         @else <span class="badge badge-dark"><h6>Not Updated </h6></span>
+                                                         {{$stat}}
+                                                         @else <span class="badge badge-dark" style="font-size:10px;">Not Updated </span>
                                                        @endif
                                                      </span></td>
                                                     <td>
-                                                        <h5> {{$p->price}}</h5>
+                                                         {{$p->price}}
                                                     </td>
                                                     
                                                     

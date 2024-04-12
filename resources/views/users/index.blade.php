@@ -4,7 +4,7 @@
 
 <div class="card-body">
 
-    <div class="row">
+    <div class="row" style="font-size:15px; color:black">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
@@ -17,12 +17,12 @@
                     <table id="datatable" class="table table-bordered  nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                             <tr>
-                                <th><h5><b>Name</b></h5></th>
-                                <th><h5><b>Address</b></h5></th>
-                                <th><h5><b>Contact</b></h5></th>
-                                <th><h5><b>email</b></h5></th>
-                                <th><h5><b>resume</b></h5></th>
-                                <th><h5><b>Roles</b></h5></th>
+                                <th><b>Name</b></th>
+                                <th><b>Address</b></th>
+                                <th><b>Contact</b></th>
+                                <th><b>email</b></th>
+                                <th><b>resume</b></th>
+                                <th><b>Roles</b></th>
                                 <th class="noExport">Action</th>
                             </tr>
                         </thead>
@@ -30,15 +30,15 @@
                         <tbody>
                             @foreach ($users as $user)
                             <tr>
-                                <td><h5>{{$user->name}}</h5></td>
-                                <td><h5>{{$user->address}}</h5></td>
-                                <td><h5>{{$user->contact}}</h5></td>
-                                <td><h5>{{$user->email}}</h5></td>
-                                <td><a href="{{url('/storage/'.$user->resume)}}" target="_blank"><h5>view resume</h5></a></td>
+                                <td>{{$user->name}}</td>
+                                <td>{{$user->address}}</td>
+                                <td>{{$user->contact}}</td>
+                                <td>{{$user->email}}</td>
+                                <td><a href="{{url('/storage/'.$user->resume)}}" target="_blank">view resume</a></td>
                                
                                 @if($user->roles->count()>0) 
-                                <td><h5>{{$user->roles->first()->name}}</h5></td>
-                                 @else <td><h5>Not Creates</h5></td>
+                                <td>{{$user->roles->first()->name}}</td>
+                                 @else <td>Not Creates</td>
                                @endif
                                
 

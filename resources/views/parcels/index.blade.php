@@ -47,10 +47,10 @@
                                 <span class="badge badge-pill {{($stat=='Delivered' || $stat=='Order Confirmed')?' badge-success':''}}
                                 {{($stat=='Order Processed' || $stat=='Out for Delivery ')?' badge-warning':''}}
                                 {{($stat=='Arrived at Destination City')?' badge-warning':''}}
-                                {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} "> 
+                                {{($stat=='Failed Delivery Attempt' || $stat=='Cancel')?' badge-danger':''}} " style="font-size:12px;"> 
                                     @if($parcel->trackingstatus->count()>0) 
-                                 <h6>{{$stat}}</h6>
-                                 @else <span class="badge badge-dark"><h6>Not Updated</h6></span>
+                                 {{$stat}}
+                                 @else <span class="badge badge-dark" style="font-size:10px;" >Not Updated</span>
                                   @endif
                                  </span></td>
                                     
