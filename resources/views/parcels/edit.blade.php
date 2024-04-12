@@ -174,6 +174,14 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <div>
+                                                    <label for="Payment ">Payment Method</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" class="radio-input" name="Payment" value="cash_on_delivery">
+                                                        Cash on Delivery
+                                                    </div>
+                                                </div> 
 
                                         <div class="col-md-2 ">
                                             <div class="form-group">

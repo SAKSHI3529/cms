@@ -28,9 +28,10 @@
                         </thead>
 
                         <tbody>
-                            @foreach ($branchs as $branch)
+                            @foreach ($branchs as $index => $branch)
                             <tr>
-                                <td></td>
+                               
+                                <td>{{$index+1}}</td>
                                 <td> {{$branch->name}}</td>
                                 <td> {{$branch->state}}</td>
                                 <td> {{$branch->city}}</td>
@@ -81,10 +82,10 @@
     $('#datatable').DataTable( {
     responsive: true,
     dom: 'lBfrtip',
-    "fnRowCallback" : function(nRow, aData, iDisplayIndex){
-                $("td:first", nRow).html(iDisplayIndex +1);
-               return nRow;
-            },
+    // "fnRowCallback" : function(nRow, aData, iDisplayIndex){
+    //             $("td:first", nRow).html(iDisplayIndex +1);
+    //            return nRow;
+    //         },
     buttons: [ 
         
         {

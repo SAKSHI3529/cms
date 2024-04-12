@@ -19,13 +19,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h4>Sender Information</h4>
-<<<<<<< HEAD
-                                    <label for="fname"> <h6>Name</h6></label>
-                                    <input class="form-control" type="name" value="" id="senderName" name="senderName" required>
-=======
                                     <label for="fname"> Name</label>
                                     <input class="form-control" type="name" value="" id="senderName" name="senderName" required placeholder="Enter full name">
->>>>>>> c9d9e3b77d18da8772f4bd456b93996317661c3a
                                     @if($errors->has('senderName'))
                                     <div class="error">{{ $errors->first('senderName') }}</div>
                                 @endif

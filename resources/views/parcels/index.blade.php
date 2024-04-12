@@ -29,10 +29,10 @@
                         </thead>
 
                         <tbody>
-                            @foreach ($parcels as $parcel)
+                            @foreach ($parcels as $index =>$parcel)
                             
                             <tr>
-                                <td></td>
+                                <td><h5>{{$index+1}}</h5></td>
                                 <td> <h5>{{$parcel ->referanceNumber}}</h5></td>
                                 <td><h5>{{$parcel->senderName}}</h5></td>
                                 <td><h5>{{$parcel->receiverName}}</h5></td>
@@ -118,29 +118,27 @@
     $('#datatable').DataTable( {
     responsive: true,
     dom: 'lBfrtip',
-    "fnRowCallback" : function(nRow, aData, iDisplayIndex){
-                $("td:first", nRow).html(iDisplayIndex +1);
-               return nRow;
-            },
-    buttons: [ 
-        
-        {
-            extend: 'excel',
-            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
-            exportOptions: {
-                columns: "thead th:not(.noExport)"
-            }
-        },
-        
-        {
-            extend: 'pdfHtml5',
-            title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
-            exportOptions: {
-                columns: "thead th:not(.noExport)"
-            }
+    // "fnRowCallback" : function(nRow, aData, iDisplayIndex){
+    //             $("td:first", nRow).html(iDisplayIndex +1);
+    //            return nRow;
+    //         },
+            buttons: [ 
+    {
+        extend: 'excel',
+        title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+        exportOptions: {
+            columns: ":not(.noExport)" // Include all columns except those with the class "noExport"
         }
-                
-    ]
+    },
+    {
+        extend: 'pdfHtml5',
+        title: 'Madhur Transport \n Bhausingji Road \n kolhapur \n +91-8975058970',
+        exportOptions: {
+            columns: ":not(.noExport)" // Include all columns except those with the class "noExport"
+        }
+    }
+]
+
 } );
     </script>
 
