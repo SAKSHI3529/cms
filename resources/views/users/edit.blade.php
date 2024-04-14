@@ -2,7 +2,7 @@
 @section('title','Users edit')
 @section('content')
 <div class="container-fluid mt-3">
-    <form action="{{url('/users/'.$user->id)}}" method="POST">
+    <form action="{{url('/users/'.$user->id)}}" method="POST" enctype="multipart/form-data">
         @method("PUT")
         @csrf
     <div class="card">

@@ -104,6 +104,7 @@ class Usercontroller extends Controller
         $u = user :: find($id);
         $roles = DB::table('roles')->select('*')->get();
         return view('users.edit')->with("user",$u)->with("roles",$roles);
+
     }
 
     /**
@@ -115,6 +116,16 @@ class Usercontroller extends Controller
      */
     public function update(Request $request, $id)
     {
+        if($request->resume){
+
+            $path = $request->file('resume')->store('resume');
+            $request -> merge([
+                
+                'resume' =>$path
+               
+            ]);
+        }
+       
         $input = $request -> input();
         $u= user:: find ($id);
         $u-> update($input);
