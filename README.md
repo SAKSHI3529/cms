@@ -7,4 +7,4 @@
 
 <p>Their is Landing page   For customers, it means they can track their packages, schedule pickups, check information regarding to company  and do other things without needing to call or visit a physical location.</p> 
 
-<p>Their is organized Dashboard for Admin , it means they can handle their courier, schedule delivaries , organize staff, handle their different branches and gives real time updated notification to users.</p>
+<p>Their is organized Dashboard for Admin , it means they can handle their courier, schedule delivaries , organize staff, handle their different branches and gives real time updates through notification to users.</p>
